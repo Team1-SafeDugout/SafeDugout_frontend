@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  border: 1px solid black;
+  height: 150px;
+  width: 100%;
+}
+main{
+  border: 1px solid black;
+  height: 1000px;
+}
+section{
+  border: 1px solid black;
+  height: 450px;
+  margin: 20px 40px;
+
+}
+article{
+  border: 1px solid black;
+  height: 440px;
+  width: 33%;
+}
+footer{
+  border: 1px solid black;
+  height: 100px;
+  width: 100%;
+}
+
+
+.top-section-container{
+  display: flex;
+  justify-content: center;
+}
