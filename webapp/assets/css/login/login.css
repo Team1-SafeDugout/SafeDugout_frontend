@@ -1,0 +1,11 @@
+header {
+  background-color: rgb(228, 180, 25);
+  height: 100px;
+
+}
+
+.main-contentbox {
+  background-color: #efefef;
+  width: 500px;
+  height: 510px;
+}
