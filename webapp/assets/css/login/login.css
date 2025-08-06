@@ -1,6 +1,17 @@
+body {
+  margin: 0px 0px;
+}
+
 header {
   background-color: #DCD6D0;
   height: 100px;
+
+}
+
+.main-container {
+  min-height: 750px;
+  display: flex;
+  align-items: center;
 
 }
 
@@ -8,10 +19,12 @@ header {
   background-color: #efefef;
   width: 500px;
   height: 510px;
-  margin: 100px auto;
+  margin: 0px auto;
+
 }
 
 footer {
   background-color: #DCD6D0;
   height: 100px;
+  width: 100%;
 }
