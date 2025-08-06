@@ -1,35 +1,152 @@
 *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+/* 헤더공간 */
 header{
   border: 1px solid black;
   height: 150px;
   width: 100%;
 }
-main{
-  border: 1px solid black;
-  height: 1000px;
-}
-section{
-  border: 1px solid black;
-  height: 450px;
-  margin: 20px 40px;
-
-}
-article{
-  border: 1px solid black;
-  height: 440px;
-  width: 33%;
-}
+/* 푸터공간 */
 footer{
   border: 1px solid black;
   height: 100px;
   width: 100%;
 }
 
+/* 메인 공통*/
+main{
+  width: 100%;
+}
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 30px 30px;
+}
+section{
+  background-color: #F5F5F5;
+  border: 1px solid black;
+  padding: 12px;
+  width: calc(33.333% - 14px);
+  min-width: 280px;
+  flex-grow: 1;
+}
+.top-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
-.top-section-container{
+.top-section a{
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+}
+/* 팀 뉴스 */
+.main-news{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.news-img{
+  flex: 1;
+  background-color: #ddd;
+  height: 80px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.news-list{
+  list-style: none;
+}
+.news-list li{
+  background-color: #F5F5F5;
+  padding: 6px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+/* 팀 유튜브 */
+.youtube-thumbnail{
+  display: flex;
+  gap: 10px;
+}
+/* 나중에 영상 썸네일 들어갈 공간 */
+.youtube-thumbnail .thumbnail-img{
+  flex: 1;
+  height: 80px;
+}
+/* 경기일정 */
+.game-schedule-group{
+  margin-bottom: 10px;
+}
+.game-schedule-group h4{
+  margin-bottom: 6px;
+}
+.game-schedule{
+  display: flex;
+  gap: 6px;
+}
+.game-box {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+/* 게시판 */
+.board-list{
+  list-style: none;
+}
+.board-list li{
+  padding: 6px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+/* 경기장 정보 */
+.stadium-img {
+  width: 100%;
+  height: 120px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+/* 순위 표 */
+.team-ranking h2{
+  margin-bottom: 6px;
+}
+.ranking-list{
+  list-style: none;
+}
+.ranking-list li {
+  display: flex;
+  padding: 6px 0;
+  border-bottom: 1px solid #37353568;
+  font-size: 14px;
+}
+.ranking-list-header{
+  font-weight: bold;
+  background-color: #DCD6D0;
+  align-items: flex-start;
+
+}
+.ranking-list-team{
+  align-items: flex-start;
+}
+.ranking-list li div {
+  flex: 1;
+  text-align: center;
+}
+
+/* 반응형 대비 */
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+  }
 }
