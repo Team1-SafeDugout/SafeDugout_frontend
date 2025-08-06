@@ -1,5 +1,5 @@
 header {
-  background-color: rgb(228, 180, 25);
+  background-color: #DCD6D0;
   height: 100px;
 
 }
@@ -8,4 +8,10 @@ header {
   background-color: #efefef;
   width: 500px;
   height: 510px;
+  margin: 100px auto;
+}
+
+footer {
+  background-color: #DCD6D0;
+  height: 100px;
 }
