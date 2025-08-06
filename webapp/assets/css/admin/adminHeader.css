@@ -1,32 +1,34 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-header{
-    height :100px;
-    width: 100%;
-    background-color: #4D5061;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    line-height: 100px;
+header {
+	height: 100px;
+	width: 100%;
+	background-color: #4D5061;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	line-height: 100px;
 }
 
-.header-loginButton, .header-siteName{
-    margin: 0px 20px;
+.header-loginButton,
+.header-siteName {
+	margin: 0px 20px;
 }
 
-.header-siteName{
-    font-size: 32px;
-    font-weight: bold;
+.header-siteName {
+	font-size: 32px;
+	font-weight: bold;
 }
 
-.header-loginButton{
-    font-size: 15px;
+.header-loginButton {
+	font-size: 15px;
 }
 
-.header-loginButton a, .header-siteName a{
-    text-decoration: none;
-    color: white;
+.header-loginButton a,
+.header-siteName a {
+	text-decoration: none;
+	color: white;
 }
