@@ -1,12 +1,79 @@
+/* 바디 */
+body {
+  margin: 0px 0px;
+}
+
+/* 헤더 */
 header {
   background-color: #DCD6D0;
   height: 100px;
 
 }
 
-.main-contentbox {
-  background-color: #EFEFEF;
-  width: 500px;
-  height: 510px;
+/* 메인 */
+.main-container {
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+}
+
+.main-container form {
   margin: 0px auto;
+}
+
+.main-formbox {
+  background-color: #efefef;
+  width: 500px;
+  height: 470px;
+  padding: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.main-inputMessage{
+  width: 325px;
+  margin: 40px 0px 10px 0px;
+}
+
+.main-inputBlank input{
+  width: 325px;
+  height: 60px;
+  padding: 0px 0px;
+}
+
+.main-container button {
+  padding: 0px 0px;
+}
+
+.main-loginButton{
+  width: 329px;
+  height: 64px;
+  margin: 60px 0px 0px 0px;
+}
+
+.main-loginButton button{
+  background-color: #DCD6D0;
+  width: 329px;
+  height: 64px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.main-etcButton{
+  margin: 20px 0px 0px 0px;
+}
+
+.main-etcButton a{
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+/* 푸터 */
+footer {
+  background-color: #DCD6D0;
+  height: 100px;
+  width: 100%;
 }
