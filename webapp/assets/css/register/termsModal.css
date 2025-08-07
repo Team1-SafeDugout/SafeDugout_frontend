@@ -1,5 +1,24 @@
-header {
+body {
+  margin: 0px 0px;
+}
+
+/* 헤더 */
+#header {
   background-color: #DCD6D0;
   height: 100px;
 
+}
+
+/* 메인 */
+.main-container {
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+}
+
+/* 푸터 */
+#footer {
+  background-color: #DCD6D0;
+  height: 100px;
+  width: 100%;
 }
