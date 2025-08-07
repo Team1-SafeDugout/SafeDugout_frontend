@@ -25,7 +25,6 @@ header {
 /* 왼쪽에 있을 사이드 메뉴와 본 페이지 메뉴를 나눠줄 flex 제공 */
 main {
 	min-height: 100vh;
-	height: fit-content;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	transform: translateY(-100px);
@@ -130,9 +129,15 @@ li{
 
 .body-container-name {
 	font-size: 24px;
-	width: 100%;
+	width: 74%;
 	height: 10%;
-	align-content: end;
+  align-content: flex-end;
+}
+
+.add-button{
+	width: 26%;
+	height: 10%;
+	 align-content: flex-end;
 }
 
 .body-container-list {
@@ -151,102 +156,78 @@ li{
 }
 
 /* 검색 결과 상단 */
-.memberlist-category-line{
+.song-list-category-line{
 	margin-top: 4%;
 	height: 6%;
 	background-color: #4D5061;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
-.memberlist-category-line>div{
-	flex: 1;
+.song-list-category-line>*{
+	flex:1;
+}
+
+.song-list-category-line>div{
 	margin: 0 3%;
 	color:white;
 }
-/* ---------------------------------------검색결과목록 세팅------------------------------------------------- */
+/* ---------------------------------------목록 세팅------------------------------------------------- */
 /* 검색 결과(목록) */
-.memberlist-container{
+.song-list-container{
 	min-height: 75%;
-	/* background-color: yellow; */
 }
 
 /* 검색 결과 목록 ul */
-.memberlist-container>ul{
+.song-list-container>ul{
 	height: 100%;
 	flex-direction: column;
 }
 
-.memberlist-container>ul>li>a>*{
+.song-list-container>ul>li>a>*{
 	flex:1;
 }
 
+.song-list-container>ul>li>a>*:nth-child(5){
+	display: flex;
+}
+
 /* 검색 결과 목록 항목들 */
-.memberlist-container>ul>li>a{
+.song-list-container>ul>li>a{
 	height: 40px;
 	border: 1px solid black;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
-.memberlist-container>ul>li>a>div{
+.song-list-container>ul>li>a>div{
 	margin: 0 3%;
 }
 
 /* ------------------------------------------------페이지 번호----------------------------------------------------------- */
 /* 현재 페이지 번호 */
 
-.memberlist-pagenumber>form{
+.song-list-pagenumber>form{
 	margin: 1px;
 	display: flex;
 	justify-content: center;
 }
 
-.memberlist-pagenumber>form>ul{
+.song-list-pagenumber>form>ul{
 	display: flex;
 }
 
-.memberlist-pagenumber>form>ul>li{
+.song-list-pagenumber>form>ul>li{
 	border: 1px solid black;
 	margin: 0 10px;
 	width: 25px;
 	text-align: center;
 }
 
-.memberlist-pagenumber>form>ul>li:nth-child(1){
+.song-list-pagenumber>form>ul>li:nth-child(1){
 	background-color: #4D5061;
 	color:white;
   
-}
-
-/* ------------------------------------------------------------------------------------------------------------------------- */
-
-/* 검색 창 */
-.search-container{
-	height: 8%;
-	background-color: #4D5061;
-
-	padding: 0 10px;
-	color: white;
-}
-
-.search-bar{
-	height: 100%;
-	width: 100%;
-	
-}
-
-.search-bar>form{
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.search-bar>form>input{
-	flex:1;
-	margin: 0 1%;
 }

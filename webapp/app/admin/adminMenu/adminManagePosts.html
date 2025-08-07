@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./../../../assets/css/admin/adminMenu/adminManageTeamYoutube.css">
-  <script async src="./../../../assets/js/admin/adminMenu/adminManageTeamYoutube.js"></script>
+  <link rel="stylesheet" href="./../../../assets/css/admin/adminMenu/adminManageMember.css">
+  <script async src="./../../../assets/js/admin/adminMenu/adminManageMember.js"></script>
 </head>
 
 <body>
@@ -44,31 +44,34 @@
     </section>
     <section class="body-container">
       <div class="body-container-name">
-        팀유튜브
+        게시글 / 공지사항
       </div>
-
-      <form action="" method="get" class = "add-button">
-        <button id = "add-youtube-button"> 추가하기+ </button>
-      </form>
-      
 
       <section class="body-container-list">
         <div>
-          <div class="youtube-list-category-line">
-            <div>글번호</div>
-            <div>팀 명</div>
-            <div>유튜브 링크</div>
-            <div>수정일자</div>
-            <div></div>
+          <div class="search-container">
+            <div class="search-bar">
+              <form action="" method="get">
+                <label for="search-button"> 회원 검색 </label>
+                <input type="text">
+                <button type="submit" id="search-button"> 검색 </button>
+              </form>
+            </div>
           </div>
 
-          <div class="youtube-list-container">
-            <ul id="youtube-list-container-ul">
+          <div class="memberlist-category-line">
+            <div>글번호</div>
+            <div>작성자 ID</div>
+            <div>가입 일자</div>
+          </div>
+
+          <div class="memberlist-container">
+            <ul id="memberlist-container-ul">
 
             </ul>
           </div>
 
-          <div class="youtube-list-pagenumber">
+          <div class="memberlist-pagenumber">
             <form action="" method="get">
               <button type="button" id="left-button"> ◁ </button>
               <ul id="numberlist-ul">
