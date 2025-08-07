@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  height: 150px;
+  width: 100%;
+}
+main{
+  width: 100%;
+}
+footer{
+  height: 100px;
+  width: 100%;
+}
+
+#numberlist-ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+/* 현재 페이지 번호 */
+.list-pagenumber{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-pagenumber>div{
+  margin: 1px;
+}
+
+.list-pagenumber>ul{
+  display: flex;
+}
+
+.list-pagenumber>ul>li{
+  border: 1px solid black;
+  margin: 0 10px;
+  width: 25px;
+  text-align: center;
+}
+
+.list-pagenumber>ul>li:nth-child(1){
+  background-color: #4D5061;
+  color:white;
+  
+}
