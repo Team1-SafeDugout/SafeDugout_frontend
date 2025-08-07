@@ -3,7 +3,7 @@ body {
 }
 
 /* 헤더 */
-header {
+#header {
   background-color: #DCD6D0;
   height: 100px;
 
@@ -17,7 +17,7 @@ header {
 }
 
 /* 푸터 */
-footer {
+#footer {
   background-color: #DCD6D0;
   height: 100px;
   width: 100%;
