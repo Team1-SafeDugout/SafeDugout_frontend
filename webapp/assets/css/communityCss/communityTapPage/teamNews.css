@@ -11,8 +11,20 @@ main{
 .team-news-container{
   margin: 0 40px;
 }
-.team-news-container
-#numberlist-ul{
+.news-box{
+  background-color: #F5F5F5;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+h2{
+  margin-left: 40px;
+}
+.news-list{
+  list-style: none;
+}
+
+.team-news-container #numberlist-ul{
   display: flex;
   gap: 10px;
   list-style: none;
