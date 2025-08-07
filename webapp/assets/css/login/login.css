@@ -55,6 +55,12 @@ body {
 
 }
 
+.main-inputFailMessage {
+  margin: 22px 0px 0px 0px;
+  font-size: 15px;
+  color: red;
+}
+
 .main-container button {
   padding: 0px 0px;
 }
@@ -62,7 +68,7 @@ body {
 .main-loginButton {
   width: 329px;
   height: 64px;
-  margin: 60px 0px 0px 0px;
+  margin: 22px 0px 0px 0px;
 }
 
 .main-loginButton button {
