@@ -33,20 +33,6 @@ function setNumber() {
   }
 }
 
-function setNumberButton() {
-  for (var i = 0; i < numberList.length; i++) {
-    console.log(i);
-    var n = i;
-    numberList.item(i).addEventListener('click', function() {
-      curPage = n + (Math.floor((curPage / 5)) * 5);
-      console.log(n);
-       
-      setNumber();
-      setButton();
-    });
-  }
-}
-
 
 // leftright button 보이기 말기
 function setButton() {
@@ -114,7 +100,6 @@ addbutton.addEventListener('click', function () {
 
 
 window.onload = function () {
-  setNumberButton();
   setNumber();
   setButton();
 };
