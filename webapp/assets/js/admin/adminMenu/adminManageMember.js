@@ -16,10 +16,12 @@ function setNumber() {
 
     if (curPage == curNum) {
       numberList.item(i).style.backgroundColor = "#4D5061";
+      numberList.item(i).style.color = "white";
     }
 
     else {
       numberList.item(i).style.backgroundColor = "white";
+      numberList.item(i).style.color = "black";
     }
 
     if (curNum > userNums) {
@@ -33,11 +35,14 @@ function setNumber() {
 
 function setNumberButton() {
   for (var i = 0; i < numberList.length; i++) {
-    numberList.item(i).addEventListener('click', ()=> {
-      curPage = i + (Math.floor((curPage / 5)) * 5);
-      console.log(i);
-      
+    console.log(i);
+    var n = i;
+    numberList.item(i).addEventListener('click', function() {
+      curPage = n + (Math.floor((curPage / 5)) * 5);
+      console.log(n);
+       
       setNumber();
+      setButton();
     });
   }
 }
@@ -64,7 +69,7 @@ leftButton.addEventListener('click', function () {
     curPage--;
     setNumber();
   }
-  setButton()
+  setButton();
 });
 
 // 테스트용 왼쪽 오른쪽 버튼
@@ -73,7 +78,7 @@ rightButton.addEventListener('click', function () {
     curPage++;
     setNumber();
   }
-  setButton()
+  setButton();
 });
 
 // 테스트용 추가 버튼
