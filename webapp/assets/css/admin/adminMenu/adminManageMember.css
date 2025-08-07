@@ -221,3 +221,22 @@ li{
 	color:white;
   
 }
+
+.search-container{
+	
+}
+
+.search-bar{
+	height: 100%;
+	width: 90%;
+}
+
+.search-bar>form{
+	height: 100%;
+	width: 100%;
+}
+
+.search-bar>form>input{
+	height: 100%;
+	width: 100%;
+}
