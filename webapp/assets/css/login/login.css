@@ -1,28 +1,62 @@
+/* 바디 */
 body {
   margin: 0px 0px;
 }
 
+/* 헤더 */
 header {
   background-color: #DCD6D0;
   height: 100px;
 
 }
 
+/* 메인 */
 .main-container {
   min-height: 750px;
   display: flex;
   align-items: center;
-
 }
 
-.main-contentbox {
+.main-container form {
+  margin: 0px auto;
+}
+
+.main-formbox {
   background-color: #efefef;
   width: 500px;
   height: 510px;
-  margin: 0px auto;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
+
+.main-container button {
+  padding: 0px 0px;
+}
+
+.main-loginButton{
+  background-color: #DCD6D0;
+  width: 325px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.main-inputMessage{
+  width: 325px;
+  margin: 40px 0px 10px 0px;
+}
+
+.main-inputBlank input{
+  width: 325px;
+  height: 60px;
+}
+
+
+/* 푸터 */
 footer {
   background-color: #DCD6D0;
   height: 100px;
