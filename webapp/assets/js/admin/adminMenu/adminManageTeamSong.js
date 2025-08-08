@@ -1,5 +1,5 @@
-const userList = document.getElementById("memberlist-container-ul");
-const addbutton = document.getElementsByClassName("memberlist-category-line").item(0);
+const userList = document.getElementById("song-list-container-ul");
+const addbutton = document.getElementsByClassName("song-list-category-line").item(0);
 
 const leftButton = document.getElementById("left-button");
 const rightButton = document.getElementById("right-button");
@@ -71,27 +71,49 @@ rightButton.addEventListener('click', function () {
 addbutton.addEventListener('click', function () {
 
   setNumber();
-  const userListNum = document.querySelectorAll("#memberlist-container-ul>li");
+  const userListNum = document.querySelectorAll("#song-list-container-ul>li");
   if (userListNum.length >= 10) return;
 
   const newMember = document.createElement('li');
 
   const aTag = document.createElement('a');
-  const userNumber = document.createElement('div');
-  const userID = document.createElement('div');
-  const addDate = document.createElement('div');
+  const number = document.createElement('div');
+  const teamName = document.createElement('div');
+  const songName = document.createElement('div');
+  const fixDate = document.createElement('div');
+  const linkURL = document.createElement('div');
+  const buttons = document.createElement('div');
 
-  const userNumberText = document.createTextNode("userNumber");
-  const userIDText = document.createTextNode("userID");
-  const addDateText = document.createTextNode("addDate");
+  const changeButton = document.createElement('button');
+  const deleteButton = document.createElement('button');
 
-  userNumber.appendChild(userNumberText);
-  userID.appendChild(userIDText);
-  addDate.appendChild(addDateText);
+  changeButton.setAttribute('type', 'button');
+  changeButton.appendChild(document.createTextNode("수정"));
 
-  aTag.appendChild(userNumber);
-  aTag.appendChild(userID);
-  aTag.appendChild(addDate);
+  deleteButton.setAttribute('type', 'button');
+  deleteButton.appendChild(document.createTextNode("삭제"));
+
+  const NumberText = document.createTextNode("number");
+  const teamNameText = document.createTextNode("team");
+  const songNameText = document.createTextNode("YAHO");
+  const linkURLText = document.createTextNode("naver.com");
+  const fixDateText = document.createTextNode("0000.00.00");
+
+  buttons.appendChild(changeButton);
+  buttons.appendChild(deleteButton);
+
+  number.appendChild(NumberText);
+  teamName.appendChild(teamNameText);
+  songName.appendChild(songNameText);
+  linkURL.appendChild(linkURLText);
+  fixDate.appendChild(fixDateText);
+
+  aTag.appendChild(number);
+  aTag.appendChild(teamName);
+  aTag.appendChild(songName);
+  aTag.appendChild(linkURL);
+  aTag.appendChild(fixDate);
+  aTag.appendChild(buttons);
   newMember.appendChild(aTag);
 
   userList.appendChild(newMember);

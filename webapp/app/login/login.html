@@ -10,41 +10,46 @@
 </head>
 
 <body>
-  <header>
-
-  </header>
+  <div id="header"></div>
   <main>
     <div class="main-container">
-      <form action="">
-        <div class="main-formbox">
-          <div class="main-inputMessage">
-            로그인
+      <div class="main-title">
+        로그인
+      </div>
+      <form action="" method="post">
+        <div class="main-form-box">
+          <div class="main-input-message">
+            아이디s
           </div>
-          <div class="main-inputBlank">
-            <input type="text" name="register">
+          <div class="main-input-blank">
+            <input type="text" name="register" placeholder="아이디">
           </div>
-          <div class="main-inputMessage">
-            로그아웃
+          <div class="main-input-message">
+            비밀번호
           </div>
-          <div class="main-inputBlank">
-            <input type="text" name="register">
+          <div class="main-input-blank">
+            <input type="password" name="register" placeholder="비밀번호">
           </div>
-          <button type="submit">
-            <div class="main-loginButton">
-              로그인
-            </div>
-          </button>
-          <div class="main-etcButton">
-
+          <div class="main-input-fail-message">
+            아이디 또는 비밀번호가 잘못되었습니다.
+          </div>
+          <div class="main-login-button">
+            <button type="submit">로그인
+            </button>
+          </div>
+          <div class="main-etc-button">
+            <a href="">아이디 찾기</a>
+            <h> | </h>
+            <a href="">비밀번호 찾기</a>
+            <h> | </h>
+            <a href="">회원가입</a>
           </div>
         </div>
       </form>
     </div>
   </main>
 
-  <footer>
-
-  </footer>
+  <div id="footer"></div>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
-const userList = document.getElementById("memberlist-container-ul");
-const addbutton = document.getElementsByClassName("memberlist-category-line").item(0);
+const postList = document.getElementById("trading-list-container-ul");
+const addbutton = document.getElementsByClassName("trading-list-category-line").item(0);
 
 const leftButton = document.getElementById("left-button");
 const rightButton = document.getElementById("right-button");
@@ -71,30 +71,45 @@ rightButton.addEventListener('click', function () {
 addbutton.addEventListener('click', function () {
 
   setNumber();
-  const userListNum = document.querySelectorAll("#memberlist-container-ul>li");
+  const userListNum = document.querySelectorAll("#trading-list-container-ul>li");
   if (userListNum.length >= 10) return;
 
   const newMember = document.createElement('li');
 
   const aTag = document.createElement('a');
-  const userNumber = document.createElement('div');
-  const userID = document.createElement('div');
-  const addDate = document.createElement('div');
 
-  const userNumberText = document.createTextNode("userNumber");
-  const userIDText = document.createTextNode("userID");
-  const addDateText = document.createTextNode("addDate");
+  const number = document.createElement('div');
+  const tradeImgDiv = document.createElement('div');
+  const title = document.createElement('div');
+  const tradeDate = document.createElement('div');
+  const sellerID = document.createElement('div');
+  const buyerID = document.createElement('div');
 
-  userNumber.appendChild(userNumberText);
-  userID.appendChild(userIDText);
-  addDate.appendChild(addDateText);
+  const numberText = document.createTextNode("number");
+  const tradeImg = document.createElement('img');
+  const titleText = document.createTextNode("title");
+  const tradeDateText = document.createTextNode("0000.00.00");
+  const sellerIDText = document.createTextNode("seller");
+  const buyerIDText = document.createTextNode("buyer");
 
-  aTag.appendChild(userNumber);
-  aTag.appendChild(userID);
-  aTag.appendChild(addDate);
+  tradeImg.setAttribute('src', "./../../../assets/img/communityImg/doosan.png");
+
+  number.appendChild(numberText);
+  tradeImgDiv.appendChild(tradeImg);
+  title.appendChild(titleText);
+  tradeDate.appendChild(tradeDateText);
+  sellerID.appendChild(sellerIDText);
+  buyerID.appendChild(buyerIDText);
+
+  aTag.appendChild(number);
+  aTag.appendChild(tradeImgDiv);
+  aTag.appendChild(title);
+  aTag.appendChild(tradeDate);
+  aTag.appendChild(sellerID);
+  aTag.appendChild(buyerID);
   newMember.appendChild(aTag);
 
-  userList.appendChild(newMember);
+  postList.appendChild(newMember);
 });
 
 
