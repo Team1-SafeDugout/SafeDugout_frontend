@@ -3,36 +3,3 @@
 	margin: 0;
 }
 
-header {
-	height: 100px;
-	width: 100%;
-	background-color: #DCD6D0;
-	/* display: flex;
-	flex-wrap: wrap; */
-	justify-content: space-between;
-	line-height: 100px;
-}
-
-.header-loginButton,
-.header-siteName {
-	margin: 0px 20px;
-}
-
-.header-siteName {
-	font-size: 32px;
-	font-weight: bold;
-}
-
-.header-loginButton {
-	font-size: 15px;
-}
-
-.header-loginButton a,
-.header-siteName a {
-	text-decoration: none;
-	color: white;
-  
-}
-.nav{
-  background-color: #DCD6D0;
-}
