@@ -31,7 +31,7 @@ body {
   margin: 0px auto;
 }
 
-.main-formBox {
+.main-form-box {
   background-color: #efefef;
   width: 500px;
   height: 470px;
@@ -42,12 +42,12 @@ body {
 
 }
 
-.main-inputMessage {
+.main-input-message {
   width: 325px;
   margin: 40px 0px 10px 0px;
 }
 
-.main-inputBlank input {
+.main-input-blank input {
   width: 310px;
   height: 60px;
   padding: 0px 0px 0px 15px;
@@ -55,27 +55,28 @@ body {
 
 }
 
-.main-inputFailMessage {
+.main-input-fail-message {
   margin: 22px 0px 0px 0px;
   font-size: 15px;
   color: red;
+  /* display: none; */
 }
 
 .main-container button {
   padding: 0px 0px;
 }
 
-.main-loginButton {
+.main-login-button {
   width: 329px;
   height: 64px;
   margin: 22px 0px 0px 0px;
 }
 
-.main-loginButton button {
+.main-login-button button {
   cursor: pointer;
 }
 
-.main-loginButton button {
+.main-login-button button {
   background-color: #DCD6D0;
   width: 329px;
   height: 64px;
@@ -83,11 +84,11 @@ body {
   text-align: center;
 }
 
-.main-etcButton {
+.main-etc-button {
   margin: 20px 0px 0px 0px;
 }
 
-.main-etcButton a {
+.main-etc-button a {
   font-size: 15px;
   text-decoration: none;
   color: black;
