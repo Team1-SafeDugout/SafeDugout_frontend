@@ -28,16 +28,18 @@ body {
 .main-small-title {
   position: absolute;
   top: 190px;
-  left: 430px;
+  left: 580px;
   font-size: 24px;
 
 }
 
+/* 폼 컨테이너 */
 .main-form-box {
   background-color: #EFEFEF;
   width: 740px;
-  height: 600px;
+  height: 750px;
   margin: 150px 0px 100px 0px;
+  padding: 10px 0px 0px 0px;
   /* display: flex; */
   /* justify-content: center; */
   position: relative;
@@ -53,7 +55,14 @@ body {
 .main-input-list {
   background-color: aqua;
   height: 30px;
-  margin: 20px 125px 0px 125px;
+  margin: 0px 120px 10px 120px;
+  display: flex;
+}
+
+.main-input-list-optional {
+  background-color: aqua;
+  height: 30px;
+  margin: 20px 120px 0px 120px;
   display: flex;
 }
 
@@ -61,14 +70,19 @@ body {
   /* height: 25px; */
 }
 
-.main-input-list select {
+.main-input-list-optional select {
   width: 177px;
+}
+
+.main-input-email-at {
+  margin: 0px 5px;
+  display: none;
 }
 
 .main-input-address {
   background-color: aqua;
   height: 30px;
-  margin: 5px 125px;
+  margin: 5px 120px;
   display: flex;
 }
 
@@ -77,24 +91,32 @@ body {
   font-size: 15px;
 }
 
+/* 입력 오류 메시지 */
+.main-input-error-message {
+  margin: 10px 120px 0px 120px;
+  color: red;
+  font-size: 10px;
+}
+
 .main-input-list button {
   background-color: #DCD6D0;
-  margin-left: 15px;
+  margin-left: 25px;
   text-align: center;
   line-height: 15px;
   cursor: pointer;
 }
 
+/* 버튼 div */
 .main-button-container {
   position: absolute;
   bottom: 0px;
-  margin: 0px 0px 0px 500px;
+  margin: 0px 0px 20px 485px;
 }
 
 .main-button-container button {
   background-color: #DCD6D0;
-  width: 185px;
-  height: 60px;
+  width: 125px;
+  height: 45px;
   margin: 0px 10px;
   cursor: pointer;
 }
@@ -104,6 +126,7 @@ body {
   font-size: 15px;
 }
 
+/* 버튼 a */
 .main-button-container a {
   margin: 0px 10px;
 }

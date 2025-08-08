@@ -24,12 +24,14 @@
           <ul>
             <div class="main-input-container">
               <li>
+                <div class="main-input-error-message">* 필수 입력 값입니다.</div>
                 <div class="main-input-list">
                   <div class="main-input-list-text">이름</div>
                   <input type="text" placeholder="이름을 입력하세요">
                 </div>
               </li>
               <li>
+                <div class="main-input-error-message">* 필수 입력 값입니다. / 중복된 아이디 입니다.</div>
                 <div class="main-input-list">
                   <div class="main-input-list-text">아이디</div>
                   <input type="text" placeholder="영문, 숫자 조합 6자 이상">
@@ -37,18 +39,21 @@
                 </div>
               </li>
               <li>
+                <div class="main-input-error-message">* 필수 입력 값입니다. / 비밀번호가 유효하지 않습니다.</div>
                 <div class="main-input-list">
                   <div class="main-input-list-text">비밀번호</div>
                   <input type="password" placeholder="영문, 숫자, 특수문자 조합 8자 이상">
                 </div>
               </li>
               <li>
+                <div class="main-input-error-message">* 비밀번호가 일치하지 않습니다.</div>
                 <div class="main-input-list">
                   <div class="main-input-list-text">비밀번호 확인</div>
                   <input type="password" placeholder="비밀번호를 재입력하세요">
                 </div>
               </li>
               <li>
+                <div class="main-input-error-message">* 필수 입력 값입니다.</div>
                 <div class="main-input-list">
                   <div class="main-input-list-text">핸드폰 번호</div>
                   <input type="text" placeholder="핸드폰 번호를 입력하세요">
@@ -56,6 +61,7 @@
                 </div>
               </li>
               <li>
+                <div class="main-input-error-message">* 인증번호가 불일치합니다.</div>
                 <div class="main-input-list">
                   <div class="main-input-list-text">인증 번호 입력</div>
                   <input type="text" placeholder="인증 번호 입력">
@@ -63,17 +69,17 @@
                 </div>
               </li>
               <li>
+                <div class="main-input-error-message">* 필수 입력 값입니다. / 형식이 올바르지 않습니다.</div>
                 <div class="main-input-list">
                   <div class="main-input-list-text">이메일</div>
-                  <input type="text" placeholder="이메일을 입력하세요">
-                  <div>@</div>
-                  <input type="text">
+                  <input type="email" placeholder="이메일을 입력하세요">
+                  <div class="main-input-email-at"></div>
                 </div>
               </li>
               <li>
-                <div class="main-input-list">
+                <div class="main-input-list-optional">
                   <div class="main-input-list-text">주소</div>
-                  <input type="text">
+                  <input type="text" readonly style="pointer-events: none">
                   <button type="button">우편번호</button>
                 </div>
                 <div class="main-input-address">
@@ -86,10 +92,10 @@
                 </div>
               </li>
               <li>
-                <div class="main-input-list">
+                <div class="main-input-list-optional">
                   <div class="main-input-list-text">MY팀</div>
                   <select name="" id="" placeholder="MY팀을 선택하세요">
-                    <option value="삼성 라이온즈">MY팀을 선택하세요</option>
+                    <option value="삼성 라이온즈">MY팀을 선택하세요(미정)</option>
                     <option value="삼성 라이온즈">삼성 라이온즈</option>
                     <option value="LG 트윈스">LG 트윈스</option>
                     <option value="두산 베어스">두산 베어스</option>
