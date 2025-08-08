@@ -14,13 +14,6 @@ body{
 	background-color: #EFEFEF;
 }
 
-/* 헤더 공간 비워주기 */
-header {
-	height: 100px;
-	position: relative;
-	background-color: #4D5061;
-}
-
 /* 왼쪽에 있을 사이드 메뉴와 본 페이지 메뉴를 나눠줄 flex 제공 */
 main {
 	min-height: 100vh;
@@ -29,13 +22,6 @@ main {
 	transform: translateY(-100px);
 
 	display: flex;
-}
-
-/* 푸터 공간 비워주기 */
-footer {
-	height: 100px;
-	background-color: #4D5061;
-	transform: translateY(-200px);
 }
 
 li{
