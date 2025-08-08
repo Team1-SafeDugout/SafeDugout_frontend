@@ -53,9 +53,13 @@ body {
 
 .main-input-list{
   background-color: aqua;
-  height: 20px;
+  height: 30px;
   margin: 20px 0px 0px 0px;
   display: flex;
+}
+
+.main-input-list input{
+  /* height: 25px; */
 }
 
 .main-input-list select{
