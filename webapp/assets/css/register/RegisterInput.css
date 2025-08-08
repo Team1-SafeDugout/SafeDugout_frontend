@@ -38,47 +38,46 @@ body {
   width: 740px;
   height: 600px;
   margin: 150px 0px 100px 0px;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   position: relative;
 }
 
-.main-form-box ul{
+.main-form-box ul {
   padding-inline-start: 0px;
   list-style-type: none;
 }
 
-.main-input-container{
-}
+.main-input-container {}
 
-.main-input-list{
+.main-input-list {
   background-color: aqua;
   height: 30px;
-  margin: 20px 0px 0px 0px;
+  margin: 20px 125px 0px 125px;
   display: flex;
 }
 
-.main-input-list input{
+.main-input-list input {
   /* height: 25px; */
 }
 
-.main-input-list select{
+.main-input-list select {
   width: 177px;
 }
 
-.main-input-address{
+.main-input-address {
   background-color: aqua;
-  height: 20px;
-  margin: 5px 0px;
+  height: 30px;
+  margin: 5px 125px;
   display: flex;
 }
 
-.main-input-list-text{
+.main-input-list-text {
   width: 120px;
   font-size: 15px;
 }
 
-.main-input-list button{
+.main-input-list button {
   background-color: #DCD6D0;
   margin-left: 15px;
   text-align: center;
@@ -89,6 +88,7 @@ body {
 .main-button-container {
   position: absolute;
   bottom: 0px;
+  margin: 0px 0px 0px 500px;
 }
 
 .main-button-container button {
