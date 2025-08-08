@@ -137,30 +137,37 @@ main{
   padding: 10px 15px;
   border-top: 1px solid #EFEFEF;
 }
-
+.team-board a{
+  color: black;
+  text-decoration: none;
+}
 .team-board-header {
   color: black;
   font-weight: bold;
   
 }
-.team-board li div:nth-child(1) { /* 글번호 */
+/* 글번호 */
+.team-board li div:nth-child(1) { 
   width: 10%;
   text-align: left;
 }
-
-.team-board li div:nth-child(2) { /* 제목 */
+/* 제목 */
+.team-board li div:nth-child(2) { 
   width: 55%;
   text-align: center;
 }
-.team-board li div:nth-child(3) { /* 작성자 */
+/* 작성자 */
+.team-board li div:nth-child(3) { 
   width: 15%;
   text-align: right;
 }
-
-.team-board li div:nth-child(4) { /* 작성일자 */
+/* 작성일자 */
+.team-board li div:nth-child(4) { 
   width: 20%;
   text-align: right;
 }
+
+
 
 /* 현재 페이지 번호 */
 .list-pagenumber{

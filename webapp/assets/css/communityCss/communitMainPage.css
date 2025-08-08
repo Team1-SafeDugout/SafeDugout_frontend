@@ -3,18 +3,6 @@
   margin: 0;
   padding: 0;
 }
-/* 헤더공간 */
-header{
-  border: 1px solid black;
-  height: 150px;
-  width: 100%;
-}
-/* 푸터공간 */
-footer{
-  border: 1px solid black;
-  height: 100px;
-  width: 100%;
-}
 
 /* 메인 공통*/
 main{
