@@ -66,7 +66,7 @@
   background-color: white;
   border-top: 1px solid #F5F5F5;
   border-bottom: 1px solid #F5F5F5;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   line-height: 2;
 }
 
@@ -78,7 +78,7 @@
 .team-comment-header h2 {
   font-size: 20px;
   border-bottom: 1px solid black ;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
 }
 .team-comment-list{
   list-style-type: none;
@@ -93,7 +93,7 @@
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-size: 14px;
 }
 
@@ -106,7 +106,7 @@
   cursor: pointer;
   line-height: 1;
 }
-.team-post-detail > button{
+.team-post-detail a button{
   padding: 10px 15px;
   border: 1px solid black;
   background: none;
