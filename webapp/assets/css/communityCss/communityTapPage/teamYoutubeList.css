@@ -60,6 +60,12 @@
   border: 1px solid #ccc;
   border-top: none;
   padding: 12px 0;
+  
+}
+
+.team-youtube-list-row:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .team-youtube-list-row span {
