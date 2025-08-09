@@ -17,6 +17,7 @@ body {
   justify-content: center;
 }
 
+/* 페이지 큰 제목 */
 .main-title {
   position: absolute;
   top: 140px;
@@ -25,10 +26,12 @@ body {
   font-weight: 700;
 }
 
+/* 페이지 소제목 */
 .main-small-title {
+  width: 740px;
   position: absolute;
   top: 190px;
-  left: 580px;
+  /* left: 580px; */
   font-size: 24px;
 
 }
@@ -53,25 +56,33 @@ body {
 .main-input-container {}
 
 .main-input-list {
-  background-color: aqua;
+  /* background-color: aqua; */
   height: 30px;
   margin: 0px 120px 10px 120px;
   display: flex;
 }
 
 .main-input-list-optional {
-  background-color: aqua;
+  /* background-color: aqua; */
   height: 30px;
   margin: 20px 120px 0px 120px;
   display: flex;
 }
 
+/* 필수 입력값 입력 칸 */
 .main-input-list input {
   /* height: 25px; */
+  width: 200px;
 }
 
+/* 선택 입력값 입력 칸 */
+.main-input-list-optional input{
+  width: 200px;
+}
+
+/* MY팀 선택 드롭박스 */
 .main-input-list-optional select {
-  width: 177px;
+  width: 207px;
 }
 
 .main-input-email-at {
@@ -80,10 +91,14 @@ body {
 }
 
 .main-input-address {
-  background-color: aqua;
+  /* background-color: aqua; */
   height: 30px;
   margin: 5px 120px;
   display: flex;
+}
+
+.main-input-address input{
+  width: 200px;
 }
 
 .main-input-list-text {
@@ -93,12 +108,22 @@ body {
 
 /* 입력 오류 메시지 */
 .main-input-error-message {
-  margin: 10px 120px 0px 120px;
+  margin: 10px 0px 0px 240px;
   color: red;
   font-size: 10px;
 }
 
+/* 입력칸 옆 버튼 */
 .main-input-list button {
+  background-color: #DCD6D0;
+  margin-left: 25px;
+  text-align: center;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+/* 주소 입력칸 옆 버튼 */
+.main-input-list-optional button{
   background-color: #DCD6D0;
   margin-left: 25px;
   text-align: center;
