@@ -132,6 +132,12 @@
   gap: 8px;
   align-items: flex-start;
   margin-top: 10px;
+  
+}
+.team-comment-area textarea{
+  max-width: 1000px;
+  min-width: 1000px;
+  user-select: none;
 }
 
 .team-comment-area input {
