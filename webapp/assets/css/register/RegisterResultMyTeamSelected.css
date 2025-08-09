@@ -31,21 +31,41 @@ body {
   margin: 0px auto;
 }
 
-.main-form-box {
+/* 메시지 박스 */
+.main-message-container {
   background-color: #efefef;
   width: 500px;
   height: 470px;
   padding: 25px 0px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* 회원가입 완료 메시지 */
+.main-result-message{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 100px 0px 0px 0px;
+}
+
+/* 회원가입 후 안내 메시지 */
+.main-info-message{
 
 }
 
-/* 다음, 취소 버튼 */
+/*선택된 MY팀 로고 */
+.main-selected-team-img img{
+  width: 60px;
+  height: 60px;
+  margin: 25px 0px;
+}
+
+/* 다음, 취소 버튼 컨테이너*/
 .main-button-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 50px;
 }
 
 .main-button-container button {
