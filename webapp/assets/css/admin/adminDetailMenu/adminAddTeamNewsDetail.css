@@ -47,6 +47,43 @@ main {
   align-items: center;
 }
 
+/* 파일 첨부 서식 */
+
+.file{
+  width: 95%;
+  min-height: 3vh;
+
+  align-items: center;
+  display: flex;
+
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.file>label{
+  display: flex;
+  align-items: end;
+  font-size: 10px;
+}
+
+.img-area{
+  border: 1px solid black;
+  height: 10vh;
+  width: 10vh;
+  background-color: #EFEFEF;
+}
+
+.img-area>img{
+  height: 10vh;
+  height: 10vh;
+  position:relative;
+  object-fit: cover;
+}
+
+#file-area{
+  display: none;
+}
+
 /* 제목 서식 */
 .title{
   width: 95%;
@@ -63,6 +100,24 @@ main {
   font-size: 15px;
   height: 100%;
 }
+
+/* URL 서식 */
+.url{
+  width: 95%;
+  margin: 10px 0;
+  min-height: 3vh;
+}
+
+.url>div{
+  font-size: 15px;
+}
+
+.url>input{
+  width: 100%;
+  font-size: 15px;
+  height: 100%;
+}
+
 
 /* 본문 서식 */
 
@@ -86,40 +141,6 @@ main {
   border-radius: 0%;
 }
 
-/* 파일 첨부 서식 */
-
-.file{
-  width: 95%;
-  min-height: 3vh;
-
-  border: 1px solid black;
-  align-items: center;
-  display: flex;
-
-  margin-top: 10px;
-  font-size: 15px;
-}
-#file-area{
-  display: none;
-}
-
-.file>label{
-  width: 10%;
-  text-align: center;
-  border-right: 1px solid black;
-}
-
-.file>div:nth-child(3){
-  width: 80%;
-  font-size: 8px;
-}
-
-.file>div:nth-child(4){
-  width: 10%;
-  text-align: center;
-  border-left: 1px solid black;
-}
-
 /* 저장 버튼 서식 */
 .buttons{
   min-height: 3vh;
@@ -132,8 +153,15 @@ main {
 #save-button, #cancle-button{
   min-width: 10vh;
   min-height: 3vh;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 .line{
   width: 90%;
+}
+
+#save-button{
+  background-color: #4D5061;
+  color:white;
 }
