@@ -89,7 +89,7 @@ main {
   margin: 5px;
   width: 95%;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .post-button{
@@ -104,6 +104,7 @@ main {
 
 .section-bottom-buttons>form>button:last-child{
   background-color: white;
+  color:black
 }
 
 .line{

@@ -101,6 +101,8 @@ addbutton.addEventListener('click', function () {
   sellerID.appendChild(sellerIDText);
   buyerID.appendChild(buyerIDText);
 
+  aTag.setAttribute('href', './../adminDetailMenu/adminProductTradingDetail.html');
+
   aTag.appendChild(number);
   aTag.appendChild(tradeImgDiv);
   aTag.appendChild(title);
