@@ -100,6 +100,8 @@ addbutton.addEventListener('click', function () {
   tradeDate.appendChild(tradeDateText);
   deleteButtonDiv.appendChild(deleteButton);
 
+  aTag.setAttribute('href', "./../adminDetailMenu/adminProductDetail.html");
+
   aTag.appendChild(number);
   aTag.appendChild(tradeImgDiv);
   aTag.appendChild(title);
