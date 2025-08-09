@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="kor">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./../../../assets/css/admin/adminDetailMenu/adminAddNoticePostDetail.css">
+  <script src=""></script>
 </head>
+
 <body>
   <main>
-    <h1> 어드민 공지 추가 디테일 창입니다.</h1>
-    <a href="./../adminMenu/adminManagePosts.html">  목록으로 돌아갑니다. </a>
+    <seciont class="section-background">
+      <!-- 본문 공간 -->
+      <section class="section-post">
+        <div class="post-title-container">
+          <div> 
+            제목
+            <div class="title-warning"> *필수 입력 값 입니다.</div> 
+          </div>
+          <div class="title"> 
+            제목 텍스트 크기 24px
+          </div>          
+        </div>
+
+        <div class = "line"> </div>
+
+        <div class="post-content-container">
+          <div> 내용 </div>
+          <div class="post-content"> 내용입니다 </div>
+        </div>
+      </section>
+
+      <div class="post-date"> 0000.00.00 </div>
+
+      <!-- 하단 버튼 -->
+      <section class = "section-buttons">
+        <form action="" method="get">
+          <button class = "post-button" type ="submit"> 저장 </button>
+          <button class = "post-button" type ="submit"> 취소 </button>
+        </form>
+      </section>
+    </seciont>
   </main>
 </body>
+
 </html>

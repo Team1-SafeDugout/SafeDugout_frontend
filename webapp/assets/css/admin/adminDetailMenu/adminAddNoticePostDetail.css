@@ -69,6 +69,11 @@ main {
   padding: 3px 15px;
 }
 
+.title-warning{
+  font-size: 8px;
+  color: red;
+}
+
 /* 본문 서식 */
 .post-content-container{
   height: fit-content;
@@ -85,19 +90,11 @@ main {
 }
 
 /* 하단 버튼 */
-.section-bottom-buttons{
+.section-buttons{
   margin: 5px;
   width: 95%;
   display: flex;
-  justify-content: space-between;
-}
-
-/* 하단 버튼 */
-.section-top-buttons{
-  margin: 5px;
-  width: 95%;
-  display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .post-button{
@@ -105,12 +102,12 @@ main {
   height: 30px;
 }
 
-.section-bottom-buttons>form>button:first-child , .section-top-buttons>form>button:first-child{
+.section-buttons>form>button:first-child{
   background-color: #4D5061;
   color:white
 }
 
-.section-bottom-buttons>form>button:last-child , .section-top-buttons>form>button:last-child{
+.section-buttons>form>button:last-child{
   background-color: white;
   color:black
 }
