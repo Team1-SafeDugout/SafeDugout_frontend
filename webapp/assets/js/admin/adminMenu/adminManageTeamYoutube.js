@@ -80,7 +80,7 @@ addbutton.addEventListener('click', function () {
   const number = document.createElement('div');
   const teamName = document.createElement('div');
   const fixDate = document.createElement('div');
-  const linkURL = document.createElement('div');
+  const linkURL = document.createElement('a');
   const buttons = document.createElement('div');
 
   const changeButton = document.createElement('button');
@@ -104,6 +104,8 @@ addbutton.addEventListener('click', function () {
   teamName.appendChild(teamNameText);
   linkURL.appendChild(linkURLText);
   fixDate.appendChild(fixDateText);
+
+  linkURL.setAttribute('href',"https://www.youtube.com/");
 
   aTag.appendChild(number);
   aTag.appendChild(teamName);

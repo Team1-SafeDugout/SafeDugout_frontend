@@ -85,6 +85,8 @@ addbutton.addEventListener('click', function () {
   const userIDText = document.createTextNode("userID");
   const addDateText = document.createTextNode("addDate");
 
+  aTag.setAttribute('href', "./../adminDetailMenu/adminUserDetail.html");
+
   userNumber.appendChild(userNumberText);
   userID.appendChild(userIDText);
   addDate.appendChild(addDateText);
