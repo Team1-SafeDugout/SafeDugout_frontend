@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+.team-records {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.top-section {
+  display: flex;
+  gap: 20px;
+}
+
+/* 왼쪽 기록 영역 */
+.records {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.record-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.record-box h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.record-header, .record-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.record-header div, .record-row div {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #eee;
+}
+
+/* 오른쪽 역대순위 */
+.history-ranking {
+  flex: 1;
+  background: #0a2d4d;
+  color: #fff;
+  padding: 10px;
+}
+
+.history-header, .history-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.history-header div, .history-row div {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* 하단 우승년도 */
+.championships {
+  margin-top: 30px;
+}
+
+.championships h3 {
+  background: #0a2d4d;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.logo-list {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: #fff;
+}
+
+.logo-list img {
+  height: 80px;
+}
