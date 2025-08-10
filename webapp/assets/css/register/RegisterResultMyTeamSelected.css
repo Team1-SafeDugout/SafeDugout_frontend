@@ -4,11 +4,11 @@ body {
 }
 
 /* 헤더 */
-#header {
+/* #header {
   background-color: #DCD6D0;
   height: 100px;
 
-}
+} */
 
 /* 메인 */
 .main-container {
@@ -44,19 +44,17 @@ body {
 }
 
 /* 회원가입 완료 메시지 */
-.main-result-message{
+.main-result-message {
   font-size: 24px;
   font-weight: 700;
   margin: 100px 0px 0px 0px;
 }
 
 /* 회원가입 후 안내 메시지 */
-.main-info-message{
-
-}
+.main-info-message {}
 
 /*선택된 MY팀 로고 */
-.main-selected-team-img img{
+.main-selected-team-img img {
   width: 60px;
   height: 60px;
   margin: 25px 0px;
@@ -107,8 +105,8 @@ body {
 }
 
 /* 푸터 */
-#footer {
+/* #footer {
   background-color: #DCD6D0;
   height: 100px;
   width: 100%;
-}
+} */
