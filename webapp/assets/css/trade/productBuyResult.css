@@ -11,9 +11,10 @@ body {
 
 /* 메인 */
 .main-container {
-  width: 100%;
   min-height: 750px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -33,10 +34,90 @@ body {
 
 }
 
-/* 다음, 취소 버튼 */
+/* 메시지 박스 */
+.main-message-container {
+  background-color: #efefef;
+  width: 900px;
+  height: 760px;
+  margin: 30px 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 넓은 컨테이너 */
+.container-full {
+  width: 710px;
+  margin: 15px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 왼쪽 컨테이너 */
+.container-left {
+  width: 250px;
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.container-left-bottom {
+  width: 250px;
+  margin: 0px 0px 35px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+/* 포인트 종류 */
+.point-name {
+  width: 130px;
+  margin: 0px 120px 0px 0px;
+  font-size: 15px;
+}
+
+/* 포인트 값 */
+.point-amount {
+  font-size: 15px;
+}
+
+/* 상품 이미지 */
+.container-right img {
+  width: 170px;
+  height: 170px;
+}
+
+/* 상품 텍스트 */
+.product-text {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* 긴 검은선 */
+.long-line {
+  width: 790px;
+  border-bottom: 1px solid black;
+}
+
+/* 짧은 검은선 */
+.short-line {
+  width: 710px;
+  border-bottom: 1px solid black;
+}
+
+/* '상품 구매' */
+.container-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 50px 0px 50px 0px;
+}
+
+/* 버튼 컨테이너 */
 .main-button-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 90px;
 }
 
 .main-button-container button {

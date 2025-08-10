@@ -11,39 +11,134 @@
 
 <body>
   <div id="header"></div>
+  <form action="" method="get">
+    <div class="search-container">
+      <input type="text" placeholder="검색어를 입력해주세요">
+      <button type="button" onclick="location.href='./tradeSearchResult.html'">검색</button>
+    </div>
+  </form>
   <main>
     <div class="main-container">
-      <div class="main-title">
-        상품 등록/수정 페이지
-      </div>
-      <div class="main-small-title">
+      <form action="" method="post">
+        <div class="register-container">
+          <div class="img-container">
+            <div class="img-box"><img src="" alt=""></div>
+            <button type="button">사진 등록+</button>
+          </div>
+          <div class="middle-container">
+            <div class="name-input-container">
+              <div class="register-error-message">• 상품명을 입력하세요</div>
+              <div class="product-name-text">상품 명 : <input type="text"></div>
+            </div>
+            <div class="category-input-container">
+              <div class="product-category-text">카테고리 설정</div>
+              <div class="product-team-text">팀 선택 &nbsp;&nbsp;• 팀을 선택하지 않으면 팀 카테고리가 기타로 설정됩니다.</div>
+              <div class="logo-container">
+                <div class="logo"><img src="./../../assets/img/communityImg/doosan.png" alt=""></div>
+                <div class="logo"><img src="./../../assets/img/communityImg/HH.png" alt=""></div>
+                <div class="logo"><img src="./../../assets/img/communityImg/kia.png" alt=""></div>
+                <div class="logo"><img src="./../../assets/img/communityImg/kt.png" alt=""></div>
+                <div class="logo"><img src="./../../assets/img/communityImg/lg.png" alt=""></div>
+                <div class="logo"><img src="./../../assets/img/communityImg/LT.png" alt=""></div>
+                <div class="logo"><img src="./../../assets/img/communityImg/nc.png" alt=""></div>
+                <div class="logo"><img src="./../../assets/img/communityImg/SS.png" alt=""></div>
+                <div class="logo"><img src="./../../assets/img/communityImg/ssg.png" alt=""></div>
+                <div class="logo"><img src="./../../assets/img/communityImg/WO.png" alt=""></div>
+              </div>
+              <div class="product-type-text">굿즈 종류 선택</div>
+              <div class="product-type">모자</div>
+              <div class="product-type">의류</div>
+              <div class="product-type">잡화</div>
+              <div class="product-type">응원 도구</div>
+              <div class="product-type">야구 용품</div>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="product-explain-text">상품 설명</div>
+            <div class="product-explain-blank">
+              <textarea name="" id=""></textarea>
+            </div>
+            <div class="trade-location-container">
+              <div>희망 지역 :</div>
+              <input type="text">
+            </div>
+            <div class="trade-method-container">
+              <div>거래 방식 :</div>
+              <div class="trade-method-checkbox">
+                <span>배달</span>
+                <input type="checkbox">
+                <span>직거래</span>
+                <input type="checkbox">
+              </div>
+            </div>
+            <div class="bottom-container">
+              <div class="price-container">
+                <div>상품 가격 : </div>
+                <input type="number">
+              </div>
+              <div class="main-button-container">
+                <a href="./productRegisterResult.html">
+                  <div class="main-button-next">상품 등록
+                  </div>
+                </a>
+                <a href="./productDetailBuyer.html">
+                  <div class="main-button-cancel">취소
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
 
-      </div>
-
-      <div>상품 명</div>
-      <div>카테고리 설정</div>
-      <div>팀 선택</div>
-      <div>굿즈 종류 선택</div>
-      <div>상품 설명</div>
-      <div>희망 지역</div>
-      <div>거래 방식</div>
-      <div>상품 가격</div>
-      <div class="main-button-container">
-        <a href="./tradeSearchResult.html">
-          <div class="main-button-cancel">검색
+          <!-- <div class="long-line"></div>
+          <div class="container-full">
+            <div class="container-left">
+              <div class="point-name">
+                현재 보유 포인트 <br><br>
+              </div>
+              <div class="point-amount">
+                163000 포인트 <br><br><br>
+              </div>
+              <div class="point-name">
+                상품 가격 <br><br>
+              </div>
+              <div class="point-amount">
+                163000 포인트 <br><br>
+              </div>
+            </div>
+            <div class="container-right">
+              <div class="product-img"><img src="./../../assets/img/tradeImg/product6.jpg" alt=""></div>
+              <div class="product-text">상품 명 : </div>
+              <div class="product-text">거래 방식 : 택배 발송 / 직거래</div>
+            </div>
           </div>
-        </a>
-        <a href="./productRegister.html">
-          <div class="main-button-next">상품 등록
+          <div class="short-line"></div>
+          <div class="container-full">
+            <div class="container-left-bottom">
+              <div class="point-name">
+                결제 후 잔여 포인트 <br><br>
+              </div>
+              <div class="point-amount">
+                143000 포인트 <br><br>
+              </div>
+            </div>
+            <div></div>
           </div>
-        </a>
-        <a href="./productDetailSeller.html">
-          <div class="main-button-cancel">취소
-          </div>
-        </a>
-      </div>
+          <div class="long-line"></div>
+          <div class="main-button-container">
+            <a href="./productBuyResult.html">
+              <div class="main-button-next">결제
+              </div>
+            </a>
+            <a href="./productDetailBuyer.html">
+              <div class="main-button-cancel">취소
+              </div>
+            </a>
+          </div> -->
+        </div>
+      </form>
     </div>
   </main>
+
   <div id="footer"></div>
 </body>
 
