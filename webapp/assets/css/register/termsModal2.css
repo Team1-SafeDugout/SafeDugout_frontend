@@ -177,6 +177,8 @@ body {
   bottom: 100px;
 }
 
+
+/* 다음, 취소 버튼 */
 .main-button-container button {
   background-color: #DCD6D0;
   width: 185px;

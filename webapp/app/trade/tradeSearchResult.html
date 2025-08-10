@@ -11,26 +11,152 @@
 
 <body>
   <div id="header"></div>
+  <form action="" method="get">
+    <div class="search-container">
+      <input type="text" placeholder="검색어를 입력해주세요">
+      <button type="button" onclick="location.href='./tradeSearchResult.html'">검색</button>
+    </div>
+  </form>
   <main>
     <div class="main-container">
-      <div class="main-title">
+      <!-- <div class="title">
         중고거래 검색결과 페이지
-      </div>
-      <div class="main-small-title">
-        검색 결과
-      </div>
-
-      <div></div>
-      <div class="main-button-container">
+      </div> -->
+      <div class="small-title"></div>
+      <aside>
+        <div class="aside-container">
+          <div class="aside-text">상품 카테고리</div>
+          <ul>
+            <div class="category-container">
+              <li>
+                <div class="category"><a href="">모든 상품 유형</a></div>
+              </li>
+              <li>
+                <div class="category"><a href="">유니폼</a></div>
+              </li>
+              <li>
+                <div class="category"><a href="">모자</a></div>
+              </li>
+              <li>
+                <div class="category"><a href="">의류</a></div>
+              </li>
+              <li>
+                <div class="category"><a href="">잡화</a></div>
+              </li>
+              <li>
+                <div class="category"><a href="">응원용품</a></div>
+              </li>
+              <li>
+                <div class="category"><a href="">야구용품</a></div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <section class="section-container">
+        <div class="team-bar">
+          <div class="team-bar-text">팀 선택</div>
+          <div class="team-bar-logo-container">
+            <div class="team-bar-logo"><a href="">모든 팀</a></div>
+            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/ssg.png" alt=""></a></div>
+            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/lg.png" alt=""></a></div>
+            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/doosan.png" alt=""></a>
+            </div>
+            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/WO.png" alt=""></a></div>
+            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/kia.png" alt=""></a></div>
+            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/SS.png" alt=""></a></div>
+            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/HH.png" alt=""></a></div>
+            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/nc.png" alt=""></a></div>
+            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/LT.png" alt=""></a></div>
+            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/kt.png" alt=""></a></div>
+          </div>
+        </div>
+        <div class="page-bar">
+          <div class="page-bar-text">
+            <span class="big-text">[“검색 글”] 검색 결과</span>
+            <span class="small-text">0000개 모든 팀 > 모든 상품 유형</span>
+          </div>
+          <div class="page-container">
+            <div class="page-num"><a href="">1</a></div>
+            <div class="page-num"><a href="">2</a></div>
+            <div class="page-num"><a href="">3</a></div>
+            <div class="page-num"><a href="">4</a></div>
+            <div class="page-num"><a href="">5</a></div>
+            <div class="arrow-button"><a href="">▶</a></div>
+          </div>
+        </div>
+        <div class="product-container">
+          <div class="product-list">
+            <div class="product-img"><a href="./productDetailBuyer.html"><img
+                  src="./../../assets/img/tradeImg/product1.jpg" alt=""></a></div>
+            <div class="product-name"><a href="./productDetailBuyer.html">상품 이름</a></div>
+            <div class="product-price">상품 가격</div>
+            <div class="product-time">1분 전</div>
+          </div>
+          <div class="product-list">
+            <div class="product-img"><a href="./productDetailBuyer.html"><img
+                  src="./../../assets/img/tradeImg/product2.jpg" alt=""></a></div>
+            <div class="product-name"><a href="./productDetailBuyer.html">상품 이름</a></div>
+            <div class="product-price">상품 가격</div>
+            <div class="product-time">3분 전</div>
+          </div>
+          <div class="product-list">
+            <div class="product-img"><a href="./productDetailBuyer.html"><img
+                  src="./../../assets/img/tradeImg/product3.jpg" alt=""></a></div>
+            <div class="product-name"><a href="./productDetailBuyer.html">상품 이름</a></div>
+            <div class="product-price">상품 가격</div>
+            <div class="product-time">5분 전</div>
+          </div>
+          <div class="product-list">
+            <div class="product-img"><a href="./productDetailBuyer.html"><img
+                  src="./../../assets/img/tradeImg/product4.jpg" alt=""></a></div>
+            <div class="product-name"><a href="./productDetailBuyer.html">상품 이름</a></div>
+            <div class="product-price">상품 가격</div>
+            <div class="product-time">하루 전</div>
+          </div>
+          <div class="product-list">
+            <div class="product-img"><a href="./productDetailBuyer.html"><img
+                  src="./../../assets/img/tradeImg/product5.jpg" alt=""></a></div>
+            <div class="product-name"><a href="./productDetailBuyer.html">상품 이름</a></div>
+            <div class="product-price">상품 가격</div>
+            <div class="product-time">1주 전</div>
+          </div>
+          <div class="product-list">
+            <div class="product-img"><a href="./productDetailBuyer.html"><img
+                  src="./../../assets/img/tradeImg/product6.jpg" alt=""></a></div>
+            <div class="product-name"><a href="./productDetailBuyer.html">상품 이름</a></div>
+            <div class="product-price">상품 가격</div>
+            <div class="product-time">3주 전</div>
+          </div>
+          <div class="product-list">
+            <div class="product-img"><a href="./productDetailBuyer.html"><img
+                  src="./../../assets/img/tradeImg/product7.jpg" alt=""></a></div>
+            <div class="product-name"><a href="./productDetailBuyer.html">상품 이름</a></div>
+            <div class="product-price">상품 가격</div>
+            <div class="product-time">1달 전</div>
+          </div>
+          <div class="product-list">
+            <div class="product-img"><a href="./productDetailBuyer.html"><img
+                  src="./../../assets/img/tradeImg/product8.jpg" alt=""></a></div>
+            <div class="product-name"><a href="./productDetailBuyer.html">상품 이름</a></div>
+            <div class="product-price">상품 가격</div>
+            <div class="product-time">1년 전</div>
+          </div>
+        </div>
+      </section>
+      <!-- <div>검색창</div>
+      <div>팀 선택</div>
+      <div>카테고리</div>
+      <div class="button-container">
         <a href="./tradeSearchResult.html">
-          <div class="main-button-next">검색
+          <div class="button-next">검색
           </div>
         </a>
         <a href="./productDetailBuyer.html">
-          <div class="main-button-cancel">상품1
+          <div class="button-cancel">상품1
           </div>
         </a>
-      </div>
+      </div> -->
     </div>
   </main>
   <div id="footer"></div>

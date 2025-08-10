@@ -33,10 +33,13 @@ body {
 
 }
 
+/* form 컨테이너 */
 .main-form-box {
   min-height: 600px;
+  margin: 150px 0px 0px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 
@@ -44,7 +47,7 @@ body {
 .main-term-container {
   height: 50px;
   display: flex;
-  margin: 150px 0px;
+  margin: 10px 0px;
   align-items: center;
 }
 
@@ -55,16 +58,19 @@ body {
 
 .main-checkbox input {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.315);
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 
+/* 약관 버튼 */
 .main-term-box {
   background-color: #DCD6D0;
   width: 1000px;
   height: 50px;
   padding: 0px 0px 0px 20px;
   display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
   line-height: 50px;
   color: black;
 }
@@ -73,13 +79,12 @@ body {
   filter: brightness(0.9);
 }
 
+/* 다음, 취소 버튼 */
 .main-button-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 100px;
 }
 
-
-/* 다음, 취소 버튼 */
 .main-button-container button {
   background-color: #DCD6D0;
   width: 185px;
