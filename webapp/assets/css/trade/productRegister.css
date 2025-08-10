@@ -81,6 +81,16 @@ body {
   height: 100px;
 }
 
+/* 사진 등록 버튼 */
+.img-container button {
+  background-color: transparent;
+  border: none;
+}
+
+.img-container button:hover {
+  cursor: pointer;
+}
+
 /* 중간 컨테이너 */
 .middle-container {
   width: 600px;
@@ -94,11 +104,12 @@ body {
   width: 100%;
   height: 100px;
   margin: 0px 0px 35px 0px;
+  padding: 15px 0px 0px 0px;
 }
 
 /* 에러 메시지 */
 .register-error-message {
-  margin: 10px 0px 0px 25px;
+  margin: 0px 0px 0px 25px;
   font-size: 15px;
   color: red;
 }
@@ -157,10 +168,14 @@ body {
   height: 60px;
 }
 
-/* '굿즈 종류 선택' */
-.product-type-text {
+.product-type-text-container {
   border-bottom: 1px solid black;
   width: 500px;
+  display: flex;
+}
+
+/* '굿즈 종류 선택' */
+.product-type-text {
   font-size: 15px;
   font-weight: 700;
 }
@@ -169,7 +184,8 @@ body {
 .product-type {
   width: 500px;
   font-size: 15px;
-  margin: 5px 0px;
+  margin: 12px 0px;
+  line-height: 17px;
 }
 
 /* 오른쪽 컨테이너 */
@@ -185,6 +201,7 @@ body {
 /* '상품 설명' */
 .product-explain-text {
   width: 440px;
+  margin-top: 10px;
   font-size: 15px;
 }
 
@@ -198,6 +215,7 @@ body {
 /* 희망 지역 입력 컨테이너 */
 .trade-location-container {
   width: 440px;
+  margin: 20px 0px;
   font-size: 15px;
   display: flex;
   justify-content: space-between;
@@ -205,8 +223,8 @@ body {
 
 /* 거래 방식 입력 컨테이너 */
 .trade-method-container {
-  border-bottom: 1px solid black;
   width: 440px;
+  margin: 0px 0px 20px 0px;
   font-size: 15px;
   display: flex;
   justify-content: space-between;
@@ -215,22 +233,27 @@ body {
 /* 아래 끝 컨테이너 */
 .bottom-container {
   width: 440px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
 /* 상품 가격 텍스트 */
 .price-container {
   border-bottom: 1px solid black;
-  width: 260px;
+  width: 320px;
+  display: flex;
+  align-items: center;
 }
 
 .price-container div {
   font-size: 15px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .price-container input {
-  width: 155px;
-  height: 50px;
+  width: 130px;
+  height: 30px;
   font-size: 15px;
 }
 
@@ -245,14 +268,14 @@ body {
 
 /* 짧은 검은선 */
 .short-line {
-  width: 710px;
+  width: 440px;
   border-bottom: 1px solid black;
 }
 
 /* 버튼 컨테이너 */
 .main-button-container {
-  position: absolute;
-  bottom: 90px;
+  width: 250px;
+  margin-left: 1px;
 }
 
 .main-button-container button {
@@ -267,29 +290,29 @@ body {
   border: 2px solid black;
   background-color: #DCD6D0;
   width: 80px;
-  height: 50px;
+  height: 30px;
   display: inline-block;
   color: black;
   text-decoration: none;
   font-size: 15px;
-  line-height: 60px;
+  line-height: 30px;
   text-align: center;
 }
 
 .main-button-container a {
-  margin: 0px 10px;
+  margin: 0px 0px 0px 10px;
 }
 
 .main-button-cancel {
   border: 2px solid black;
   background-color: #efefef;
   width: 80px;
-  height: 50px;
+  height: 30px;
   display: inline-block;
   color: black;
   text-decoration: none;
   font-size: 15px;
-  line-height: 60px;
+  line-height: 30px;
   text-align: center;
 }
 

@@ -32,7 +32,8 @@
             </div>
             <div class="category-input-container">
               <div class="product-category-text">카테고리 설정</div>
-              <div class="product-team-text">팀 선택 &nbsp;&nbsp;• 팀을 선택하지 않으면 팀 카테고리가 기타로 설정됩니다.</div>
+              <div class="product-team-text">팀 선택 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 팀을 선택하지 않으면 팀 카테고리가 기타로 설정됩니다.
+              </div>
               <div class="logo-container">
                 <div class="logo"><img src="./../../assets/img/communityImg/doosan.png" alt=""></div>
                 <div class="logo"><img src="./../../assets/img/communityImg/HH.png" alt=""></div>
@@ -45,12 +46,15 @@
                 <div class="logo"><img src="./../../assets/img/communityImg/ssg.png" alt=""></div>
                 <div class="logo"><img src="./../../assets/img/communityImg/WO.png" alt=""></div>
               </div>
-              <div class="product-type-text">굿즈 종류 선택</div>
-              <div class="product-type">모자</div>
-              <div class="product-type">의류</div>
-              <div class="product-type">잡화</div>
-              <div class="product-type">응원 도구</div>
-              <div class="product-type">야구 용품</div>
+              <div class="product-type-text-container">
+                <div class="product-type-text">굿즈 종류 선택</div>
+                <div class="register-error-message">• 굿즈 종류를 하나 선택해 주세요</div>
+              </div>
+              <div class="product-type"><label for="hat">모자</label><input type="checkbox" id="hat"></div>
+              <div class="product-type"><label for="cloths">의류</label><input type="checkbox" id="cloths"></div>
+              <div class="product-type"><label for="etc">잡화</label><input type="checkbox" id="etc"></div>
+              <div class="product-type"><label for="cheer">응원 도구</label><input type="checkbox" id="cheer"></div>
+              <div class="product-type"><label for="baseball">야구 용품</label><input type="checkbox" id="baseball"></div>
             </div>
           </div>
           <div class="right-container">
@@ -62,6 +66,8 @@
               <div>희망 지역 :</div>
               <input type="text">
             </div>
+            <div class="short-line"></div>
+            <div class="register-error-message">• 거래 방식을 선택해 주세요</div>
             <div class="trade-method-container">
               <div>거래 방식 :</div>
               <div class="trade-method-checkbox">
@@ -71,6 +77,7 @@
                 <input type="checkbox">
               </div>
             </div>
+            <div class="short-line"></div>
             <div class="bottom-container">
               <div class="price-container">
                 <div>상품 가격 : </div>
@@ -81,7 +88,7 @@
                   <div class="main-button-next">상품 등록
                   </div>
                 </a>
-                <a href="./productDetailBuyer.html">
+                <a href="./tradeMain.html">
                   <div class="main-button-cancel">취소
                   </div>
                 </a>
