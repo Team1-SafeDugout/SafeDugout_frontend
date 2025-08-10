@@ -1,5 +1,5 @@
-const userList = document.getElementById("memberlist-container-ul");
-const addbutton = document.getElementsByClassName("memberlist-category-line").item(0);
+const userList = document.getElementById("list-ul");
+const addbutton = document.getElementsByClassName("list-names").item(0);
 
 const leftButton = document.getElementById("left-button");
 const rightButton = document.getElementById("right-button");
@@ -71,30 +71,32 @@ rightButton.addEventListener('click', function () {
 addbutton.addEventListener('click', function () {
 
   setNumber();
-  const userListNum = document.querySelectorAll("#memberlist-container-ul>li");
+  const userListNum = document.querySelectorAll("#list-ul>li");
   if (userListNum.length >= 10) return;
 
   const newMember = document.createElement('li');
 
-  const aTag = document.createElement('a');
   const userNumber = document.createElement('div');
   const userID = document.createElement('div');
   const addDate = document.createElement('div');
+
+  const userIdURL = document.createElement('a');
+  userID.appendChild(userIdURL);
 
   const userNumberText = document.createTextNode("userNumber");
   const userIDText = document.createTextNode("userID");
   const addDateText = document.createTextNode("addDate");
 
-  aTag.setAttribute('href', "./../adminDetailMenu/adminUserDetail.html");
+  userIdURL.setAttribute('href', "./../adminDetailMenu/adminUserDetail.html");
 
   userNumber.appendChild(userNumberText);
-  userID.appendChild(userIDText);
+  userID.appendChild(userIdURL);
+  userIdURL.appendChild(userIDText);
   addDate.appendChild(addDateText);
 
-  aTag.appendChild(userNumber);
-  aTag.appendChild(userID);
-  aTag.appendChild(addDate);
-  newMember.appendChild(aTag);
+  newMember.appendChild(userNumber);
+  newMember.appendChild(userID);
+  newMember.appendChild(addDate);
 
   userList.appendChild(newMember);
 });
