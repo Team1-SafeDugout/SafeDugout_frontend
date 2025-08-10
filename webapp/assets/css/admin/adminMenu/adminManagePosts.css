@@ -42,13 +42,13 @@ li{
 	font-size: 32px;
 	font-weight: bold;
 	width: 100%;
-	height: 1vh;
+	min-height: 100px;
 	align-content: end;
 }
 
 .sidebar-div-info {
 	padding-left: 10%;
-	height: 2vh;
+	min-height: 150px;
 }
 
 .sidebar-div-info>div{
@@ -63,16 +63,16 @@ li{
 	font-size: 15px;
 }
 
-.sidebar-div-info>div {
+.sidebar-div-info>div{
 	border: 1px solid black;
 	background-color: black;
 	width: 80%;
-	height: 8vh;
+	height: 80%;
 }
 
 .sidebar-div-container {
 	padding-left: 10%;
-	height: 7vh;
+	/* min-height: 7vh; */
 }
 
 .sidebar-div-container>div {
@@ -80,7 +80,7 @@ li{
 	background-color: black;
 	color: white;
 	width: 80%;
-	height: 8vh;
+	min-height: 300px;
 }
 
 .sidebar-div-container>div>ul>li:hover{
@@ -88,7 +88,7 @@ li{
 }
 
 .sidebar-div-container>div>ul{
-	height: 10vh;
+	min-height: 300px;
 	display: flex;
 	flex-direction: column;
 }
@@ -117,7 +117,7 @@ li{
 .body-container-name {
 	font-size: 24px;
 	width: 100%;
-	height: 10%;
+	height: 100px;
 	align-content: end;
 }
 
