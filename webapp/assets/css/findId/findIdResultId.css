@@ -7,14 +7,16 @@ body {
 #header {
   background-color: #DCD6D0;
   height: 100px;
+
 }
 
 /* 메인 */
 .main-container {
-  width: 100%;
   min-height: 750px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .main-title {
@@ -25,18 +27,51 @@ body {
   font-weight: 700;
 }
 
-.main-small-title {
-  position: absolute;
-  top: 190px;
-  left: 580px;
-  font-size: 24px;
-
+/* 박스 제목 */
+.main-message-title {
+  width: 850px;
+  font-size: 15px;
+  margin: 140px 0px 0px 0px;
 }
 
-/* 다음, 취소 버튼 */
+.main-message-title span {
+  color: #D9D9D9;
+  font-size: 15px;
+}
+
+.main-container form {
+  margin: 0px auto;
+}
+
+/* 메시지 박스 */
+.main-message-container {
+  background-color: #efefef;
+  width: 850px;
+  height: 220px;
+  padding: 25px 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 회원가입 완료 메시지 */
+.main-result-message {
+  font-size: 24px;
+  font-weight: 700;
+  /* margin: 100px 0px 0px 0px; */
+}
+
+/* 회원가입 후 안내 메시지 */
+.main-info-message {
+  margin: 100px 0px 0px 0px;
+}
+
+/* 다음, 취소 버튼 컨테이너*/
 .main-button-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 310px;
 }
 
 .main-button-container button {

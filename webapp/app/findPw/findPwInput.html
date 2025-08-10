@@ -17,16 +17,60 @@
         비밀번호 찾기
       </div>
       <div class="main-small-title">
-        회원 가입 정보로 찾기<br>
-        회원 가입시 등록한 정보로 비밀번호를 찾을 수 있습니다.
+
       </div>
 
-      <div class="main-button-container">
-        <a href="./findPwChange.html">
-          <div class="main-button-next">확인
+      <form action="" method="post">
+        <div class="main-form-box">
+          <div class="main-form-title">
+            <span>●</span>&nbsp;회원 가입시 등록한 정보로 비밀번호를 찾을 수 있습니다.
           </div>
-        </a>
-      </div>
+          <div class="main-input-container">
+            <div class="main-input-list">
+              <div class="main-input-name">이름</div>
+              <div class="main-input-box">
+                <div class="main-error-message">* 등록되지 않은 정보입니다. / 필수 입력값입니다.</div>
+                <input type="text" placeholder="이름을 입력하세요">
+              </div>
+            </div>
+            <div class="main-input-list">
+              <div class="main-input-name">아이디</div>
+              <div class="main-input-box">
+                <div class="main-error-message">* 등록되지 않은 아이디입니다. / 필수 입력값입니다.</div>
+                <input type="text" placeholder="아이디를 입력하세요">
+              </div>
+            </div>
+            <div class="main-input-list">
+              <div class="main-input-name">이메일</div>
+              <div class="main-input-box">
+                <div class="main-error-message">* 등록되지 않은 이메일입니다. / 필수 입력값입니다.</div>
+                <input type="email" placeholder="이메일을 입력하세요">
+              </div>
+            </div>
+            <div class="main-input-list">
+              <div class="main-input-name">핸드폰 번호</div>
+              <div class="main-input-box">
+                <div class="main-error-message">* 등록되지 않은 번호입니다. / 필수 입력값입니다.</div>
+                <input type="text" placeholder="핸드폰 번호를 입력하세요">
+                <button type="button">인증 번호 발송</button>
+              </div>
+            </div>
+            <div class="main-input-list">
+              <div class="main-input-name">인증번호 입력</div>
+              <div class="main-input-box">
+                <div class="main-error-message">* 인증 번호 불일치</div>
+                <input type="text" placeholder="인증 번호 입력">
+                <button type="button">인증</button>
+              </div>
+            </div>
+          </div>
+          <div class="main-button-container">
+            <button type="button" onclick="location.href='./findPwChange.html'">
+              확인
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
   </main>
   <div id="footer"></div>
