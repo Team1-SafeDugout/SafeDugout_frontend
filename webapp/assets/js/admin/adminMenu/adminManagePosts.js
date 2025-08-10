@@ -1,1 +1,1 @@
-const addbutton = document.getElementsByClassName("memberlist-category-line").item(0);
+const addbutton = document.getElementsByClassName("post-category-line").item(0);

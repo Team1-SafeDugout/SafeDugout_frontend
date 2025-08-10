@@ -1,11 +1,5 @@
-const userList = document.getElementById("list-ul");
-const addbutton = document.getElementById("save-button");
-const openModal = document.getElementById("add-youtube-button");
-const closeModal = document.getElementById("cancle-button");
-
-
-const modal = document.getElementById("section-modal");
-const modalForm = document.getElementById("modal-form");
+const userList = document.getElementById("news-list-container-ul");
+const addbutton = document.getElementsByClassName("news-list-category-line").item(0);
 
 const leftButton = document.getElementById("left-button");
 const rightButton = document.getElementById("right-button");
@@ -73,28 +67,19 @@ rightButton.addEventListener('click', function () {
   setButton();
 });
 
-openModal.addEventListener('click', function(){
-  modal.style.display = "flex";
-  modalForm.reset();
-});
-
-closeModal.addEventListener('click', function(){
-  modal.style.display = "none";
-});
-
 // 테스트용 추가 버튼
 addbutton.addEventListener('click', function () {
 
   setNumber();
-  const userListNum = document.querySelectorAll("#list-ul>li");
+  const userListNum = document.querySelectorAll("#news-list-container-ul>li");
   if (userListNum.length >= 10) return;
 
   const newMember = document.createElement('li');
 
+  const aTag = document.createElement('a');
   const number = document.createElement('div');
-  const teamName = document.createElement('div');
+  const newsTitle = document.createElement('a');
   const fixDate = document.createElement('div');
-  const linkURL = document.createElement('div');
   const buttons = document.createElement('div');
 
   const changeButton = document.createElement('button');
@@ -107,29 +92,25 @@ addbutton.addEventListener('click', function () {
   deleteButton.appendChild(document.createTextNode("삭제"));
 
   const NumberText = document.createTextNode("number");
-  const teamNameText = document.createTextNode("userID");
-  const linkURLText = document.createTextNode("addDate");
+  const newsTitleText = document.createTextNode("뉴스제목");
   const fixDateText = document.createTextNode("0000.00.00");
 
   buttons.appendChild(changeButton);
   buttons.appendChild(deleteButton);
 
   number.appendChild(NumberText);
-  teamName.appendChild(teamNameText);
-  linkURL.appendChild(linkURLText);
+  newsTitle.appendChild(newsTitleText);
   fixDate.appendChild(fixDateText);
 
-  linkURL.setAttribute('href',"https://www.youtube.com/");
+  newsTitle.setAttribute("href", "./../adminDetailMenu/adminTeamNewesDetail.html")
 
-  newMember.appendChild(number);
-  newMember.appendChild(teamName);
-  newMember.appendChild(linkURL);
-  newMember.appendChild(fixDate);
-  newMember.appendChild(buttons);
-  // newMember.appendChild(aTag);
+  aTag.appendChild(number);
+  aTag.appendChild(newsTitle);
+  aTag.appendChild(fixDate);
+  aTag.appendChild(buttons);
+  newMember.appendChild(aTag);
 
   userList.appendChild(newMember);
-  modal.style.display = "none";
 });
 
 
