@@ -18,7 +18,6 @@ body{
 /* 왼쪽에 있을 사이드 메뉴와 본 페이지 메뉴를 나눠줄 flex 제공 */
 main {
 	min-height: 100vh;
-	height: fit-content;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	transform: translateY(-100px);
@@ -116,15 +115,20 @@ li{
 
 .body-container-name {
 	font-size: 24px;
-	width: 100%;
-	height: 100px;
-	align-content: end;
+	width: 74%;
+	height: 10%;
+  align-content: flex-end;
+}
+
+.add-button{
+	width: 26%;
+	height: 10%;
+	 align-content: flex-end;
 }
 
 .body-container-list {
 	width: 80%;
-	min-height: 90vh;
-	height: max-content;
+	height: 90%;
 	background-color: white;
 	display: flex;
 	justify-content: center;
@@ -138,22 +142,26 @@ li{
 }
 
 /* 검색 결과 상단 */
-.post-category-line{
+.song-list-category-line{
 	margin-top: 4%;
-	height: 4vh;
+	height: 6%;
 	background-color: #4D5061;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
-.post-category-line>div{
-	flex: 1;
+.song-list-category-line>*{
+	flex:1;
+}
+
+.song-list-category-line>div{
 	margin: 0 3%;
 	color:white;
 }
-/* ---------------------------------------검색결과목록 세팅------------------------------------------------- */
+/* ---------------------------------------목록 세팅------------------------------------------------- */
 /* 검색 결과(목록) */
-.section-user-postlist, .section-admin-postlist{
+.section-recordlist{
   width: 100%;
   min-height: 50vh;
   height: fit-content;
@@ -165,11 +173,6 @@ li{
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-}
-
-.list-title{
-  width: 100%;
-  height: 3vh;
 }
 
 .list-container{
@@ -191,14 +194,6 @@ li{
 .list-names>div, .list-ul>li>div{
   flex:1;
   padding-left: 10px;
-}
-
-.list-names>div:nth-child(2), .list-ul>li>div:nth-child(2){
-  flex:3;
-}
-
-.list-names>div:nth-child(3), .list-ul>li>div:nth-child(3){
-  flex:1;
 }
 
 .list-names{
@@ -229,35 +224,4 @@ li{
 .page-buttons>form>ul>li:nth-child(1){
 	background-color: #4D5061;
 	color:white;
-}
-
-/* ------------------------------------------------------------------------------------------------------------------------- */
-
-/* 검색 창 */
-.search-container{
-	height: 4vh;
-	background-color: #4D5061;
-
-	padding: 0 10px;
-	color: white;
-}
-
-.search-bar{
-	height: 100%;
-	width: 100%;
-	
-}
-
-.search-bar>form{
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.search-bar>form>input{
-	flex:1;
-	margin: 0 1%;
 }

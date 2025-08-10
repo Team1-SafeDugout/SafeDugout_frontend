@@ -18,7 +18,7 @@ body{
 /* 왼쪽에 있을 사이드 메뉴와 본 페이지 메뉴를 나눠줄 flex 제공 */
 main {
 	min-height: 100vh;
-	height: 100%;
+	height: fit-content;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	transform: translateY(-100px);
@@ -116,29 +116,30 @@ li{
 
 .body-container-name{
     width: 100%;
-    height: 20px;
+    height: 10%;
     align-content: end;
     font-size: 24px;
 }
 
 .statistics-container{
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     width: 100%;
 
-    height: 90;
+    height: 90%;
 }
 
 .statistics-name{
     height: 10%;
     background-color: #4D5061;
-    text-align: start;
+    text-align: end;
     align-content: center;
     padding: 0 15px;
     color:white;
 }
 
 .guests-statistics{
-    background-color: red;
+    background-color: white;
+		border: 1px solid black;
     height: 500px;
 }
 
@@ -151,14 +152,16 @@ li{
 
 .trading-count, .selling-count{
     width: 40%;
-    height: 30vh;
+    height: 40vh;
     border: 1px solid black;
     background-color: white;
 }
 
-.trading-count{
-
-}
-
-.selling-count{
+.trading-count>div:nth-child(2), .selling-count>div:nth-child(2){
+	font-size: 32px;
+	height: 90%;
+	display: flex;
+	line-height: 90%;
+	justify-content: center;
+	align-items: center;
 }

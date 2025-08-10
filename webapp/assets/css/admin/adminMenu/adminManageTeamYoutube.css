@@ -140,80 +140,143 @@ li{
 	height: 100%;
 }
 
-/* 검색 결과 상단 */
-.youtube-list-category-line{
-	margin-top: 4%;
-	height: 6%;
-	background-color: #4D5061;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-}
-
-.youtube-list-category-line>*{
-	flex:1;
-}
-
-.youtube-list-category-line>div{
-	margin: 0 3%;
-	color:white;
-}
 /* ---------------------------------------검색결과목록 세팅------------------------------------------------- */
 /* 검색 결과(목록) */
-.youtube-list-container{
-	min-height: 75%;
-	/* background-color: yellow; */
+.section-yotubelist{
+  width: 100%;
+  min-height: 50vh;
+  height: fit-content;
+  margin-top: 10px;
 }
 
-/* 검색 결과 목록 ul */
-.youtube-list-container>ul{
-	height: 100%;
-	flex-direction: column;
+.list-background{
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.youtube-list-container>ul>li>a>*{
-	flex:1;
+.list-container{
+  width: 100%;
+  min-height: 40vh;
+  max-height: 50vh;
+  overflow-y: scroll;
+  border: 1px solid black;
+  scrollbar-width: none;
 }
 
-.youtube-list-container>ul>li>a>*:nth-child(5){
-	display: flex;
+.list-names, .list-ul>li{
+  display: flex;
+  border: 1px solid black;
+  height: 4vh;
+  line-height: 4vh;
 }
 
-/* 검색 결과 목록 항목들 */
-.youtube-list-container>ul>li>a{
-	height: 40px;
-	border: 1px solid black;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+.list-names>div, .list-ul>li>div{
+  flex:1;
+  padding-left: 10px;
 }
 
-.youtube-list-container>ul>li>a>div{
-	margin: 0 3%;
+.list-names{
+  background-color: #4D5061;
+  color:white;
 }
 
 /* ------------------------------------------------페이지 번호----------------------------------------------------------- */
 /* 현재 페이지 번호 */
 
-.youtube-list-pagenumber>form{
+.page-buttons>form{
 	margin: 1px;
 	display: flex;
 	justify-content: center;
 }
 
-.youtube-list-pagenumber>form>ul{
+.page-buttons>form>ul{
 	display: flex;
 }
 
-.youtube-list-pagenumber>form>ul>li{
+.page-buttons>form>ul>li{
 	border: 1px solid black;
 	margin: 0 10px;
 	width: 25px;
 	text-align: center;
 }
 
-.youtube-list-pagenumber>form>ul>li:nth-child(1){
+.page-buttons>form>ul>li:nth-child(1){
 	background-color: #4D5061;
 	color:white;
-  
+}
+
+/* ------------------------------------------------모달창관련----------------------------------------------------------- */
+
+.section-modal{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-background{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	z-index: 1;
+	opacity:0.5;
+	background-color: black;
+}
+
+.section-modal>form{
+	z-index: 2;
+	width: 80%;
+	height: 60vh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 30px;
+}
+
+.modal-input-radio, .modal-input-text, .modal-buttons{
+	display: flex;
+	width: 100%;
+}
+
+.modal-input-text{
+	justify-content: space-between;
+}
+
+.modal-input-text>label{
+	flex: 1;
+}
+
+.modal-input-text>input{
+	flex:7;
+}
+
+.modal-input-radio{
+	overflow-x: scroll;
+	scrollbar-width:none;
+	justify-content: center;
+}
+
+.modal-input-radio>label>img{
+	width: 100px;
+	height: 100px;
+}
+
+.modal-buttons{
+	justify-content: space-around;
+}
+
+.modal-buttons>button{
+	width: 100px;
+  height: 30px;
+}
+
+.section-modal>form>div>button:first-child{
+	color: white;
+	background-color: #4D5061;
 }

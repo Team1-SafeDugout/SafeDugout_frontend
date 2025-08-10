@@ -152,58 +152,69 @@ li{
 }
 /* ---------------------------------------검색결과목록 세팅------------------------------------------------- */
 /* 검색 결과(목록) */
-.memberlist-container{
-	min-height: 75%;
-	/* background-color: yellow; */
+.section-recordlist{
+  width: 100%;
+  min-height: 50vh;
+  height: fit-content;
+  margin-top: 10px;
 }
 
-/* 검색 결과 목록 ul */
-.memberlist-container>ul{
-	height: 100%;
-	flex-direction: column;
+.list-background{
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.memberlist-container>ul>li>a>*{
-	flex:1;
+.list-container{
+  width: 100%;
+  min-height: 40vh;
+  max-height: 50vh;
+  overflow-y: scroll;
+  border: 1px solid black;
+  scrollbar-width: none;
 }
 
-/* 검색 결과 목록 항목들 */
-.memberlist-container>ul>li>a{
-	height: 40px;
-	border: 1px solid black;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.list-names, .list-ul>li{
+  display: flex;
+  border: 1px solid black;
+  height: 4vh;
+  line-height: 4vh;
 }
 
-.memberlist-container>ul>li>a>div{
-	margin: 0 3%;
+.list-names>div, .list-ul>li>div{
+  flex:1;
+  padding-left: 10px;
+}
+
+.list-names{
+  background-color: #4D5061;
+  color:white;
 }
 
 /* ------------------------------------------------페이지 번호----------------------------------------------------------- */
 /* 현재 페이지 번호 */
 
-.memberlist-pagenumber>form{
+.page-buttons>form{
 	margin: 1px;
 	display: flex;
 	justify-content: center;
 }
 
-.memberlist-pagenumber>form>ul{
+.page-buttons>form>ul{
 	display: flex;
 }
 
-.memberlist-pagenumber>form>ul>li{
+.page-buttons>form>ul>li{
 	border: 1px solid black;
 	margin: 0 10px;
 	width: 25px;
 	text-align: center;
 }
 
-.memberlist-pagenumber>form>ul>li:nth-child(1){
+.page-buttons>form>ul>li:nth-child(1){
 	background-color: #4D5061;
 	color:white;
-  
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------- */
