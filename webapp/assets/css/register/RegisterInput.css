@@ -76,7 +76,7 @@ body {
 }
 
 /* 선택 입력값 입력 칸 */
-.main-input-list-optional input{
+.main-input-list-optional input {
   width: 200px;
 }
 
@@ -97,7 +97,7 @@ body {
   display: flex;
 }
 
-.main-input-address input{
+.main-input-address input {
   width: 200px;
 }
 
@@ -123,7 +123,7 @@ body {
 }
 
 /* 주소 입력칸 옆 버튼 */
-.main-input-list-optional button{
+.main-input-list-optional button {
   background-color: #DCD6D0;
   margin-left: 25px;
   text-align: center;
