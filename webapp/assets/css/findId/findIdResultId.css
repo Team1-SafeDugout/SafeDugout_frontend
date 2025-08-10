@@ -4,11 +4,11 @@ body {
 }
 
 /* 헤더 */
-#header {
+/* #header {
   background-color: #DCD6D0;
   height: 100px;
 
-}
+} */
 
 /* 메인 */
 .main-container {
@@ -113,8 +113,8 @@ body {
 }
 
 /* 푸터 */
-#footer {
+/* #footer {
   background-color: #DCD6D0;
   height: 100px;
   width: 100%;
-}
+} */
