@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./../../../assets/css/admin/adminMenu/adminManageTeamYoutube.css">
-  <script async src="./../../../assets/js/admin/adminMenu/adminManageTeamYoutube.js"></script>
+  <link rel="stylesheet" href="./../../../assets/css/admin/adminMenu/adminManageTeamNews.css">
+  <link rel="stylesheet" href="./../../../assets/css/admin/adminHeader.css">
+  <link rel="stylesheet" href="./../../../assets/css/admin/adminFooter.css">
+  <script async src="./../../../assets/js/admin/adminMenu/adminManageTeamNews.js"></script>
 </head>
 
 <body>
@@ -46,27 +48,26 @@
       </div>
 
       <div class = "add-button">
-        <a href = "" id = "add-youtube-button"> 추가하기+ </a>
+        <a href = "./../adminDetailMenu/adminAddTeamNewsDetail.html" id = "add-news-button"> 추가하기+ </a>
       </div>
       
 
       <section class="body-container-list">
         <div>
-          <div class="youtube-list-category-line">
+          <div class="news-list-category-line">
             <div>글번호</div>
             <div>뉴스 제목</div>
-            <div>유튜브 링크</div>
             <div>수정일자</div>
             <div></div>
           </div>
 
-          <div class="youtube-list-container">
-            <ul id="youtube-list-container-ul">
+          <div class="news-list-container">
+            <ul id="news-list-container-ul">
 
             </ul>
           </div>
 
-          <div class="youtube-list-pagenumber">
+          <div class="news-list-pagenumber">
             <form action="" method="get">
               <button type="button" id="left-button"> ◁ </button>
               <ul id="numberlist-ul">
@@ -85,6 +86,7 @@
     </section>
   </main>
   <div id="footer"></div>
+  <script src="./../../../assets/js/admin/adminHeaderFooterInclude.js"></script>
 </body>
 
 </html>

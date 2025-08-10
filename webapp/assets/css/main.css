@@ -4,50 +4,51 @@
 }
 
 header {
-  height: 150px;
+  height: 100%;
   width: 100%;
   background-color: #DCD6D0;
-  padding: 0px;
+
 
 }
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: #DCD6D0;
+
+}
+
+.team-ranking-header {
+  width: 650px;
+  height: 100%;
+  background-color: white;
+  padding: 5%;
+}
+
+.team-ranking {
+  background-color: rgb(230, 31, 31);
+  height: 60px;
+  width: 600px;
+  padding-left: 3%;
+}
+.ranking-list{
+  background-color: #DCD6D0;
+  display: flex;
+  
+}
+.ranking-list-team{
+  background-color: white;
+  height: 60px;
+  width: 600px;
+  display: flex;
+}
+
+
 
 footer {
   height: 100px;
   width: 100%;
   background-color: #DCD6D0;
   align-content: end;
-
-}
-
-.header-container {
-  background-color: #DCD6D0;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.team-ranking {
-  height: 686px;
-  width: 536px;
-  display: flex;
-  padding: 10%;
-  background-color: white;
-}
-
-.team-ranking-header {
-  background-color: rgb(230, 31, 31);
-  height: 10%;
-  width: 536;
-}
-
-.team-ranking-header-container {
-  width: 100%;
-  display: flex;
-}
-
-.ranking-list {
-  background-color: #DCD6D0;
-  height: 10%;
-  width: 536px;
-  text-align: left;
 
 }

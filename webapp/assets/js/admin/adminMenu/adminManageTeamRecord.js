@@ -1,11 +1,5 @@
 const userList = document.getElementById("list-ul");
-const addbutton = document.getElementById("save-button");
-const openModal = document.getElementById("add-youtube-button");
-const closeModal = document.getElementById("cancle-button");
-
-
-const modal = document.getElementById("section-modal");
-const modalForm = document.getElementById("modal-form");
+const addbutton = document.getElementById("add-record-button");
 
 const leftButton = document.getElementById("left-button");
 const rightButton = document.getElementById("right-button");
@@ -73,15 +67,6 @@ rightButton.addEventListener('click', function () {
   setButton();
 });
 
-openModal.addEventListener('click', function(){
-  modal.style.display = "flex";
-  modalForm.reset();
-});
-
-closeModal.addEventListener('click', function(){
-  modal.style.display = "none";
-});
-
 // 테스트용 추가 버튼
 addbutton.addEventListener('click', function () {
 
@@ -94,7 +79,6 @@ addbutton.addEventListener('click', function () {
   const number = document.createElement('div');
   const teamName = document.createElement('div');
   const fixDate = document.createElement('div');
-  const linkURL = document.createElement('div');
   const buttons = document.createElement('div');
 
   const changeButton = document.createElement('button');
@@ -102,13 +86,13 @@ addbutton.addEventListener('click', function () {
 
   changeButton.setAttribute('type', 'button');
   changeButton.appendChild(document.createTextNode("수정"));
+  changeButton.setAttribute("onclick", "location.href = './../adminDetailMenu/adminTeamRecordDetail.html'" )
 
   deleteButton.setAttribute('type', 'button');
   deleteButton.appendChild(document.createTextNode("삭제"));
 
   const NumberText = document.createTextNode("number");
   const teamNameText = document.createTextNode("userID");
-  const linkURLText = document.createTextNode("addDate");
   const fixDateText = document.createTextNode("0000.00.00");
 
   buttons.appendChild(changeButton);
@@ -116,20 +100,14 @@ addbutton.addEventListener('click', function () {
 
   number.appendChild(NumberText);
   teamName.appendChild(teamNameText);
-  linkURL.appendChild(linkURLText);
   fixDate.appendChild(fixDateText);
-
-  linkURL.setAttribute('href',"https://www.youtube.com/");
 
   newMember.appendChild(number);
   newMember.appendChild(teamName);
-  newMember.appendChild(linkURL);
   newMember.appendChild(fixDate);
   newMember.appendChild(buttons);
-  // newMember.appendChild(aTag);
 
   userList.appendChild(newMember);
-  modal.style.display = "none";
 });
 
 

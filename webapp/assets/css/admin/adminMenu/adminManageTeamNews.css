@@ -1,3 +1,5 @@
+/* --------------------------------------------------------기초 설정------------------------------------------------------------ */
+
 * {
 	padding: 0;
 	margin: 0;	
@@ -118,23 +120,28 @@ li{
   align-content: flex-end;
 }
 
+.add-button{
+	width: 26%;
+	height: 10%;
+	 align-content: flex-end;
+}
+
 .body-container-list {
 	width: 80%;
 	height: 90%;
 	background-color: white;
 	display: flex;
 	justify-content: center;
-	padding: 1% 0;
+	padding: 3% 0;
 }
 
-.body-container-list>div{
+.body-container-list >div{
 	width: 80%;
 	height: 100%;
-  overflow-y: scroll;
 }
 
 /* 검색 결과 상단 */
-.sell-list-category-line{
+.news-list-category-line{
 	margin-top: 4%;
 	height: 6%;
 	background-color: #4D5061;
@@ -143,73 +150,69 @@ li{
 	align-items: center;
 }
 
-.sell-list-category-line>*{
+.news-list-category-line>*{
 	flex:1;
 }
 
-.sell-list-category-line>div{
+.news-list-category-line>div{
 	margin: 0 3%;
 	color:white;
 }
 /* ---------------------------------------검색결과목록 세팅------------------------------------------------- */
 /* 검색 결과(목록) */
-.sell-list-container{
+.news-list-container{
 	min-height: 75%;
+	/* background-color: yellow; */
 }
 
 /* 검색 결과 목록 ul */
-.sell-list-container>ul{
+.news-list-container>ul{
 	height: 100%;
 	flex-direction: column;
 }
 
-.sell-list-container>ul>li>a>*{
+.news-list-container>ul>li>a>*{
 	flex:1;
 }
 
-.sell-list-container>ul>li>a>*:nth-child(5){
+.news-list-container>ul>li>a>*:nth-child(5){
 	display: flex;
 }
 
 /* 검색 결과 목록 항목들 */
-.sell-list-container>ul>li>a>div>img{
-	height: 60px;
-	width: 60px;
-}
-
-.sell-list-container>ul>li>a{
-	height: 60px;
+.news-list-container>ul>li>a{
+	height: 40px;
 	border: 1px solid black;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-.sell-list-container>ul>li>a>div{
+.news-list-container>ul>li>a>div{
 	margin: 0 3%;
 }
 
 /* ------------------------------------------------페이지 번호----------------------------------------------------------- */
 /* 현재 페이지 번호 */
 
-.sell-list-pagenumber>form{
+.news-list-pagenumber>form{
 	margin: 1px;
 	display: flex;
 	justify-content: center;
 }
 
-.sell-list-pagenumber>form>ul{
+.news-list-pagenumber>form>ul{
 	display: flex;
 }
 
-.sell-list-pagenumber>form>ul>li{
+.news-list-pagenumber>form>ul>li{
 	border: 1px solid black;
 	margin: 0 10px;
 	width: 25px;
 	text-align: center;
 }
 
-.sell-list-pagenumber>form>ul>li:nth-child(1){
+.news-list-pagenumber>form>ul>li:nth-child(1){
 	background-color: #4D5061;
 	color:white;
   
