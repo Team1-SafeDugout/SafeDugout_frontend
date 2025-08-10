@@ -3,12 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>팀뉴스 추가</title>
+  <link rel="stylesheet" href="./../../../assets/css/admin/adminDetailMenu/adminAddTeamNewsDetail.css">
 </head>
 <body>
   <main>
-    <h1> 팀뉴스 추가화면.</h1>
-    <a href="./../adminMenu/adminManageTeamNews.html">  목록으로 돌아갑니다. </a>
+    <section class="section-background">
+      <!-- 필수 입력 정보 : 제목, URL -->
+      <!-- 선택 입력 정보 : 내용, 첨부파일 -->
+      <form action="" method="post" name = "adminNewsPost">
+        <!-- 첨부 파일 -->
+        <section class = "file">
+          <label for = "file-area"> 
+            <div class = "img-area">
+              <img src="./../../../assets/img/communityImg/tradeLogo.png">
+            </div>
+            <div class = "file-button-style"> 클릭하여 파일 추가 </div>
+          </label>
+          <input type= "file" name = "file" id = "file-area">
+        </section>
+
+
+        <!-- 제목 추가 부분 -->
+        <section class = "title">
+          <label for ="title-text"> 제목 </label>
+          <input type="text" name = "title-text" required>
+        </section>
+
+        <!-- URL 추가 부분 -->
+        <section class = "url">
+          <label for ="url-text"> URL </label>
+          <input type="url" name = "url-text" required>
+        </section>
+
+        <hr class = line>
+
+        <!-- 본문 추가 부분 -->
+        <section class = "content">
+          <label for ="content-textarea"> 내용 </label>
+          <div> 서식 API </div>
+          <textarea name="content" id="content-textarea"> </textarea>
+        </section>
+
+        <!-- 버튼 추가 부분 -->
+        <section class = "buttons">
+          <button id = "save-button"> 저장 </button>
+          <button id = "cancle-button"> 취소 </button>
+        </section>
+      </form>
+
+    </section>
   </main>
 </body>
 </html>

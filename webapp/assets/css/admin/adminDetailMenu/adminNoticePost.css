@@ -92,17 +92,25 @@ main {
   justify-content: space-between;
 }
 
+/* 하단 버튼 */
+.section-top-buttons{
+  margin: 5px;
+  width: 95%;
+  display: flex;
+  justify-content: end;
+}
+
 .post-button{
   width: 100px;
   height: 30px;
 }
 
-.section-bottom-buttons>form>button:first-child{
+.section-bottom-buttons>form>button:first-child , .section-top-buttons>form>button:first-child{
   background-color: #4D5061;
   color:white
 }
 
-.section-bottom-buttons>form>button:last-child{
+.section-bottom-buttons>form>button:last-child , .section-top-buttons>form>button:last-child{
   background-color: white;
   color:black
 }
