@@ -35,11 +35,20 @@ main{
 
 .team-notice-board li {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 10px;
+  gap: 650px;
+  text-align: center;
   border-top: 1px solid black;
 }
-
+.team-notice-board li a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.team-notice-board li a:hover{
+  text-decoration: underline;
+}
 .team-notice-header {
   position: relative;
   height: 40px;
