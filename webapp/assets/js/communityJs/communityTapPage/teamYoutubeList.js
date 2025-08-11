@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const youtubeListEl = document.querySelector(".team-youtube-list");
 
-  // 유튜브 데이터 (번호, 제목, 링크)
+  // 유튜브 데이터
   const youtubeData = [
     {
       num: 3,
