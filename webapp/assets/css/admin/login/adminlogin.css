@@ -81,7 +81,7 @@ li{
   margin: 22px 0px 0px 0px;
   font-size: 15px;
   color: red;
-  /* display: none; */
+  display: none;
 }
 
 .main-container button {
