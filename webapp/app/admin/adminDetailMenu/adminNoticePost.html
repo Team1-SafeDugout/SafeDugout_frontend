@@ -8,18 +8,18 @@
   <link rel="stylesheet" href="./../../../assets/css/admin/adminDetailMenu/adminNoticePost.css">
   <link rel="stylesheet" href="./../../../assets/css/admin/adminHeader.css">
   <link rel="stylesheet" href="./../../../assets/css/admin/adminFooter.css">
-  <script src=""></script>
+  <script src="./../adminDetailMenu/adminNoticePost.js"></script>
 </head>
 
 <body>
   <div id="header"></div>
   <main>
-    <seciont class="section-background">
+    <section class="section-background">
       <!-- 상단 버튼 -->
       <section class = "section-top-buttons">
         <form action="" method="get">
-          <button class = "post-button" type ="submit"> 수정 </button>
-          <button class = "post-button" type ="submit"> 삭제 </button>
+          <button class = "post-button" type ="button" onclick = "location.href = './../adminDetailMenu/adminAddNoticePostDetail.html'"> 수정 </button>
+          <button class = "post-button" type ="button" id = "delete-button"> 삭제 </button>
         </form>
       </section>
 
@@ -49,11 +49,11 @@
         </form>
 
         <form action="" method="get">
-          <button class = "post-button" type ="submit"> 이전 글 </button>
-          <button class = "post-button" type ="submit"> 다음 글 </button>
+          <button class = "post-button" type ="button" onclick = "location.href = './../adminMenu/adminManagePosts.html' "> 이전 글 </button>
+          <button class = "post-button" type ="button" onclick = "location.href = './../adminMenu/adminManagePosts.html' "> 다음 글 </button>
         </form>
       </section>
-    </seciont>
+    </section>
   </main>
   <div id="footer"></div>
   <script src="./../../../assets/js/admin/adminHeaderFooterInclude.js"></script>
