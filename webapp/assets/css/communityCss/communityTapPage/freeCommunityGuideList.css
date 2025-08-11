@@ -1,23 +1,22 @@
-/* 팀 공지 컨테이너 기본 스타일 */
-.team-notice-container {
+/* 입문가이드 컨테이너 기본 스타일 */
+.free-guide-list-container {
   width: 1200px;
   min-height: 800px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-/* 공지 제목 h2 */
-.team-notice-container > h2 {
+/* 입문가이드 제목 h2 */
+.free-guide-list-container > h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #222;
   border-bottom: 2px solid #e0e0e0;
-
 }
 
-/* 공지판 ul 스타일 */
-.team-notice-board ul {
+/* 리스트 박스 내 ul 스타일 */
+.free-guide-list-box ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -29,8 +28,8 @@
   background-color: #fafafa;
 }
 
-/* 공지 헤더 li */
-.team-notice-header {
+/* 리스트 헤더 li */
+.free-guide-list-header {
   background-color: #f0f0f0;
   font-weight: 700;
   text-align: center;
@@ -39,23 +38,23 @@
   border-bottom: 1px solid #ddd;
 }
 
-/* 개별 공지 리스트 아이템 */
-.team-notice-list-item {
+/* 개별 리스트 아이템 */
+.free-guide-list-item {
   display: flex;
-  flex-direction: column;    
-  align-items: center;       
+  flex-direction: column;
+  align-items: center;
   padding: 14px 20px;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
 }
 
 /* 호버 시 배경색 변화 */
-.team-notice-list-item:hover {
+.free-guide-list-item:hover {
   background-color: #c6c7c7;
 }
 
 /* 제목 영역 */
-.notice-title a {
+.free-guide-title a {
   color: black;
   text-decoration: none;
   font-weight: 600;
@@ -64,17 +63,18 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 100%;
+  display: inline-block;
 }
 
 /* 제목 링크 호버 효과 */
-.notice-title a:hover {
+.free-guide-title a:hover {
   text-decoration: underline;
 }
 
 /* 날짜 영역 */
-.notice-date {
+.free-guide-date {
   color: #878787;
   font-size: 14px;
-  margin-top: 6px;        
+  margin-top: 6px;
   white-space: nowrap;
 }
