@@ -137,8 +137,17 @@ main {
 }
 
 #save-button, #cancle-button{
-  min-width: 10vh;
-  min-height: 3vh;
+  min-width: 100px;
+  min-height: 30px;
+}
+
+#save-button{
+  background-color: #4D5061;
+}
+
+#cancle-button{
+  border: 1px solid black;
+  text-align: center;
 }
 
 .line{
