@@ -96,7 +96,7 @@ function loadCSS(href) {
   });
 }
 
-// 로그인 여부와 팀명 확인 ()
+// 로그인 여부와 팀명 확인
 function getUserStatus() {
   const loggedIn = localStorage.getItem("loggedIn") === "true";
   const team = localStorage.getItem("team") || "doosan";

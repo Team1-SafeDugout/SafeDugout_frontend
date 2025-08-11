@@ -1,6 +1,6 @@
 // 각 썸네일 리스트에 들어갈 유튜브 비디오 ID 배열
 const teamSongVideoIds = ['dqW2DaOjOho', 'g4tl-r76JEs', 'xr6wPZxyhxI', '_hWa_T6Ku8U', 'yirww4738cs'];
-const playerSongVideoIds = ['u3qiN8-UxeY', 'UDCWbW96deg', 'xs0Lfqs2C2I', '3MxdMmF4eGM', 'L_jWHffIx5E'];
+const playerSongVideoIds = ['u3qiN8-UxeY', 'UDCWbW96deg', 'xs0Lfqs2C2I', '3MxdMmF4eGM', 'LIpJjxAe2V8'];
 
 const thumbLists = document.querySelectorAll('.cheer-song .thumb-list');
 const videoIdsList = [teamSongVideoIds, playerSongVideoIds];
