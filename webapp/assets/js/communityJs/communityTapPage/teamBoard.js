@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// 공지글
+// 공지글 
 const noticeData = [
   { id: 1, title: "사이트 이용안내", link: "./teamNoticeBoardDetail.html" },
   { id: 2, title: "홈경기 일정 변경 공지", link: "./teamNoticeBoardDetail.html" },
