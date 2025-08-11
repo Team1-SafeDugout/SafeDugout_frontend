@@ -15,15 +15,22 @@ body{
 	background-color: #EFEFEF;
 }
 
+a{
+  text-decoration-line: none;
+  text-decoration-color: none;
+	color: inherit;
+}
+
 /* 왼쪽에 있을 사이드 메뉴와 본 페이지 메뉴를 나눠줄 flex 제공 */
 main {
-	min-height: 100vh;
-	height: fit-content;
+	width: 1200px;
+	min-height: 800px;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	transform: translateY(-100px);
+	/* transform: translateY(-100px); */
 
 	display: flex;
+	margin: 0 auto;
 }
 
 li{
@@ -32,7 +39,7 @@ li{
 
 /* -------------------------------------------------------사이드 메뉴 ----------------------------------------------------- */
 .body-sidebar {
-	width: 20%;
+	width: 400px;
 	display: flex;
 	flex-direction: column;
 }
@@ -51,19 +58,19 @@ li{
 	min-height: 150px;
 }
 
-.sidebar-div-info>div{
+.sidebar-div-info>div {
 	justify-content: center;
-	
+
 }
 
-.sidebar-div-info>div>div{
+.sidebar-div-info>div>div {
 	margin-left: 10%;
 	margin-top: 6%;
-	color:white;
+	color: white;
 	font-size: 15px;
 }
 
-.sidebar-div-info>div{
+.sidebar-div-info>div {
 	border: 1px solid black;
 	background-color: black;
 	width: 80%;
@@ -83,42 +90,41 @@ li{
 	min-height: 300px;
 }
 
-.sidebar-div-container>div>ul>li:hover{
+.sidebar-div-container>div>ul>li:hover {
 	background-color: #4D5061;
 }
 
-.sidebar-div-container>div>ul{
+.sidebar-div-container>div>ul {
 	min-height: 300px;
 	display: flex;
 	flex-direction: column;
 }
 
-.sidebar-div-container>div>ul>li>a{
+.sidebar-div-container>div>ul>li>a {
 	text-decoration: none;
 	color: white;
 }
 
-.sidebar-elements{
-	flex:1;
+.sidebar-elements {
+	flex: 1;
 	border: 1px solid black;
 	text-align: center;
 	align-content: center;
 }
 
-/* -------------------------------------------------------사이드 메뉴 ----------------------------------------------------- */
+/* -------------------------------------------------------본 메뉴 ----------------------------------------------------- */
 .body-container {
-	width: 70%;
+	width: 800px;
 
 	display: flex;
-	flex-wrap: wrap;
-	/* flex-direction: column; */
+	flex-direction: column;
 }
 
-.body-container-name{
-    width: 100%;
-    height: 10%;
-    align-content: end;
-    font-size: 24px;
+.body-container-name {
+	font-size: 24px;
+	width: 100%;
+	height: 100px;
+	align-content: end;
 }
 
 .statistics-container{

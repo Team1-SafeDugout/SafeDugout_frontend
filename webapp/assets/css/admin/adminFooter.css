@@ -4,7 +4,7 @@
 }
 
 footer {
-	height: 10vh;
+	min-height: 100px;
 	width: 100%;
 	background-color: #4D5061;
 	align-content: end;

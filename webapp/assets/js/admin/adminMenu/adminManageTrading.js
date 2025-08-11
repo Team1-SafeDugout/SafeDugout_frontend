@@ -1,5 +1,5 @@
-const postList = document.getElementById("trading-list-container-ul");
-const addbutton = document.getElementsByClassName("trading-list-category-line").item(0);
+const postList = document.getElementById("list-ul");
+const addbutton = document.getElementsByClassName("list-names").item(0);
 
 const leftButton = document.getElementById("left-button");
 const rightButton = document.getElementById("right-button");
@@ -71,7 +71,7 @@ rightButton.addEventListener('click', function () {
 addbutton.addEventListener('click', function () {
 
   setNumber();
-  const userListNum = document.querySelectorAll("#trading-list-container-ul>li");
+  const userListNum = document.querySelectorAll("#list-ul>li");
   if (userListNum.length >= 10) return;
 
   const newMember = document.createElement('li');
@@ -93,23 +93,23 @@ addbutton.addEventListener('click', function () {
   const buyerIDText = document.createTextNode("buyer");
 
   tradeImg.setAttribute('src', "./../../../assets/img/communityImg/doosan.png");
+  aTag.setAttribute('href', './../adminDetailMenu/adminProductTradingDetail.html');
 
   number.appendChild(numberText);
   tradeImgDiv.appendChild(tradeImg);
-  title.appendChild(titleText);
+  title.appendChild(aTag);
   tradeDate.appendChild(tradeDateText);
   sellerID.appendChild(sellerIDText);
   buyerID.appendChild(buyerIDText);
+  aTag.appendChild(titleText);
 
-  aTag.setAttribute('href', './../adminDetailMenu/adminProductTradingDetail.html');
 
-  aTag.appendChild(number);
-  aTag.appendChild(tradeImgDiv);
-  aTag.appendChild(title);
-  aTag.appendChild(tradeDate);
-  aTag.appendChild(sellerID);
-  aTag.appendChild(buyerID);
-  newMember.appendChild(aTag);
+  newMember.appendChild(number);
+  newMember.appendChild(tradeImgDiv);
+  newMember.appendChild(title);
+  newMember.appendChild(tradeDate);
+  newMember.appendChild(sellerID);
+  newMember.appendChild(buyerID);
 
   postList.appendChild(newMember);
 });
