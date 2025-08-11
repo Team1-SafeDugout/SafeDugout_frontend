@@ -63,6 +63,11 @@ body {
   /* margin: 100px 0px 0px 0px; */
 }
 
+/* 찾은 아이디 */
+.main-result-message span {
+  color: rgb(0, 238, 255);
+}
+
 /* 회원가입 후 안내 메시지 */
 .main-info-message {
   margin: 100px 0px 0px 0px;
