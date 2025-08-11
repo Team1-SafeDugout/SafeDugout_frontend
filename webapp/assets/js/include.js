@@ -1,6 +1,12 @@
+// const logOutButton = window.getElementById();
+const isLogin = false;
+
 window.addEventListener('DOMContentLoaded', () => {
+
+  const headerFileSelection = isLogin ? "./../../headerLogin.html" : "./../../headerNoLogin.html";
+
   // 헤더 불러오기
-  fetch('./../../headerLogin.html')
+  fetch(headerFileSelection)
     .then(response => response.text())
     .then(data => {
       document.getElementById('header').innerHTML = data;
