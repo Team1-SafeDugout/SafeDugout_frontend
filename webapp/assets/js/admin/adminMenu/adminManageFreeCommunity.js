@@ -18,20 +18,18 @@ addbutton.addEventListener('click', function () {
 	const postType = document.createElement('div');
 	const deleteBtn = document.createElement('div');
 
-	// userIdURL.setAttribute('href', "./../adminDetailMenu/adminUserDetail.html");
-
 	postNumText = document.createTextNode("1");
-	postTitleText = document.createTextNode("공지입니다.");
-	postDateText = document.createTextNode("0000.00.00");
-	postTypeText = document.createTextNode("전체공지");
+	postTitleText = document.createTextNode("응원은 두산으로");
+	postDateText = document.createTextNode("admin");
+	postTypeText = document.createTextNode("2025-08-12");
 	deleteBtnText = document.createTextNode("삭제하기");
 
-	postTitle.style.overflow = "hidden";
+  postTitle.style.overflow = "hidden";
   postTitle.style.whiteSpace = "nowrap";
   postTitle.style.textOverflow = "eclipse";
 
   const postTitleLink = document.createElement('a');
-  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminNoticePost.html");
+  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminManageFreeCommunityDetail.html");
   postTitleLink.appendChild(postTitleText);
 
 	postNum.appendChild(postNumText);
@@ -77,16 +75,16 @@ addUserPostButton.addEventListener('click', function () {
 	postIDText = document.createTextNode("th3180");
 	deleteBtnText = document.createTextNode("삭제하기");
 
-	postTitle.style.overflow = "hidden";
+  postTitle.style.overflow = "hidden";
   postTitle.style.whiteSpace = "nowrap";
   postTitle.style.textOverflow = "eclipse";
 
-	const postTitleLink = document.createElement('a');
-  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminUserPost.html");
+  const postTitleLink = document.createElement('a');
+  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminManageFreeCommunityDetail.html");
   postTitleLink.appendChild(postTitleText);
 
 	postNum.appendChild(postNumText);
-	postTitle.appendChild(postTitleLink);
+	postTitle.appendChild(postTitleText);
 	postDate.appendChild(postDateText);
 	postType.appendChild(postTypeText);
 	postID.appendChild(postIDText);

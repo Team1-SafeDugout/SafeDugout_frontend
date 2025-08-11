@@ -170,5 +170,9 @@ main {
 
 #save-button{
   background-color: #4D5061;
-  color:white;
+}
+
+#cancle-button{
+  border: 1px solid black;
+  text-align: center;
 }
