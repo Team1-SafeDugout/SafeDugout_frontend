@@ -16,22 +16,26 @@
       <h2>게시판</h2>
       <div class="team-notice-board">
         <h4>공지글</h4>
-        <ul>
+        <ul id="team-notice-content">
+          <!-- 공지글 리스트 헤더 -->
           <li class="team-notice-header">
             <div class="center-text">공지</div>
             <div class="team-notice-more"><a href="./teamNoticeBoard.html">더보기</a></div>
           </li>
+          <!-- 리스트 들어갈 공간 -->
           <li class="team-notice-list"></li>
           <li class="team-notice-list"></li>
           <li class="team-notice-list"></li>
         </ul>
       </div>
     </div> 
+
     <!-- 게시글 목록 -->
     <div class="team-board-container">
       <div class="team-board-tools-header">
         <h4>게시글</h4>
         <div class="team-board-tools">
+          <!-- 검색 창 -->
           <form action="">
             <span>검색</span>
             <input type="text">
@@ -39,10 +43,12 @@
               <img class="team-board-search" src="./../../../assets/img/communityImg/freeIconSearch.png" alt="">
             </button>
           </form>
+          <!-- 글쓰기 탭 -->
           <a href="./teamPostWriting.html" class="team-board-write">글쓰기</a>
         </div>
       </div>
-      <ul class="team-board">
+      <!-- 게시글 리스트 헤더 -->
+      <ul class="team-board-content">
         <li class="team-board-header">
           <div>글번호</div>
           <div>제목</div>
@@ -57,6 +63,7 @@
             <div>작성일자</div>
           </a>
         </li>
+        <!-- 게시글 들어갈 공간 -->
         <li class="team-board-list"></li>
         <li class="team-board-list"></li>
         <li class="team-board-list"></li>
@@ -68,6 +75,7 @@
         <li class="team-board-list"></li>
       </ul>
     </div>
+    <!-- 페이지 네이션 -->
     <div class = "list-pagenumber">
       <div id ="left-button"> ◁ </div>
       <ul id = "numberlist-ul">
