@@ -7,18 +7,18 @@ const userPostList = document.getElementById('user-post-list');
 // 테스트용 추가 버튼
 addbutton.addEventListener('click', function () {
 
-  const userListNum = document.querySelectorAll("#post-list>li");
-  if (userListNum.length >= 10) return;
+	const userListNum = document.querySelectorAll("#post-list>li");
+	if (userListNum.length >= 10) return;
 
-  const newPost = document.createElement('li');
+	const newPost = document.createElement('li');
 
-  const postNum = document.createElement('div');
-  const postTitle = document.createElement('div');
-  const postDate = document.createElement('div');
-  const postType = document.createElement('div');
-  const deleteBtn = document.createElement('div');
+	const postNum = document.createElement('div');
+	const postTitle = document.createElement('div');
+	const postDate = document.createElement('div');
+	const postType = document.createElement('div');
+	const deleteBtn = document.createElement('div');
 
-  // userIdURL.setAttribute('href', "./../adminDetailMenu/adminUserDetail.html");
+	// userIdURL.setAttribute('href', "./../adminDetailMenu/adminUserDetail.html");
 
 	postNumText = document.createTextNode("1");
 	postTitleText = document.createTextNode("공지입니다.");
@@ -26,41 +26,45 @@ addbutton.addEventListener('click', function () {
 	postTypeText = document.createTextNode("전체공지");
 	deleteBtnText = document.createTextNode("삭제하기");
 
+  const postTitleLink = document.createElement('a');
+  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminUserPost.html");
+  postTitleLink.appendChild(postTitleText);
+
 	postNum.appendChild(postNumText);
-	postTitle.appendChild(postTitleText);
+	postTitle.appendChild(postTitleLink);
 	postDate.appendChild(postDateText);
 	postType.appendChild(postTypeText);
 	deleteBtn.appendChild(deleteBtnText);
 
-	deleteBtn.addEventListener('click', function(){
-		if(window.confirm("정말 삭제하시겠습니까")){
+	deleteBtn.addEventListener('click', function () {
+		if (window.confirm("정말 삭제하시겠습니까")) {
 			newPost.remove();
 		}
 	});
 
-  newPost.appendChild(postNum);
-  newPost.appendChild(postTitle);
-  newPost.appendChild(postDate);
-  newPost.appendChild(postType);
-  newPost.appendChild(deleteBtn);
+	newPost.appendChild(postNum);
+	newPost.appendChild(postTitle);
+	newPost.appendChild(postDate);
+	newPost.appendChild(postType);
+	newPost.appendChild(deleteBtn);
 
-  postList.appendChild(newPost);
+	postList.appendChild(newPost);
 });
 
 // 테스트용 추가 버튼
 addUserPostButton.addEventListener('click', function () {
 
-  const userListNum = document.querySelectorAll("#user-post-list>li");
-  if (userListNum.length >= 10) return;
+	const userListNum = document.querySelectorAll("#user-post-list>li");
+	if (userListNum.length >= 10) return;
 
-  const newPost = document.createElement('li');
+	const newPost = document.createElement('li');
 
-  const postNum = document.createElement('div');
-  const postTitle = document.createElement('div');
-  const postDate = document.createElement('div');
-  const postType = document.createElement('div');
+	const postNum = document.createElement('div');
+	const postTitle = document.createElement('div');
+	const postDate = document.createElement('div');
+	const postType = document.createElement('div');
 	const postID = document.createElement('div');
-  const deleteBtn = document.createElement('div');
+	const deleteBtn = document.createElement('div');
 
 	postNumText = document.createTextNode("1");
 	postTitleText = document.createTextNode("커뮤니티 글 제목입니다.");
@@ -76,18 +80,18 @@ addUserPostButton.addEventListener('click', function () {
 	postID.appendChild(postIDText);
 	deleteBtn.appendChild(deleteBtnText);
 
-	deleteBtn.addEventListener('click', function(){
-		if(window.confirm("정말 삭제하시겠습니까")){
+	deleteBtn.addEventListener('click', function () {
+		if (window.confirm("정말 삭제하시겠습니까")) {
 			newPost.remove();
 		}
 	});
 
-  newPost.appendChild(postNum);
-  newPost.appendChild(postTitle);
-  newPost.appendChild(postDate);
-  newPost.appendChild(postType);
+	newPost.appendChild(postNum);
+	newPost.appendChild(postTitle);
+	newPost.appendChild(postDate);
+	newPost.appendChild(postType);
 	newPost.appendChild(postID);
-  newPost.appendChild(deleteBtn);
+	newPost.appendChild(deleteBtn);
 
-  userPostList.appendChild(newPost);
+	userPostList.appendChild(newPost);
 });
