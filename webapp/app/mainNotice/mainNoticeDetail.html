@@ -6,33 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>메인 공지사항 디테일 페이지</title>
   <link rel="stylesheet" href="./../../assets/css/mainNotice/mainNoticeDetail.css">
+  <link rel="stylesheet" href="./../../assets/css/headerLogin.css">
+  <link rel="stylesheet" href="./../../assets/css/headerNoLogin.css">
+  <link rel="stylesheet" href="./../../assets/css/footer.css">
   <script defer src="./../../assets/js/mainNotice/mainNoticeDetail.js"></script>
 </head>
 
 <body>
-  <div id="header"></div>
+  <div id="team-header"></div>
   <main>
-    <div class="main-container">
-      <div class="main-title">
-        사이트 폐쇄 안내
+    <div class="team-notice-board-detail">
+      <h2>공지사항</h2>
+      <div class="team-notice-board-header">
+        <span>제목: </span>
+        <p>[메인공지] : 불펜토크 사이트 이용 안내</p>
       </div>
-      <div class="main-small-title">
-
+      <div class="team-notice-board-content">
+        <p>상품 등록 페이지로 이동합니다.</p>
+        <p>팀 로고 버튼 클릭시 팀 커뮤니티 메인페이지로 이동합니다.</p>
+        <p>마이페이지로 이동합니다.</p>
+        <p>불펜토크 메인페이지로 이동합니다.</p>
+        <p>안녕하세요 불펜토크 이용자 여러분! 원활한 사이트 이용을 위한 안내문입니다.</p>
+        <p>불펜토크 사이트 비회원 이용자께서는 MY 팀 커뮤니티와 중고거래 페이지에서 게시글 및 정보, 상품 열람만 가능하며, ...</p>
       </div>
-
-      <div>사이트 폐쇄 합니다<br>
-        폐쇄 일자 2025 - 08 - 24<br><br>
-
-        빠잉</div>
-      <div class="main-button-container">
-        <a href="./mainNoticeList.html">
-          <div class="main-button-next">목록
-          </div>
-        </a>
+      <div class="team-notice-board-btn-container">
+        <div class="team-notice-board-btn">
+          <button type="button">이전글</button>
+          <button type="button">다음글</button>
+        </div>
+        <div class="btn-to-list"><a href="/webapp/app/mainNotice/mainNoticeList.html"><button type="button">목록으로</button></a></div>
       </div>
+      <div class="team-notice-date">2025.06.23</div>
     </div>
   </main>
-  <div id="footer"></div>
+  <div id="team-footer"></div>
+  <script src="/webapp/assets/js/trade/tradeInclude.js"></script>
 </body>
 
 </html>
