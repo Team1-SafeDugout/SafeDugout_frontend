@@ -19,13 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   submitBtn.addEventListener("click", (e) => {
 
-    // 기존 에러 메시지 제거
     if (titleErrorDiv) titleErrorDiv.remove();
     if (contentErrorDiv) contentErrorDiv.remove();
 
     let valid = true;
 
-    // 제목 검사
+    // 제목
     if (!titleInput.value.trim()) {
       titleErrorDiv = createErrorMessage("제목을 입력하세요");
       titleInput.classList.add("error");
@@ -34,8 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       titleInput.classList.remove("error");
     }
-
-    // 내용 검사
+    // 내용
     if (!contentTextarea.value.trim()) {
       contentErrorDiv = createErrorMessage("내용을 입력하세요");
       contentTextarea.classList.add("error");
@@ -44,14 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       contentTextarea.classList.remove("error");
     }
-
     if (!valid) {
-      return; // 유효성 실패 시 더 이상 진행 안 함
+      return; 
     }
-
-    // 유효성 통과하면 confirm 창 띄우기
     if (confirm("등록하시겠습니까?")) {
-      // 확인 클릭 시 등록 완료 페이지로 이동
       window.location.href = "/webapp/app/communityHtml/communityTapPage/teamPostComplete.html";
     }
   });
