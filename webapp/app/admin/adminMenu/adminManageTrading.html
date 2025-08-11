@@ -29,15 +29,15 @@
       <div class="sidebar-div-container">
         <div>
           <ul>
+            <li class="sidebar-elements"> <a href="./adminSiteStatistics.html"> 사이트 통계</a> </li>
             <li class="sidebar-elements"> <a href="./adminManagePosts.html"> 게시글 / 공지사항</a> </li>
+            <li class="sidebar-elements"> <a href="./adminSiteStatistics.html"> 신규 가입자 가이드 </a> </li>
             <li class="sidebar-elements"> <a href="./adminManageTeamNews.html"> 팀 뉴스</a> </li>
-            <li class="sidebar-elements"> <a href="./adminManageTeamRecord.html"> 팀 기록</a> </li>
             <li class="sidebar-elements"> <a href="./adminManageTeamYoutube.html"> 팀 유튜브</a> </li>
             <li class="sidebar-elements"> <a href="./adminManageTeamSong.html"> 팀 응원가</a> </li>
             <li class="sidebar-elements"> <a href="./adminManageSell.html"> 판매글</a> </li>
             <li class="sidebar-elements"> <a href="./adminManageTrading.html"> 거래중인 글</a> </li>
             <li class="sidebar-elements"> <a href="./adminManageMember.html"> 회원관리</a> </li>
-            <li class="sidebar-elements"> <a href="./adminSiteStatistics.html"> 사이트 정보</a> </li>
           </ul>
         </div>
       </div>
@@ -45,25 +45,26 @@
     <section class="body-container">
       <div class="body-container-name">
         거래 중인글 목록
-      </div>      
-
+      </div>
       <section class="body-container-list">
-        <div>
-          <div class="trading-list-category-line">
-            <div>글번호</div>
+        <div class="list-background">
+
+          <div class="list-names">
+            <div>글 번호</div>
             <div></div>
             <div>제목</div>
-            <div>거래일자</div>
-            <div>판매자ID</div>
-            <div>구매자ID</div>
+            <div>거래 일자</div>
+            <div>판매자 ID</div>
+            <div>구매자 ID</div>
           </div>
+          
+          <div class="list-container">
+            <ul class="list-ul" id="list-ul">
 
-          <div class="trading-list-container">
-            <ul id="trading-list-container-ul">
             </ul>
           </div>
 
-          <div class="trading-list-pagenumber">
+          <div class="page-buttons">
             <form action="" method="get">
               <button type="button" id="left-button"> ◁ </button>
               <ul id="numberlist-ul">
@@ -76,6 +77,7 @@
               <button type="button" id="right-button"> ▷ </button>
             </form>
           </div>
+
         </div>
       </section>
     </section>
