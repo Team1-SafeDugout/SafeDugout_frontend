@@ -145,3 +145,60 @@ li{
   background-color: #4D5061;
   color:white
 }
+
+/*  */
+
+
+/* 댓글 영역 */
+
+.team-comment-header h2 {
+  font-size: 20px;
+  border-bottom: 1px solid black ;
+  margin-bottom: 5px;
+}
+.team-comment-list{
+  list-style-type: none;
+}
+
+.comment-item { 
+  padding: 12px 0; 
+  /* border-bottom: 1px solid black;  */
+}
+
+.team-comment-info{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* 수정,삭제 버튼 */
+.team-comment-button button,
+.team-btn-submit {
+  padding: 5px 10px;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+  line-height: 1;
+}
+.team-post-detail a button{
+  padding: 10px 15px;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+  line-height: 1;
+}
+.team-comment-button{
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+.team-post-header button,
+.team-comment-button button{
+  font-size: 10px;
+  padding: 5px 10px;
+}
+.team-comment-button button:hover{
+  text-decoration: underline;
+}
