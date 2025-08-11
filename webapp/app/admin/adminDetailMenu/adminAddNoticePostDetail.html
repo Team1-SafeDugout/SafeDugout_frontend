@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="./../../../assets/css/admin/adminDetailMenu/adminAddNoticePostDetail.css">
   <link rel="stylesheet" href="./../../../assets/css/admin/adminHeader.css">
   <link rel="stylesheet" href="./../../../assets/css/admin/adminFooter.css">
-  <script src=""></script>
+  <script src="./../adminDetailMenu/adminAddNoticePostDetail.js"></script>
 </head>
 
 <body>
   <div id="header"></div>
   <main>
-    <seciont class="section-background">
+    <section class="section-background">
       <!-- 필수 입력 정보 : 제목 -->
        <!-- 선택 입력 정보 : 내용, 파일 -->
       <form action="" method="post" name = "adminNoticePost">
@@ -50,11 +50,11 @@
 
         <!-- 확인 혹은 취소 버튼 -->
         <section class = "buttons">
-         <button id = "save-button"> 저장 </button>
-         <button id = "cancle-button"> 취소 </button>
+         <button id = "save-button" type = "button" onclick = "location.href = './../adminDetailMenu/adminNoticePost.html' "> 저장 </button>
+         <button id = "cancle-button" type = "button" onclick = "location.href = './../adminMenu/adminManagePosts.html' "> 취소 </button>
         </section>
       </form>
-    </seciont>
+    </section>
   </main>
   <div id="footer"></div>
   <script src="./../../../assets/js/admin/adminHeaderFooterInclude.js"></script>
