@@ -88,9 +88,18 @@ addbutton.addEventListener('click', function () {
 
   changeButton.setAttribute('type', 'button');
   changeButton.appendChild(document.createTextNode("수정"));
+  changeButton.addEventListener("click", function(){
+    location.href = "./../adminDetailMenu/adminAddTeamNewsDetail.html";
+  });
 
   deleteButton.setAttribute('type', 'button');
   deleteButton.appendChild(document.createTextNode("삭제"));
+  deleteButton.addEventListener("click",function(){
+    if(confirm("정말 삭제하시겠습니까?")){
+      alert("삭제되었습니다.");
+      newNews.remove();
+    }
+  });
 
   const NumberText = document.createTextNode("number");
   const newsTitleText = document.createTextNode("뉴스제목");

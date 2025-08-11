@@ -5,6 +5,8 @@ const leftButton = document.getElementById("left-button");
 const rightButton = document.getElementById("right-button");
 const numberList = document.querySelectorAll("#numberlist-ul>li");
 
+// 
+
 const userNums = 12;
 var curPage = 0;
 
