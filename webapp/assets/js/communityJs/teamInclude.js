@@ -1,15 +1,15 @@
 const teamHeaders = {
   loginHeader: {
-    doosan : "headerHtml/doosanHeader.html",
-    hanwha : "headerHtml/hanwhaHeader.html",
-    kia : "headerHtml/kiaHeader.html",
-    kiwoom: "headerHtml/kiwoomHeader.html",
-    kt : "headerHtml/ktHeader.html",
-    lg: "headerHtml/lgHeader.html",
-    lotte: "headerHtml/lotteHeader.html",
-    nc: "headerHtml/ncHeader.html",
-    samsung: "headerHtml/samsungHeader.html",
-    ssg: "headerHtml/ssgHeader.html"
+    doosan : "/headerHtml/doosanHeader.html",
+    hanwha : "/headerHtml/hanwhaHeader.html",
+    kia : "/headerHtml/kiaHeader.html",
+    kiwoom: "/headerHtml/kiwoomHeader.html",
+    kt : "/headerHtml/ktHeader.html",
+    lg: "/headerHtml/lgHeader.html",
+    lotte: "/headerHtml/lotteHeader.html",
+    nc: "/headerHtml/ncHeader.html",
+    samsung: "/headerHtml/samsungHeader.html",
+    ssg: "/headerHtml/ssgHeader.html"
   },
   beforeLoginHeader: {
     doosan: "/beforeLoginHeader/doosan.html",
