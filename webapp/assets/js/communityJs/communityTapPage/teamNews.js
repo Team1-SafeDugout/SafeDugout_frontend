@@ -1,4 +1,4 @@
-// 샘플 뉴스 데이터
+// 뉴스 더미 데이터
 const newsData = [
   {
     img: './../../../assets/img/communityImg/lg.png',
@@ -42,7 +42,7 @@ const newsData = [
   },
 ];
 
-// ul.team-news-box 요소 선택
+
 const newsList = document.querySelector('.team-news-box');
 
 function renderNewsList() {
@@ -50,20 +50,15 @@ function renderNewsList() {
   newsData.forEach(({ img, title, link }) => {
     const a = document.createElement('a');
     a.href = link;
-
-
     const li = document.createElement('li');
     li.classList.add('team-news-list');
-
     const spanImg = document.createElement('span');
     const image = document.createElement('img');
     image.src = img;
     image.alt = title;
     spanImg.appendChild(image);
-
     const spanTitle = document.createElement('span');
     spanTitle.textContent = title;
-
     li.appendChild(spanImg);
     li.appendChild(spanTitle);
     a.appendChild(li);
