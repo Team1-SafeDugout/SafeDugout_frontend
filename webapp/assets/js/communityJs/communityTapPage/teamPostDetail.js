@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 댓글 리스트 전체 가져오기
   const commentList = document.querySelector(".team-comment-list");
-
-  // 댓글 삭제 버튼들 모두 선택
   const deleteButtons = commentList.querySelectorAll("button[type='submit']:nth-child(2)");
-
   // 삭제 버튼에 이벤트 추가
   deleteButtons.forEach(btn => {
     btn.addEventListener("click", (e) => {
@@ -17,40 +13,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// 비로그인 시 작성 제한
 document.addEventListener("DOMContentLoaded", () => {
-  const userId = localStorage.getItem("userId"); // 로그인 아이디 가져오기
+  const userId = localStorage.getItem("userId"); 
   const commentForm = document.querySelector(".team-comment-area form");
   const textarea = commentForm.querySelector("textarea");
   const submitBtn = commentForm.querySelector(".team-btn-submit");
-
   if (!userId) {
-    // 로그인 안 된 상태면
     textarea.disabled = true;
     textarea.placeholder = "로그인 후 댓글을 작성할 수 있습니다.";
     submitBtn.disabled = true;
-
-    // 만약 댓글 입력 시도하면 안내창 띄우기 
     commentForm.addEventListener("submit", (e) => {
       e.preventDefault();
       alert("댓글을 작성하려면 로그인해야 합니다.");
     });
   } else {
-    // 로그인 됐을 때
   }
 });
 
+// 로그인 유저가 작성자가 아니면 수정/삭제 버튼 숨기기
 document.addEventListener("DOMContentLoaded", () => {
   const loginUserId = localStorage.getItem("userId"); 
-
   const postWriterElem = document.querySelector(".team-post-writer p");
   const postWriterId = postWriterElem ? postWriterElem.textContent.trim() : null;
-
   if (loginUserId !== postWriterId) {
-    // 로그인 유저가 작성자가 아니면 수정/삭제 버튼 숨기기
     const buttons = document.querySelectorAll(".team-post-header button");
     buttons.forEach(btn => btn.style.display = "none");
   }
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   const loginUserId = localStorage.getItem("userId"); // 로그인한 사용자 ID 가져오기
   const commentItems = document.querySelectorAll(".comment-item");

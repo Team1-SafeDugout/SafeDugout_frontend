@@ -12,7 +12,7 @@
 /* 공지글 */
 .team-notice-container{
   width: 80%;
-  margin-bottom: 40px;
+  margin: 40px auto;
 }
 
 .team-notice-board h4{

@@ -13,15 +13,15 @@ const teamHeaders = {
   },
   beforeLoginHeader: {
     doosan: "/beforeLoginHeader/doosan.html",
-    hanwha: "beforeLoginHeader/hanwha.html",
-    kia : "beforeLoginHeader/kia.html",
-    kiwoom: "beforeLoginHeader/kiwoom.html",
-    kt : "beforeLoginHeader/kt.html",
-    lg: "beforeLoginHeader/lg.html",
-    lotte: "beforeLoginHeader/lotte.html",
-    nc: "beforeLoginHeader/nc.html",
-    samsung: "beforeLoginHeader/samsung.html",
-    ssg: "beforeLoginHeader/ssg.html"
+    hanwha: "/beforeLoginHeader/hanwha.html",
+    kia : "/beforeLoginHeader/kia.html",
+    kiwoom: "/beforeLoginHeader/kiwoom.html",
+    kt : "/beforeLoginHeader/kt.html",
+    lg: "/beforeLoginHeader/lg.html",
+    lotte: "/beforeLoginHeader/lotte.html",
+    nc: "/beforeLoginHeader/nc.html",
+    samsung: "/beforeLoginHeader/samsung.html",
+    ssg: "/beforeLoginHeader/ssg.html"
   }
 };
 
