@@ -29,7 +29,7 @@ addbutton.addEventListener('click', function () {
   postTitle.style.textOverflow = "eclipse";
 
   const postTitleLink = document.createElement('a');
-  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminManageFreeCommunityDetail.html");
+  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminFreeCommunityGuideDetail.html");
   postTitleLink.appendChild(postTitleText);
 
 	postNum.appendChild(postNumText);
@@ -69,7 +69,7 @@ addUserPostButton.addEventListener('click', function () {
 	const deleteBtn = document.createElement('div');
 
 	postNumText = document.createTextNode("1");
-	postTitleText = document.createTextNode("커뮤니티 글 제목입니다.");
+	postTitleText = document.createTextNode("전체 커뮤니티 글 제목입니다.");
 	postDateText = document.createTextNode("0000.00.00");
 	postTypeText = document.createTextNode("게시글");
 	postIDText = document.createTextNode("th3180");
@@ -80,11 +80,11 @@ addUserPostButton.addEventListener('click', function () {
   postTitle.style.textOverflow = "eclipse";
 
   const postTitleLink = document.createElement('a');
-  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminManageFreeCommunityDetail.html");
+  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminFreeComunityUserPost.html");
   postTitleLink.appendChild(postTitleText);
 
 	postNum.appendChild(postNumText);
-	postTitle.appendChild(postTitleText);
+	postTitle.appendChild(postTitleLink);
 	postDate.appendChild(postDateText);
 	postType.appendChild(postTypeText);
 	postID.appendChild(postIDText);
