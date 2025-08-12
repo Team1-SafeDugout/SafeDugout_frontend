@@ -12,34 +12,48 @@
   <script defer src="./../../assets/js/login/login.js"></script>
 </head>
 
+<!-- 바디 -->
 <body>
+  <!-- 헤더 -->
   <div id="header"></div>
+  <!-- 메인 -->
   <main>
+    <!-- 메인 컨테이너 -->
     <div class="main-container">
+      <!-- 페이지 큰 제목 -->
       <div class="main-title">
         로그인
       </div>
+      <!-- form 태그 -->
       <form action="" method="post">
+        <!-- 폼 박스 -->
         <div class="main-form-box">
+          <!-- 입력 메시지 - 아이디 -->
           <div class="main-input-message">
             아이디
           </div>
+          <!-- 입력칸 -->
           <div class="main-input-blank">
             <input type="text" name="register" placeholder="아이디">
           </div>
+          <!-- 입력 메시지 - 비밀번호 -->
           <div class="main-input-message">
             비밀번호
           </div>
+          <!-- 입력칸 -->
           <div class="main-input-blank">
             <input type="password" name="register" placeholder="비밀번호">
           </div>
+          <!-- 입력 오류 메시지 -->
           <div class="main-input-fail-message">
             아이디 또는 비밀번호가 잘못되었습니다.
           </div>
+          <!-- 로그인 버튼 -->
           <div class="main-login-button">
             <button type="button" onclick="location.href='./../../mainLogin.html'">로그인
             </button>
           </div>
+          <!-- 기타 버튼(아이디 찾기/비밀번호 찾기/회원가입) -->
           <div class="main-etc-button">
             <a href="./../findId/findIdInput.html">아이디 찾기</a>
             <h> | </h>
@@ -52,7 +66,9 @@
     </div>
   </main>
 
+  <!-- 푸터 -->
   <div id="footer"></div>
+  <!-- 스크립트 -->
   <script src="./../../assets/js/includeNoLogin.js"></script>
 </body>
 
