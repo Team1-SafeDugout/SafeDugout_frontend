@@ -8,6 +8,8 @@ main{
 }
 .team-stadium-main-container{
   margin: auto;
+  min-width: 1200px;
+  min-height: 800px;
 }
 .team-stadium-main-container h2{
   text-align: center;

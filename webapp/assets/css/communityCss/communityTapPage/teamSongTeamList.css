@@ -5,8 +5,9 @@
 }
 /* 전체 영역 */
 .team-song-list-team {
-  width: 80%;
+  width: 1200px;
   margin: 40px auto;
+  min-height: 800px;
 }
 
 /* 제목 */

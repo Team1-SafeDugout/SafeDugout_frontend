@@ -1,67 +1,67 @@
 const teamHeaders = {
   loginHeader: {
-    doosan : "/headerHtml/doosanHeader.html",
-    hanwha : "/headerHtml/hanwhaHeader.html",
-    kia : "/headerHtml/kiaHeader.html",
-    kiwoom: "/headerHtml/kiwoomHeader.html",
-    kt : "/headerHtml/ktHeader.html",
-    lg: "/headerHtml/lgHeader.html",
-    lotte: "/headerHtml/lotteHeader.html",
-    nc: "/headerHtml/ncHeader.html",
-    samsung: "/headerHtml/samsungHeader.html",
-    ssg: "/headerHtml/ssgHeader.html"
+    doosan : "./../../../../webapp/app/communityHtml/headerHtml/doosanHeader.html",
+    hanwha : "./../../../../webapp/app/communityHtml/headerHtml/hanwhaHeader.html",
+    kia : "./../../../../webapp/app/communityHtml/headerHtml/kiaHeader.html",
+    kiwoom: "./../../../../webapp/app/communityHtml/headerHtml/kiwoomHeader.html",
+    kt : "./../../../../webapp/app/communityHtml/headerHtml/ktHeader.html",
+    lg: "./../../../../webapp/app/communityHtml/headerHtml/lgHeader.html",
+    lotte: "./../../../../webapp/app/communityHtml/headerHtml/lotteHeader.html",
+    nc: "./../../../../webapp/app/communityHtml/headerHtml/ncHeader.html",
+    samsung: "./../../../../webapp/app/communityHtml/headerHtml/samsungHeader.html",
+    ssg: "./../../../../webapp/app/communityHtml/headerHtml/ssgHeader.html"
   },
   beforeLoginHeader: {
-    doosan: "/beforeLoginHeader/doosan.html",
-    hanwha: "/beforeLoginHeader/hanwha.html",
-    kia : "/beforeLoginHeader/kia.html",
-    kiwoom: "/beforeLoginHeader/kiwoom.html",
-    kt : "/beforeLoginHeader/kt.html",
-    lg: "/beforeLoginHeader/lg.html",
-    lotte: "/beforeLoginHeader/lotte.html",
-    nc: "/beforeLoginHeader/nc.html",
-    samsung: "/beforeLoginHeader/samsung.html",
-    ssg: "/beforeLoginHeader/ssg.html"
+    doosan: "./../../../../webapp/app/communityHtml/beforeLoginHeader/doosan.html",
+    hanwha: "./../../../../webapp/app/communityHtml/beforeLoginHeader/hanwha.html",
+    kia : "./../../../../webapp/app/communityHtml/beforeLoginHeader/kia.html",
+    kiwoom: "./../../../../webapp/app/communityHtml/beforeLoginHeader/kiwoom.html",
+    kt : "./../../../../webapp/app/communityHtml/beforeLoginHeader/kt.html",
+    lg: "./../../../../webapp/app/communityHtml/beforeLoginHeader/lg.html",
+    lotte: "./../../../../webapp/app/communityHtml/beforeLoginHeader/lotte.html",
+    nc: "./../../../../webapp/app/communityHtml/beforeLoginHeader/nc.html",
+    samsung: "./../../../../webapp/app/communityHtml/beforeLoginHeader/samsung.html",
+    ssg: "./../../../../webapp/app/communityHtml/beforeLoginHeader/ssg.html"
   }
 };
 
 const teamFooter = {
-  doosan: "teamFooter/doosanFooter.html",
-  hanwha: "teamFooter/hanwhaFooter.html",
-  kia: "teamFooter/kiaFooter.html",
-  kiwoom: "teamFooter/kiwoomFooter.html",
-  kt: "teamFooter/ktFooter.html",
-  lg: "teamFooter/lgFooter.html",
-  lotte: "teamFooter/lotteFooter.html",
-  nc: "teamFooter/ncFooter.html",
-  samsung: "teamFooter/samsungFooter.html",
-  ssg: "teamFooter/ssgFooter.html"
+  doosan: "./../../../../webapp/app/communityHtml/teamFooter/doosanFooter.html",
+  hanwha: "./../../../../webapp/app/communityHtml/teamFooter/hanwhaFooter.html",
+  kia: "./../../../../webapp/app/communityHtml/teamFooter/kiaFooter.html",
+  kiwoom: "./../../../../webapp/app/communityHtml/teamFooter/kiwoomFooter.html",
+  kt: "./../../../../webapp/app/communityHtml/teamFooter/ktFooter.html",
+  lg: "./../../../../webapp/app/communityHtml/teamFooter/lgFooter.html",
+  lotte: "./../../../../webapp/app/communityHtml/teamFooter/lotteFooter.html",
+  nc: "./../../../../webapp/app/communityHtml/teamFooter/ncFooter.html",
+  samsung: "./../../../../webapp/app/communityHtml/teamFooter/samsungFooter.html",
+  ssg: "./../../../../webapp/app/communityHtml/teamFooter/ssgFooter.html"
 };
 
 const teamCSS = {
   loginHeader: {
-    doosan : "/webapp/assets/css/communityCss/headerCss/doosanHeader.css",
-    hanwha : "/webapp/assets/css/communityCss/headerCss/hanwhaHeader.css",
-    kia : "/webapp/assets/css/communityCss/headerCss/kiaHeader.css",
-    kiwoom: "/webapp/assets/css/communityCss/headerCss/kiwoomHeader.css",
-    kt : "/webapp/assets/css/communityCss/headerCss/ktHeader.css",
-    lg: "/webapp/assets/css/communityCss/headerCss/lgHeader.css",
-    lotte: "/webapp/assets/css/communityCss/headerCss/lotteHeader.css",
-    nc: "/webapp/assets/css/communityCss/headerCss/ncHeader.css",
-    samsung: "/webapp/assets/css/communityCss/headerCss/samsungHeader.css",
-    ssg: "/webapp/assets/css/communityCss/headerCss/ssgHeader.css"
+    doosan : "./../../../../webapp/assets/css/communityCss/headerCss/doosanHeader.css",
+    hanwha : "./../../../../webapp/assets/css/communityCss/headerCss/hanwhaHeader.css",
+    kia : "./../../../../webapp/assets/css/communityCss/headerCss/kiaHeader.css",
+    kiwoom: "./../../../../webapp/assets/css/communityCss/headerCss/kiwoomHeader.css",
+    kt : "./../../../../webapp/assets/css/communityCss/headerCss/ktHeader.css",
+    lg: "./../../../../webapp/assets/css/communityCss/headerCss/lgHeader.css",
+    lotte: "./../../../../webapp/assets/css/communityCss/headerCss/lotteHeader.css",
+    nc: "./../../../../webapp/assets/css/communityCss/headerCss/ncHeader.css",
+    samsung: "./../../../../webapp/assets/css/communityCss/headerCss/samsungHeader.css",
+    ssg: "./../../../../webapp/assets/css/communityCss/headerCss/ssgHeader.css"
   },
   footer: {
-    doosan: "/webapp/assets/css/communityCss/teamFooter/doosanFooter.css",
-    hanwha: "/webapp/assets/css/communityCss/teamFooter/hanwhaFooter.css",
-    kia: "/webapp/assets/css/communityCss/teamFooter/kiaFooter.css",
-    kiwoom: "/webapp/assets/css/communityCss/teamFooter/kiwoomFooter.css",
-    kt: "/webapp/assets/css/communityCss/teamFooter/ktFooter.css",
-    lg: "/webapp/assets/css/communityCss/teamFooter/lgFooter.css",
-    lotte: "/webapp/assets/css/communityCss/teamFooter/lotteFooter.css",
-    nc: "/webapp/assets/css/communityCss/teamFooter/ncFooter.css",
-    samsung: "/webapp/assets/css/communityCss/teamFooter/samsungFooter.css",
-    ssg: "/webapp/assets/css/communityCss/teamFooter/ssgFooter.css"
+    doosan: "./../../../../webapp/assets/css/communityCss/teamFooter/doosanFooter.css",
+    hanwha: "./../../../../webapp/assets/css/communityCss/teamFooter/hanwhaFooter.css",
+    kia: "./../../../../webapp/assets/css/communityCss/teamFooter/kiaFooter.css",
+    kiwoom: "./../../../../webapp/assets/css/communityCss/teamFooter/kiwoomFooter.css",
+    kt: "./../../../../webapp/assets/css/communityCss/teamFooter/ktFooter.css",
+    lg: "./../../../../webapp/assets/css/communityCss/teamFooter/lgFooter.css",
+    lotte: "./../../../../webapp/assets/css/communityCss/teamFooter/lotteFooter.css",
+    nc: "./../../../../webapp/assets/css/communityCss/teamFooter/ncFooter.css",
+    samsung: "./../../../../webapp/assets/css/communityCss/teamFooter/samsungFooter.css",
+    ssg: "./../../../../webapp/assets/css/communityCss/teamFooter/ssgFooter.css"
   }
 };
 
@@ -96,19 +96,16 @@ function loadCSS(href) {
   });
 }
 
-// 로그인 여부와 팀명 확인
 function getUserStatus() {
   const loggedIn = localStorage.getItem("loggedIn") === "true";
-  const team = localStorage.getItem("team") || "doosan";
+  const team = localStorage.getItem("team") || "hanwha";
   return { loggedIn, team };
 }
 
-// 헤더, 푸터, CSS 전부 로딩
 async function loadHeaderFooterCSS() {
   const { loggedIn, team } = getUserStatus();
 
   const headerFile = loggedIn? teamHeaders.loginHeader[team]: teamHeaders.beforeLoginHeader[team];
-
   const footerFile = teamFooter[team];
 
   if (!headerFile) {
@@ -121,11 +118,9 @@ async function loadHeaderFooterCSS() {
   }
 
   try {
-    // HTML 삽입
-    await loadHTML("team-header", `/webapp/app/communityHtml/${headerFile}`);
-    await loadHTML("team-footer", `/webapp/app/communityHtml/${footerFile}`);
+    await loadHTML("team-header", headerFile);
+    await loadHTML("team-footer", footerFile);
 
-    // CSS 삽입 (로그인 전후 헤더 CSS 동일하므로 loginHeader만 사용)
     const headerCSS = teamCSS.loginHeader[team];
     const footerCSS = teamCSS.footer[team];
 
@@ -138,5 +133,4 @@ async function loadHeaderFooterCSS() {
   }
 }
 
-// DOM이 준비되면 실행
 document.addEventListener("DOMContentLoaded", loadHeaderFooterCSS);

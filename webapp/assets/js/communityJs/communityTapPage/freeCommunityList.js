@@ -26,7 +26,10 @@ freeBoardData.forEach(item => {
   li.appendChild(divId);
 
   const divTitle = document.createElement("div");
-  divTitle.textContent = item.title;
+  const aTitle = document.createElement("a");
+  aTitle.textContent = item.title;
+  aTitle.href = "./freeCommunityDetail.html"; 
+  divTitle.appendChild(aTitle);
   li.appendChild(divTitle);
 
   const divAuthor = document.createElement("div");
