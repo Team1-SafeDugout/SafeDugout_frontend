@@ -34,7 +34,7 @@ document.querySelector(".team-btn-button").addEventListener("click", () => {
     return;
   }
 
-  // 실제 서비스면 로그인 유저 아이디 넣어야 함
+  // 로그인 유저 아이디 넣어야 함
   const newComment = {
     id: Date.now(),
     author: "user",
@@ -64,4 +64,28 @@ function editComment(id) {
   renderComments();
 }
 
+// 게시물 수정
+document.addEventListener("DOMContentLoaded", () => {
+  const editBtn = document.querySelector(".free-community-header button a");
 
+  // 수정 버튼 클릭
+  editBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // 기존 첨부파일 여부 확인 (로컬스토리지 사용)
+    const attachedFile = localStorage.getItem("attachedFile");
+
+    if (attachedFile) {
+      if (confirm("수정 시 첨부된 파일이 삭제됩니다. 계속하시겠습니까?")) {
+        // 파일 삭제
+        localStorage.removeItem("attachedFile");
+        console.log("첨부파일 삭제 완료");
+      } else {
+        return; // 취소하면 글쓰기 페이지로 이동 안 함
+      }
+    }
+
+    // 글쓰기 페이지로 이동
+    window.location.href = "./freeCommunityWriting.html";
+  });
+});

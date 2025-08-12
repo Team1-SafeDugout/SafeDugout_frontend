@@ -35,7 +35,7 @@ function addFreeBoardItems(data) {
     const divTitle = document.createElement("div");
     const aTitle = document.createElement("a");
     aTitle.textContent = item.title;
-    aTitle.href = "./freeCommunityDetail.html"; // 
+    aTitle.href = "./freeCommunityDetail.html"; 
     divTitle.appendChild(aTitle);
     li.appendChild(divTitle);
 
