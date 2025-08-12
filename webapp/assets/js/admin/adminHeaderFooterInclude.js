@@ -2,6 +2,9 @@
 const isLogin = true;
 
 window.addEventListener('DOMContentLoaded', () => {
+  if(window.location.pathname == ""){
+    
+  }
 
   const headerFileSelection = isLogin ? "../adminHeader.html" : "../adminHeaderBeforeLogin.html";
 
