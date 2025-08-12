@@ -19,6 +19,7 @@ body {
   justify-content: center;
 }
 
+/* 페이지 큰 제목 */
 .main-title {
   position: absolute;
   top: 140px;
@@ -26,7 +27,7 @@ body {
   font-size: 32px;
   font-weight: 700;
 }
-
+ 
 .main-small-title {
   position: absolute;
   top: 190px;
@@ -34,7 +35,7 @@ body {
   font-size: 24px;
 }
 
-/* form 박스 */
+/* 폼 박스 */
 .main-form-box {
   /* background-color: aqua; */
   width: 900px;

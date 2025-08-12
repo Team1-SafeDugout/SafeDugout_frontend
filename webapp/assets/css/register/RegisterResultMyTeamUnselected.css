@@ -19,6 +19,7 @@ body {
   justify-content: center;
 }
 
+/* 페이지 큰 제목 */
 .main-title {
   position: absolute;
   top: 140px;
@@ -27,6 +28,7 @@ body {
   font-weight: 700;
 }
 
+/* 폼 태그 */
 .main-container form {
   margin: 0px auto;
 }
@@ -61,6 +63,7 @@ body {
   bottom: 50px;
 }
 
+/* 버튼 컨테이너 button */
 .main-button-container button {
   background-color: #DCD6D0;
   width: 185px;
@@ -69,6 +72,7 @@ body {
   cursor: pointer;
 }
 
+/* 메인페이지 버튼 */
 .main-button-next {
   border: 2px solid black;
   background-color: #DCD6D0;
@@ -82,11 +86,13 @@ body {
   text-align: center;
 }
 
+/* 버튼 컨테이너 a태그 */
 .main-button-container a {
   margin: 0px 10px;
 }
 
-.main-button-cancel {
+/* 로그인 버튼 */
+.main-button-login {
   border: 2px solid black;
   background-color: #efefef;
   width: 181px;
