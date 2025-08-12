@@ -4,8 +4,17 @@
   box-sizing: border-box;
 }
 
+main{
+  width: 1200px;
+  min-height: 800px;
+  margin: 0 auto;
+}
+h2{
+  margin: 50px 0;
+}
 h4 {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 
 ul {
@@ -15,8 +24,7 @@ ul {
 /* 게시판 컨테이너 */
 .team-board-container {
   width: 1200px;
-  min-height: 800px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 /* 게시판 툴바 (검색 + 글쓰기) */
@@ -142,19 +150,12 @@ ul {
   background-color: #f0f0f0;
 }
 
-/* 공지사항 컨테이너 */
-.team-notice-container {
-  width: 1200px;
-  margin: 0 auto 40px;
-}
 
-/* 공지사항 보드 */
-.team-notice-board {
-  width: 1200px;;
-  margin: 0 auto;
+/* 공지사항 헤더와 리스트 항목 공통 */
+.team-notice-header{
+  background-color: #f5f5f5;
+  font-weight: bold;
 }
-
-/* 공지사항 헤더, 리스트 */
 .team-notice-header,
 .team-notice-list {
   display: flex;
@@ -163,64 +164,60 @@ ul {
   padding: 8px 0;
 }
 
-/* 공지사항 제목 가운데 정렬 */
-.team-notice-header .center-text {
-  flex: 1;
-  text-align: center;
-  font-weight: bold;
-  background-color: #f5f5f5;
-}
-.team-board-content>li>a{
-  text-align: center;
+/* 공지사항 리스트 항목 a태그 flex */
+.team-notice-list > a {
+  display: flex;
+  width: 100%;
+  color: black;
+  text-decoration: none;
   align-items: center;
-  justify-content: center;
-}
-/* 공지사항 더보기 위치 */
-.team-notice-more {
-  font-size: 13px;
-  margin-left: 1150px;
 }
 
-.team-notice-more a {
-  text-decoration: none;
-  color: black;
-}
 
-.team-notice-more a:hover {
-  text-decoration: underline;
-}
-
-.team-notice-list a{
-  color: black;
-  text-decoration: none;
-}
-
-.team-notice-list a:hover{
-  text-decoration: underline;
-}
-/* 공지사항 각 칸 너비 */
-.team-notice-header div:nth-child(1){
-  width: 80px;
+/* 글번호 */
+.team-notice-header div:nth-child(1),
+.team-notice-list > a div:nth-child(1) {
+  width: 10%;
   text-align: center;
 }
 
+/* 제목 */
 .team-notice-header div:nth-child(2),
-.team-notice-list div:nth-child(2) {
-  flex: 1;
+.team-notice-list > a div:nth-child(2) {
+  width: 55%;
+  text-align: left;  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 8px;
+}
+
+/* 작성자 */
+.team-notice-header div:nth-child(3),
+.team-notice-list > a div:nth-child(3) {
+  width: 15%;
   text-align: center;
 }
 
-/* 공지사항 리스트 호버 효과 */
+/* 작성일자 */
+.team-notice-header div:nth-child(4),
+.team-notice-list > a div:nth-child(4) {
+  width: 20%;
+  text-align: center;
+}
+
+/* 호버 효과 */
 .team-notice-list:hover {
   background-color: #f0f0f0;
 }
+
 
 /* 페이지 네이션 */
 .list-pagenumber {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-bottom: 10px;
   gap: 10px;
 }
 

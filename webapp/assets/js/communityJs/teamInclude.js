@@ -98,7 +98,7 @@ function loadCSS(href) {
 
 function getUserStatus() {
   const loggedIn = localStorage.getItem("loggedIn") === "true";
-  const team = localStorage.getItem("team") || "kt";
+  const team = localStorage.getItem("team") || "hanwha";
   return { loggedIn, team };
 }
 
