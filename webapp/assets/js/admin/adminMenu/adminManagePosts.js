@@ -26,8 +26,12 @@ addbutton.addEventListener('click', function () {
 	postTypeText = document.createTextNode("전체공지");
 	deleteBtnText = document.createTextNode("삭제하기");
 
+	postTitle.style.overflow = "hidden";
+  postTitle.style.whiteSpace = "nowrap";
+  postTitle.style.textOverflow = "eclipse";
+
   const postTitleLink = document.createElement('a');
-  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminUserPost.html");
+  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminNoticePost.html");
   postTitleLink.appendChild(postTitleText);
 
 	postNum.appendChild(postNumText);
@@ -73,8 +77,16 @@ addUserPostButton.addEventListener('click', function () {
 	postIDText = document.createTextNode("th3180");
 	deleteBtnText = document.createTextNode("삭제하기");
 
+	postTitle.style.overflow = "hidden";
+  postTitle.style.whiteSpace = "nowrap";
+  postTitle.style.textOverflow = "eclipse";
+
+	const postTitleLink = document.createElement('a');
+  postTitleLink.setAttribute("href", "./../adminDetailMenu/adminUserPost.html");
+  postTitleLink.appendChild(postTitleText);
+
 	postNum.appendChild(postNumText);
-	postTitle.appendChild(postTitleText);
+	postTitle.appendChild(postTitleLink);
 	postDate.appendChild(postDateText);
 	postType.appendChild(postTypeText);
 	postID.appendChild(postIDText);

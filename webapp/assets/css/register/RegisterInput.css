@@ -117,6 +117,7 @@ body {
 .main-input-list button {
   background-color: #DCD6D0;
   margin-left: 25px;
+  padding: 0px 5px;
   text-align: center;
   line-height: 15px;
   cursor: pointer;
@@ -126,6 +127,7 @@ body {
 .main-input-list-optional button {
   background-color: #DCD6D0;
   margin-left: 25px;
+  padding: 0px 5px;
   text-align: center;
   line-height: 15px;
   cursor: pointer;

@@ -93,6 +93,13 @@ body {
 .product-text {
   font-size: 15px;
   font-weight: 700;
+  width: 200px;
+  flex: 1;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
 }
 
 /* 긴 검은선 */

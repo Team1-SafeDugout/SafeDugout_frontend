@@ -29,15 +29,15 @@
       <div class="sidebar-div-container">
         <div>
           <ul>
+            <li class="sidebar-elements"> <a href="./adminSiteStatistics.html"> 사이트 통계</a> </li>
             <li class="sidebar-elements"> <a href="./adminManagePosts.html"> 게시글 / 공지사항</a> </li>
+            <li class="sidebar-elements"> <a href="./adminManageFreeCommunity.html"> 전체 커뮤니티 </a> </li>
             <li class="sidebar-elements"> <a href="./adminManageTeamNews.html"> 팀 뉴스</a> </li>
-            <li class="sidebar-elements"> <a href="./adminManageTeamRecord.html"> 팀 기록</a> </li>
             <li class="sidebar-elements"> <a href="./adminManageTeamYoutube.html"> 팀 유튜브</a> </li>
             <li class="sidebar-elements"> <a href="./adminManageTeamSong.html"> 팀 응원가</a> </li>
             <li class="sidebar-elements"> <a href="./adminManageSell.html"> 판매글</a> </li>
             <li class="sidebar-elements"> <a href="./adminManageTrading.html"> 거래중인 글</a> </li>
             <li class="sidebar-elements"> <a href="./adminManageMember.html"> 회원관리</a> </li>
-            <li class="sidebar-elements"> <a href="./adminSiteStatistics.html"> 사이트 정보</a> </li>
           </ul>
         </div>
       </div>
@@ -47,27 +47,22 @@
         팀 뉴스
       </div>
 
-      <div class = "add-button">
-        <a href = "./../adminDetailMenu/adminAddTeamNewsDetail.html" id = "add-news-button"> 추가하기+ </a>
-      </div>
-      
-
       <section class="body-container-list">
-        <div>
-          <div class="news-list-category-line">
-            <div>글번호</div>
-            <div>뉴스 제목</div>
-            <div>수정일자</div>
-            <div></div>
-          </div>
+        <div class="list-background">
 
-          <div class="news-list-container">
-            <ul id="news-list-container-ul">
+          <div class="list-names">
+            <div>회원 번호</div>
+            <div>사용자 ID</div>
+            <div>가입 일자</div>
+            <div class="add-button"> <a href="./../adminDetailMenu/adminAddTeamNewsDetail.html" id="add-news-button"> 추가하기+ </a> </div>
+          </div>
+          <div class="list-container">
+            <ul class="list-ul" id="list-ul">
 
             </ul>
           </div>
 
-          <div class="news-list-pagenumber">
+          <div class="page-buttons">
             <form action="" method="get">
               <button type="button" id="left-button"> ◁ </button>
               <ul id="numberlist-ul">
@@ -79,8 +74,8 @@
               </ul>
               <button type="button" id="right-button"> ▷ </button>
             </form>
-
           </div>
+
         </div>
       </section>
     </section>

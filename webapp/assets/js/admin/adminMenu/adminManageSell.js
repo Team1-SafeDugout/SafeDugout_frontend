@@ -1,9 +1,11 @@
-const postList = document.getElementById("sell-list-container-ul");
-const addbutton = document.getElementsByClassName("sell-list-category-line").item(0);
+const postList = document.getElementById("list-ul");
+const addbutton = document.getElementsByClassName("list-names").item(0);
 
 const leftButton = document.getElementById("left-button");
 const rightButton = document.getElementById("right-button");
 const numberList = document.querySelectorAll("#numberlist-ul>li");
+
+// 
 
 const userNums = 12;
 var curPage = 0;
@@ -71,18 +73,22 @@ rightButton.addEventListener('click', function () {
 addbutton.addEventListener('click', function () {
 
   setNumber();
-  const userListNum = document.querySelectorAll("#sell-list-container-ul>li");
+  const userListNum = document.querySelectorAll("#list-ul>li");
   if (userListNum.length >= 10) return;
 
   const newMember = document.createElement('li');
-
-  const aTag = document.createElement('a');
 
   const number = document.createElement('div');
   const tradeImgDiv = document.createElement('div');
   const title = document.createElement('div');
   const tradeDate = document.createElement('div');
   const deleteButtonDiv = document.createElement('div');
+
+  // 주소 이동
+  const aTag = document.createElement('a');
+  aTag.setAttribute('href', "./../adminDetailMenu/adminProductDetail.html");
+
+  title.appendChild(aTag);
 
   const numberText = document.createTextNode("number");
   const tradeImg = document.createElement('img');
@@ -92,22 +98,23 @@ addbutton.addEventListener('click', function () {
   deleteButton.setAttribute('type', 'button');
   deleteButton.appendChild(document.createTextNode("삭제"));
 
+  deleteButton.addEventListener('click', function(){
+    newMember.remove();
+  });
+
   tradeImg.setAttribute('src', "./../../../assets/img/communityImg/doosan.png");
 
   number.appendChild(numberText);
   tradeImgDiv.appendChild(tradeImg);
-  title.appendChild(titleText);
+  aTag.appendChild(titleText);
   tradeDate.appendChild(tradeDateText);
   deleteButtonDiv.appendChild(deleteButton);
 
-  aTag.setAttribute('href', "./../adminDetailMenu/adminProductDetail.html");
-
-  aTag.appendChild(number);
-  aTag.appendChild(tradeImgDiv);
-  aTag.appendChild(title);
-  aTag.appendChild(tradeDate);
-  aTag.appendChild(deleteButtonDiv);
-  newMember.appendChild(aTag);
+  newMember.appendChild(number);
+  newMember.appendChild(tradeImgDiv);
+  newMember.appendChild(title);
+  newMember.appendChild(tradeDate);
+  newMember.appendChild(deleteButtonDiv);
 
   postList.appendChild(newMember);
 });

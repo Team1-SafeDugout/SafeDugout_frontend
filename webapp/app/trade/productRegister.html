@@ -75,12 +75,13 @@
               <div>거래 방식 :</div>
               <div class="trade-method-checkbox">
                 <span>배달</span>
-                <input type="checkbox">
+                <input type="radio" name="tradeMethod" value="deliver">
                 <span>직거래</span>
-                <input type="checkbox">
+                <input type="radio" name="tradeMethod" value="meet">
               </div>
             </div>
             <div class="short-line"></div>
+            <div class="register-error-message-price">• 가격을 입력하세요</div>
             <div class="bottom-container">
               <div class="price-container">
                 <div>상품 가격 : </div>
@@ -98,59 +99,13 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="long-line"></div>
-          <div class="container-full">
-            <div class="container-left">
-              <div class="point-name">
-                현재 보유 포인트 <br><br>
-              </div>
-              <div class="point-amount">
-                163000 포인트 <br><br><br>
-              </div>
-              <div class="point-name">
-                상품 가격 <br><br>
-              </div>
-              <div class="point-amount">
-                163000 포인트 <br><br>
-              </div>
-            </div>
-            <div class="container-right">
-              <div class="product-img"><img src="./../../assets/img/tradeImg/product6.jpg" alt=""></div>
-              <div class="product-text">상품 명 : </div>
-              <div class="product-text">거래 방식 : 택배 발송 / 직거래</div>
-            </div>
-          </div>
-          <div class="short-line"></div>
-          <div class="container-full">
-            <div class="container-left-bottom">
-              <div class="point-name">
-                결제 후 잔여 포인트 <br><br>
-              </div>
-              <div class="point-amount">
-                143000 포인트 <br><br>
-              </div>
-            </div>
-            <div></div>
-          </div>
-          <div class="long-line"></div>
-          <div class="main-button-container">
-            <a href="./productBuyResult.html">
-              <div class="main-button-next">결제
-              </div>
-            </a>
-            <a href="./productDetailBuyer.html">
-              <div class="main-button-cancel">취소
-              </div>
-            </a>
-          </div> -->
         </div>
       </form>
     </div>
   </main>
 
   <div id="footer"></div>
-  <script src="/webapp/assets/js/trade/tradeInclude.js"></script>
+  <script src="./../../assets/js/include.js"></script>
 </body>
 
 </html>

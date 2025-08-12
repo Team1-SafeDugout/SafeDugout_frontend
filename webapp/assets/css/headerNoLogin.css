@@ -1,68 +1,52 @@
-*{
-  margin:0;
-  padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
-header{
-  height: 150px;
+
+header {
+	height: 100px;
 	width: 100%;
 	background-color: #DCD6D0;
-  padding: 0px;
+	padding: 0px;
 
 }
 
 .header-container {
 	background-color: #DCD6D0;
 	width: 100%;
-  display: flex;
+	display: flex;
 	justify-content: space-between;
 }
 
-.header-left{
-height: 100px;
+.header-left {
+	height: 100px;
 }
 
-.main-logo img{
+.main-logo img {
 	height: 100px;
 	width: 100px;
 }
-.header-right{
-  height: 100px;
-  display: flex;
+
+.header-right {
+	height: 100px;
+	display: flex;
 	float: right;
 	gap: 15px;
 	padding-right: 10px;
 
 }
-.notice{
+
+.notice {
 	display: flex;
 	line-height: 100px;
 }
 
-.login{
-	display: flex;
-	line-height: 100px;
-}
-.register{
+.login {
 	display: flex;
 	line-height: 100px;
 }
 
-nav{
-	height: 40%;
-	width: 100%;
-	/* margin: 0px 20px; / */
-}
-nav>div{
-	height: 100%;
-	width: 100%;
+.register {
 	display: flex;
-	justify-content: space-around;
-}
-
-nav>div>a>img{
-	height: 100%;
-}
-.team-logo{
-	display: flex;
-
+	line-height: 100px;
 }

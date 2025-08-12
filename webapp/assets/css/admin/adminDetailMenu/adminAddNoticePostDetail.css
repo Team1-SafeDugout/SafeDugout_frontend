@@ -15,17 +15,24 @@ body{
 	background-color: #EFEFEF;
 }
 
+a{
+  text-decoration-line: none;
+  text-decoration-color: none;
+  color: inherit;
+}
+
 /* 왼쪽에 있을 사이드 메뉴와 본 페이지 메뉴를 나눠줄 flex 제공 */
 main {
-  width: 100%;
-	min-height: 100vh;
+  width: 1200px;
+	min-height: 800px;
 	height: fit-content;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	transform: translateY(-100px);
+	/* transform: translateY(-100px); */
   justify-content: center;
 
 	display: flex;
+  margin: 0 auto;
 }
 
 /* 배경 */
@@ -130,8 +137,17 @@ main {
 }
 
 #save-button, #cancle-button{
-  min-width: 10vh;
-  min-height: 3vh;
+  min-width: 100px;
+  min-height: 30px;
+}
+
+#save-button{
+  background-color: #4D5061;
+}
+
+#cancle-button{
+  border: 1px solid black;
+  text-align: center;
 }
 
 .line{

@@ -12,6 +12,7 @@ const numberList = document.querySelectorAll("#list-ul>li");
 
 const userNums = 12;
 var curPage = 0;
+var addOn = false;
 
 // 숫자 버튼들 세팅
 function setNumber() {
@@ -75,6 +76,7 @@ rightButton.addEventListener('click', function () {
 openModal.addEventListener('click', function(){
   modal.style.display = "flex";
   modalForm.reset();
+  addOn = true;
 });
 
 closeModal.addEventListener('click', function(){
@@ -102,9 +104,20 @@ addbutton.addEventListener('click', function () {
 
   changeButton.setAttribute('type', 'button');
   changeButton.appendChild(document.createTextNode("수정"));
+  changeButton.addEventListener('click', function(){
+    modal.style.display = "flex";
+    modalForm.reset();
+    addOn = false;
+  })
 
   deleteButton.setAttribute('type', 'button');
   deleteButton.appendChild(document.createTextNode("삭제"));
+  deleteButton.addEventListener('click', function(){
+    if(confirm("삭제하시겠습니까?")){
+      alert("삭제되었습니다.");
+      newMember.remove();
+    }
+  })
 
   const NumberText = document.createTextNode("number");
   const teamNameText = document.createTextNode("team");
@@ -130,7 +143,9 @@ addbutton.addEventListener('click', function () {
   newMember.appendChild(fixDate);
   newMember.appendChild(buttons);
 
-  userList.appendChild(newMember);
+  if(addOn){
+    userList.appendChild(newMember);
+  }
   modal.style.display = "none";
 });
 

@@ -1,5 +1,5 @@
-const userList = document.getElementById("news-list-container-ul");
-const addbutton = document.getElementsByClassName("news-list-category-line").item(0);
+const newsList = document.getElementById("list-ul");
+const addbutton = document.getElementsByClassName("list-names").item(0);
 
 const leftButton = document.getElementById("left-button");
 const rightButton = document.getElementById("right-button");
@@ -69,27 +69,37 @@ rightButton.addEventListener('click', function () {
 
 // 테스트용 추가 버튼
 addbutton.addEventListener('click', function () {
-
   setNumber();
-  const userListNum = document.querySelectorAll("#news-list-container-ul>li");
+  const userListNum = document.querySelectorAll("#list-ul>li");
   if (userListNum.length >= 10) return;
 
-  const newMember = document.createElement('li');
+  const newNews = document.createElement('li');
 
-  const aTag = document.createElement('a');
   const number = document.createElement('div');
-  const newsTitle = document.createElement('a');
+  const newsTitle = document.createElement('div');
   const fixDate = document.createElement('div');
   const buttons = document.createElement('div');
+
+  const aTag = document.createElement('a');
+  aTag.setAttribute("href", "./../adminDetailMenu/adminTeamNewesDetail.html");
 
   const changeButton = document.createElement('button');
   const deleteButton = document.createElement('button');
 
   changeButton.setAttribute('type', 'button');
   changeButton.appendChild(document.createTextNode("수정"));
+  changeButton.addEventListener("click", function(){
+    location.href = "./../adminDetailMenu/adminAddTeamNewsDetail.html";
+  });
 
   deleteButton.setAttribute('type', 'button');
   deleteButton.appendChild(document.createTextNode("삭제"));
+  deleteButton.addEventListener("click",function(){
+    if(confirm("정말 삭제하시겠습니까?")){
+      alert("삭제되었습니다.");
+      newNews.remove();
+    }
+  });
 
   const NumberText = document.createTextNode("number");
   const newsTitleText = document.createTextNode("뉴스제목");
@@ -98,19 +108,18 @@ addbutton.addEventListener('click', function () {
   buttons.appendChild(changeButton);
   buttons.appendChild(deleteButton);
 
+  newsTitle.appendChild(aTag);
+
   number.appendChild(NumberText);
-  newsTitle.appendChild(newsTitleText);
+  aTag.appendChild(newsTitleText);
   fixDate.appendChild(fixDateText);
 
-  newsTitle.setAttribute("href", "./../adminDetailMenu/adminTeamNewesDetail.html")
+  newNews.appendChild(number);
+  newNews.appendChild(newsTitle);
+  newNews.appendChild(fixDate);
+  newNews.appendChild(buttons);
 
-  aTag.appendChild(number);
-  aTag.appendChild(newsTitle);
-  aTag.appendChild(fixDate);
-  aTag.appendChild(buttons);
-  newMember.appendChild(aTag);
-
-  userList.appendChild(newMember);
+  newsList.appendChild(newNews);
 });
 
 
