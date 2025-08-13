@@ -1,16 +1,3 @@
-/* 헤더 */
-/* #header {
-  background-color: #DCD6D0;
-  height: 100px;
-} */
-
-/* 푸터 */
-/* #footer {
-  background-color: #DCD6D0;
-  height: 100px;
-  width: 100%;
-} */
-
 /* 검색 컨테이너 */
 .search-container {
   background-color: #DCD6D0;
@@ -51,7 +38,6 @@
   height: 30px;
   background-color: #DCD6D0;
   color: black;
-  display: none;
 }
 
 /* 가격, 구매 버튼 컨테이너 */
