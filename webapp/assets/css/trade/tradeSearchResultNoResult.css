@@ -3,13 +3,6 @@ body {
   margin: 0px 0px;
 }
 
-/* 헤더 */
-/* #header {
-  background-color: #DCD6D0;
-  width: 100vw;
-  height: 100px;
-} */
-
 /* 검색 컨테이너 */
 .search-container {
   background-color: #DCD6D0;
@@ -39,6 +32,7 @@ body {
   font-weight: 800;
 }
 
+/* 검색 버튼 호버 */
 .search-container button:hover {
   filter: brightness(0.9);
   cursor: pointer;
@@ -82,7 +76,7 @@ body {
   align-items: center;
 }
 
-/* '상품 카테고리' */
+/* 상품 카테고리 텍스트 */
 .aside-text {
   margin: 7px 0px 0px 0px;
   font-size: 15px;
@@ -93,10 +87,6 @@ body {
   list-style-type: none;
   padding: 0px 0px;
   margin: 7px 0px;
-}
-
-/* 카테고리 컨테이너 */
-.category-container {
   background-color: white;
   width: 180px;
   display: flex;
@@ -113,21 +103,23 @@ body {
   text-align: center;
 }
 
+/* 첫번째 li 태그 */
 .category-container>li:nth-child(1) .category {
   background-color: #DCD6D0;
 }
 
-/* 카테고리 a태그 */
+/* 카테고리 a 태그 */
 .category a {
   color: black;
   text-decoration: none;
 }
 
+/* 상품 종류 텍스트 호버 */
 .category a:hover {
   cursor: pointer;
 }
 
-/* section 컨테이너 */
+/* 오른쪽 section 컨테이너 */
 .section-container {
   width: 1090px;
   display: flex;
@@ -146,7 +138,7 @@ body {
   align-items: center;
 }
 
-/* '팀 선택' */
+/* 팀 선택 텍스트 */
 .team-bar-text {
   width: 70px;
   height: 70px;
@@ -180,11 +172,13 @@ body {
   border: 1px solid orangered;
 }
 
+/* 모든 팀 버튼 첫번째 요소 a 태그*/
 .team-bar-logo:nth-child(1) a {
   color: black;
   text-decoration: none;
 }
 
+/* 모든 팀 버튼 첫번째 요소 a 태그 호버*/
 .team-bar-logo:nth-child(1) a:hover {
   color: black;
   text-decoration: underline;
@@ -196,7 +190,7 @@ body {
   height: 70px;
 }
 
-/* 페이지 버튼 바 */
+/* 로고 하단 컨테이너 */
 .page-bar {
   border-bottom: 1px solid black;
   width: 100%;
@@ -205,14 +199,14 @@ body {
   justify-content: space-between;
 }
 
-/* '["검색 글"] 검색 결과' */
+/* 조회 결과 - 검색어 */
 .big-text {
   font-size: 24px;
   font-weight: 800;
   /* display: none; */
 }
 
-/* '0000개 모든 팀 > 모든 상품 유형' */
+/* 조회 결과 - 개수, 팀, 상품 종류 */
 .small-text {
   margin: 0px 10px;
   font-size: 15px;
@@ -241,20 +235,23 @@ body {
   color: black;
 }
 
+/* 페이지 버튼 첫번째 요소 */
 .page-num:nth-child(1) {
   background-color: #DCD6D0;
 }
 
-/* 페이지 버튼 a태그 */
+/* 페이지 버튼 a 태그 */
 .page-num a {
   color: black;
   text-decoration: none;
 }
 
+/* 페이지 버튼 첫번째 요소 a 태그 */
 .page-num:nth-child(1) a {
   color: white;
 }
 
+/* 페이지 버튼 a 태그 호버 */
 .page-num a:hover {
   text-decoration: underline;
 }
@@ -268,12 +265,13 @@ body {
   line-height: 20px;
 }
 
-/* 오른쪽 화살표 버튼 a태그 */
+/* 오른쪽 화살표 버튼 a 태그 */
 .arrow-button a {
   color: #DCD6D0;
   text-decoration: none;
 }
 
+/* 오른쪽 화살표 버튼 a 태그 호버 */
 .arrow-button a:hover {
   text-decoration: underline;
 }
@@ -287,112 +285,8 @@ body {
   /* flex-wrap: wrap; */
 }
 
-/* '결과 없음' */
+/* 결과 없음 텍스트 */
 .no-result-text {
   margin: 15px 0px 0px 10px;
   font-size: 15px;
 }
-
-/* 상품 항목 */
-.product-list {
-  background-color: #f5f5f5;
-  width: 250px;
-  height: 275px;
-  margin: 15px 0px 0px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* 상품 이미지 */
-.product-img {
-  margin: 5px 0px 0px 0px;
-}
-
-.product-img img {
-  width: 240px;
-  height: 150px;
-}
-
-/* 상품 이름 */
-.product-name {
-  width: 240px;
-}
-
-/* 상품 이름 a태그 */
-.product-name a {
-  color: black;
-  text-decoration: none;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  text-decoration: none;
-}
-
-.product-name a:hover {
-  text-decoration: underline;
-}
-
-/* 상품 가격 */
-.product-price {
-  width: 240px;
-  margin: 20px 0px 0px 0px;
-}
-
-/* 상품 업로드 시간 */
-.product-time {
-  width: 240px;
-  margin: 20px 0px 0px 0px;
-}
-
-/* 다음, 취소 버튼 */
-.button-container {
-  position: absolute;
-  bottom: 0px;
-}
-
-.button-container button {
-  background-color: #DCD6D0;
-  width: 185px;
-  height: 60px;
-  margin: 0px 10px;
-  cursor: pointer;
-}
-
-.button-next {
-  border: 2px solid black;
-  background-color: #DCD6D0;
-  width: 181px;
-  height: 56px;
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 60px;
-  text-align: center;
-}
-
-.button-container a {
-  margin: 0px 10px;
-}
-
-.button-cancel {
-  border: 2px solid black;
-  background-color: #efefef;
-  width: 181px;
-  height: 56px;
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 60px;
-  text-align: center;
-}
-
-/* 푸터 */
-/* #footer {
-  background-color: #DCD6D0;
-  height: 100px;
-  width: 100%;
-} */

@@ -3,12 +3,6 @@ body {
   margin: 0px 0px;
 }
 
-/* 헤더 */
-/* #header {
-  background-color: #DCD6D0;
-  height: 100px;
-} */
-
 /* 검색 컨테이너 */
 .search-container {
   background-color: #DCD6D0;
@@ -38,6 +32,7 @@ body {
   font-weight: 800;
 }
 
+/* 검색 컨테이너 */
 .search-container button:hover {
   filter: brightness(0.9);
   cursor: pointer;
@@ -76,6 +71,7 @@ body {
 
 }
 
+/* 이미지 박스 img 태그 */
 .img-box img {
   width: 100px;
   height: 100px;
@@ -87,6 +83,7 @@ body {
   border: none;
 }
 
+/* 이미지 컨테이너 button 태그 호버 */
 .img-container button:hover {
   cursor: pointer;
 }
@@ -98,7 +95,7 @@ body {
   flex-direction: column;
 }
 
-/* 상품 명 입력 컨테이너 */
+/* 상품명 입력 컨테이너 */
 .name-input-container {
   background-color: #F5F5F5;
   width: 100%;
@@ -107,7 +104,7 @@ body {
   padding: 15px 0px 0px 0px;
 }
 
-/* 에러 메시지 */
+/* 등록 오류 메시지 */
 .register-error-message {
   margin: 0px 0px 0px 25px;
   font-size: 15px;
@@ -128,6 +125,7 @@ body {
   font-weight: 700;
 }
 
+/* 상품명 이름 입력칸 */
 .product-name-text input {
   background-color: transparent;
   font-size: 24px;
@@ -143,7 +141,7 @@ body {
   align-items: center;
 }
 
-/* '카테고리 설정' */
+/* 카테고리 텍스트 */
 .product-category-text {
   border-bottom: 1px solid black;
   width: 100%;
@@ -169,33 +167,36 @@ body {
   flex-wrap: wrap;
 }
 
-/* 로고 img */
+/* 로고 이미지 */
 .logo img {
   width: 60px;
   height: 60px;
 }
 
+/* 첫번째 로고 */
 .logo:nth-child(1) {
   border: 1px solid red;
 }
 
+/* 로고 이미지 호버 */
 .logo img:hover {
   cursor: pointer;
 }
 
+/* 상품 종류 선택 텍스트 컨테이너 */
 .product-type-text-container {
   border-bottom: 1px solid black;
   width: 500px;
   display: flex;
 }
 
-/* '굿즈 종류 선택' */
+/* 상품 종류 선택 텍스트 */
 .product-type-text {
   font-size: 15px;
   font-weight: 700;
 }
 
-/* 굿즈 종류 */
+/* 상품 종류 값 */
 .product-type {
   width: 500px;
   font-size: 15px;
@@ -213,21 +214,21 @@ body {
   align-items: center;
 }
 
-/* '상품 설명' */
+/* 상품 설명 텍스트 */
 .product-explain-text {
   width: 440px;
   margin-top: 10px;
   font-size: 15px;
 }
 
-/* 상품 설명 칸 */
+/* 상품 설명 박스 */
 .product-explain-blank textarea {
   border: 1px solid black;
   width: 440px;
   height: 340px;
 }
 
-/* 희망 지역 입력 컨테이너 */
+/* 희망 지역 컨테이너 */
 .trade-location-container {
   width: 440px;
   margin: 20px 0px;
@@ -236,7 +237,7 @@ body {
   justify-content: space-between;
 }
 
-/* 거래 방식 입력 컨테이너 */
+/* 거래 방식 컨테이너 */
 .trade-method-container {
   width: 440px;
   margin: 0px 0px 20px 0px;
@@ -245,7 +246,7 @@ body {
   justify-content: space-between;
 }
 
-/* 아래 끝 컨테이너 */
+/* 하단 컨테이너 */
 .bottom-container {
   width: 440px;
   margin-top: 0px;
@@ -253,7 +254,7 @@ body {
   align-items: center;
 }
 
-/* 상품 가격 텍스트 */
+/* 상품 가격 컨테이너 */
 .price-container {
   border-bottom: 1px solid black;
   width: 240px;
@@ -262,11 +263,13 @@ body {
   align-items: center;
 }
 
+/* 상품 가격 텍스트 */
 .price-container div {
   font-size: 15px;
   margin-right: 10px;
 }
 
+/* 상품 가격 입력칸 */
 .price-container input {
   background-color: transparent;
   width: 130px;
@@ -295,6 +298,7 @@ body {
   margin-left: 1px;
 }
 
+/* 버튼 컨테이너 button 태그 */
 .main-button-container button {
   background-color: #DCD6D0;
   width: 185px;
@@ -302,6 +306,7 @@ body {
   cursor: pointer;
 }
 
+/* 상품 등록 버튼 텍스트 */
 .main-button-next {
   border: 2px solid black;
   background-color: #DCD6D0;
@@ -316,8 +321,10 @@ body {
   text-align: center;
 }
 
+/* 버튼 컨테이너 a 태그 */
 .main-button-container a {}
 
+/* 취소 버튼 텍스트 */
 .main-button-cancel {
   border: 2px solid black;
   background-color: #efefef;
@@ -331,10 +338,3 @@ body {
   line-height: 30px;
   text-align: center;
 }
-
-/* 푸터 */
-/* #footer {
-  background-color: #DCD6D0;
-  height: 100px;
-  width: 100%;
-} */
