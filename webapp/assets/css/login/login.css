@@ -65,7 +65,7 @@ body {
   margin: 22px 0px 0px 0px;
   font-size: 15px;
   color: red;
-  /* display: none; */
+  visibility: hidden;
 }
 
 /* 메인 컨테이너 button 태그 */
