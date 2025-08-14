@@ -1,10 +1,11 @@
-const loginBtn = document.querySelector('.main-login-button');
+const registerBtn = document.querySelector('.main-button-next');
+const checkDuplicate = document.querySelector('');
 const loginErrorMessage = document.getElementsByClassName("main-input-fail-message").item(0);
 const id = document.getElementById("id");
 const pw = document.getElementById("pw");
 
 
-loginBtn.addEventListener('click', function () {
+Btn.addEventListener('click', function () {
 
   if (id.value === "" || pw.value === "") {
     loginErrorMessage.style.visibility = "visible";

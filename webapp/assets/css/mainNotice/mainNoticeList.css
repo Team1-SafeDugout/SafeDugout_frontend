@@ -38,7 +38,7 @@ main {
   background-color: #efefef;
   border: 1px solid black;
   width: 1000px;
-  height: 800px;
+  height: 600px;
   margin: 20px 0px 60px 0px;
   padding: 25px 0px;
   /* position: relative; */
@@ -49,10 +49,12 @@ main {
 
 /* 리스트 컨테이너 */
 .list-container {
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
   width: 800px;
   margin: 50px 0px 0px 0px;
-  min-height: 600px;
+  min-height: 450px;
 }
 
 /* 목록 상단 바 */
@@ -118,6 +120,8 @@ main {
   margin: 20px;
   text-align: center;
 }
+
+
 
 /* 페이지네이션 컨테이너 */
 .page-container {
