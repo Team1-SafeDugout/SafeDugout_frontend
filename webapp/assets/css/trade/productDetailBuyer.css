@@ -1,15 +1,20 @@
-/* 헤더 */
-/* #header {
-  background-color: #DCD6D0;
-  height: 100px;
-} */
+/* border-box 값 적용 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-/* 푸터 */
-/* #footer {
-  background-color: #DCD6D0;
-  height: 100px;
-  width: 100%;
-} */
+/* 바디 공간 만들어주기 */
+body,
+html {
+  height: 100%;
+}
+
+/* 바디 */
+body {
+  background-color: #EFEFEF;
+}
 
 /* 검색 컨테이너 */
 .search-container {
@@ -40,6 +45,7 @@
   font-weight: 800;
 }
 
+/* 검색 컨테이너 button 태그 호버 */
 .search-container button:hover {
   filter: brightness(0.9);
   cursor: pointer;
@@ -51,7 +57,6 @@
   height: 30px;
   background-color: #DCD6D0;
   color: black;
-  display: none;
 }
 
 /* 가격, 구매 버튼 컨테이너 */
@@ -74,24 +79,6 @@
   font-size: 15px;
   line-height: 56px;
   text-align: center;
-}
-
-/* --------------------------------------------------------기초 설정------------------------------------------------------------ */
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/* 바디 공간 만들어주기 */
-body,
-html {
-  height: 100%;
-}
-
-body {
-  background-color: #EFEFEF;
 }
 
 /* 왼쪽에 있을 사이드 메뉴와 본 페이지 메뉴를 나눠줄 flex 제공 */
@@ -123,11 +110,6 @@ main {
 
 }
 
-.post-date,
-.section-post {
-  width: 95%;
-}
-
 /* 상단 요소들 */
 .section-top-menus {
   width: 95%;
@@ -137,7 +119,6 @@ main {
   justify-content: space-between;
 }
 
-/* ======================================================================================== */
 /* 중단 요소들 */
 .section-middle-menus {
   width: 95%;
@@ -210,6 +191,7 @@ main {
   width: 100%;
 }
 
+/* 상품 이름 div 태그 */
 .product-name>div {
   flex: 1;
   border: 1px solid black;
@@ -227,6 +209,7 @@ main {
   margin-top: 10px;
 }
 
+/* 상품 설명 박스 */
 .product-description>div {
   border: 1px solid black;
   background-color: white;
@@ -246,11 +229,13 @@ main {
   margin-top: 10px;
 }
 
+/* 거래 정보 */
 .trading-info {
   display: flex;
   width: 100%;
 }
 
+/* 거래 정보 div 태그 */
 .trading-info>div {
   border: 1px solid black;
   background-color: white;
@@ -268,6 +253,7 @@ main {
   margin: 10px 0;
 }
 
+/* 상품 가격 div 태그 */
 .product-price>div {
   font-size: 32px;
   font-weight: bold;
@@ -276,9 +262,7 @@ main {
   margin-left: 5px;
 }
 
-/* ======================================================================================== */
-
-/* 하단 메뉴 */
+/* 하단 컨테이너 */
 .section-bottom-menus {
   width: 95%;
   height: fit-content;
@@ -288,7 +272,6 @@ main {
   justify-content: end;
 }
 
-/* -------------------------------------------------------------------------------------------- */
 /* 메뉴 공통 */
 .section-bottom-menus,
 .section-middle-menus,

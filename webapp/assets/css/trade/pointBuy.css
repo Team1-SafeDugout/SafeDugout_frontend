@@ -3,12 +3,6 @@ body {
   margin: 0px 0px;
 }
 
-/* 헤더 */
-/* #header {
-  background-color: #DCD6D0;
-  height: 100px;
-} */
-
 /* 메인 */
 .main-container {
   min-height: 750px;
@@ -16,22 +10,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.main-title {
-  position: absolute;
-  top: 140px;
-  left: 100px;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.main-small-title {
-  position: absolute;
-  top: 190px;
-  left: 580px;
-  font-size: 24px;
-
 }
 
 /* 메시지 박스 */
@@ -53,7 +31,7 @@ body {
   font-size: 15px;
 }
 
-/* 넓은 컨테이너 */
+/* 컨테이너 */
 .container-full {
   width: 710px;
   margin: 15px 0px 0px 0px;
@@ -61,25 +39,9 @@ body {
   align-items: center;
 }
 
-/* 왼쪽 컨테이너 */
-.container-left {
-  width: 250px;
-  margin: 40px 0px 0px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-
 /* 포인트 입력 메시지 */
 .input-message {
   /* margin: 20px 0px 0px 0px; */
-}
-
-/* 포인트 종류 */
-.point-name {
-  width: 130px;
-  margin: 0px 120px 0px 0px;
-  font-size: 15px;
 }
 
 /* 포인트 값 */
@@ -89,7 +51,7 @@ body {
   font-weight: 700;
 }
 
-/* 포인트 입력칸 */
+/* 포인트 입력칸 input 태그 */
 .point-amount input {
   background-color: transparent;
   width: 250px;
@@ -98,6 +60,7 @@ body {
   font-weight: 700;
 }
 
+/* 포인트 입력칸 input 태그 클릭시 */
 .point-amount input:focus {
   outline: none;
 }
@@ -148,6 +111,7 @@ body {
   /* bottom: 90px; */
 }
 
+/* 버튼 컨테이너 butotn 태그 */
 .main-button-container button {
   background-color: #DCD6D0;
   width: 185px;
@@ -156,6 +120,7 @@ body {
   cursor: pointer;
 }
 
+/* 결제 버튼 텍스트 */
 .main-button-next {
   border: 2px solid black;
   background-color: #DCD6D0;
@@ -169,10 +134,12 @@ body {
   text-align: center;
 }
 
+/* 버튼 컨테이너 a 태그 */
 .main-button-container a {
   margin: 0px 10px;
 }
 
+/* 취소 버튼 텍스트 */
 .main-button-cancel {
   border: 2px solid black;
   background-color: #efefef;
@@ -185,10 +152,3 @@ body {
   line-height: 60px;
   text-align: center;
 }
-
-/* 푸터 */
-/* #footer {
-  background-color: #DCD6D0;
-  height: 100px;
-  width: 100%;
-} */

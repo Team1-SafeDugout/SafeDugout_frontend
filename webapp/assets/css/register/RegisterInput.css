@@ -97,6 +97,7 @@ body {
 /* 주소 입력 컨테이너 input */
 .main-input-address input {
   width: 200px;
+
 }
 
 /* 입력 메시지 div */
@@ -107,9 +108,15 @@ body {
 
 /* 입력 오류 메시지 */
 .main-input-error-message {
+  height: 15px;
   margin: 10px 0px 0px 240px;
   color: red;
   font-size: 10px;
+}
+
+/* 입력 오류 메시지 span 태그 */
+.main-input-error-message span {
+  display: none;
 }
 
 /* 입력칸 옆 버튼 */

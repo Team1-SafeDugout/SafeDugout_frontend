@@ -3,13 +3,6 @@ body {
   margin: 0px 0px;
 }
 
-/* 헤더 */
-/* #header {
-  background-color: #DCD6D0;
-  height: 100px;
-
-} */
-
 /* 메인 */
 .main-container {
   min-height: 750px;
@@ -19,6 +12,7 @@ body {
   justify-content: center;
 }
 
+/* 페이지 큰 제목 */
 .main-title {
   position: absolute;
   top: 140px;
@@ -27,6 +21,7 @@ body {
   font-weight: 700;
 }
 
+/* 폼 태그 */
 .main-container form {
   margin: 0px auto;
 }
@@ -43,7 +38,7 @@ body {
   align-items: center;
 }
 
-/* 회원가입 완료 메시지 */
+/* 결과 메시지 */
 .main-result-message {
   width: 600px;
   font-size: 24px;
@@ -51,25 +46,13 @@ body {
   margin: 15px 0px 0px 0px;
 }
 
-/* 회원가입 후 안내 메시지 */
-.main-info-message {
-  margin: 100px 0px 0px 0px;
-}
-
-/* 다음, 취소 버튼 컨테이너*/
+/* 버튼 컨테이너 */
 .main-button-container {
   position: absolute;
   bottom: 50px;
 }
 
-.main-button-container button {
-  background-color: #DCD6D0;
-  width: 185px;
-  height: 60px;
-  margin: 0px 10px;
-  cursor: pointer;
-}
-
+/* 로그인 버튼 */
 .main-button-next {
   border: 2px solid black;
   background-color: #DCD6D0;
@@ -83,26 +66,7 @@ body {
   text-align: center;
 }
 
+/* 로그인 버튼 a 태그 */
 .main-button-container a {
   margin: 0px 10px;
 }
-
-.main-button-cancel {
-  border: 2px solid black;
-  background-color: #efefef;
-  width: 181px;
-  height: 56px;
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 60px;
-  text-align: center;
-}
-
-/* 푸터 */
-/* #footer {
-  background-color: #DCD6D0;
-  height: 100px;
-  width: 100%;
-} */

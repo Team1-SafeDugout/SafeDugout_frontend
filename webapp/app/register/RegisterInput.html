@@ -38,25 +38,26 @@
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message">* 필수 입력 값입니다.</div>
+              <div class="main-input-error-message"><span>* 필수 입력 값입니다.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <!-- 입력 메시지 -->
                 <div class="main-input-list-text">이름</div>
                 <!-- 입력 input -->
-                <input type="text" placeholder="이름을 입력하세요">
+                <input type="text" placeholder="이름을 입력하세요" id="name">
               </div>
             </li>
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message">* 필수 입력 값입니다. / 중복된 아이디 입니다.</div>
+              <div class="main-input-error-message"><span>* 필수 입력 값입니다.</span><span>* 중복된 아이디 입니다.</span><span>* 아이디 중복
+                  확인을 해주세요.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <!-- 입력 메시지 -->
                 <div class="main-input-list-text">아이디</div>
                 <!-- 입력 input -->
-                <input type="text" placeholder="영문, 숫자 조합 6자 이상">
+                <input type="text" placeholder="영문, 숫자 조합 6자 이상" id="id">
                 <!-- 입력 button -->
                 <button type="button">중복 확인</button>
               </div>
@@ -64,53 +65,54 @@
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message">* 필수 입력 값입니다. / 비밀번호가 유효하지 않습니다.</div>
+              <div class="main-input-error-message"><span>* 필수 입력 값입니다.</span><span>* 비밀번호가 유효하지 않습니다.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <div class="main-input-list-text">비밀번호</div>
-                <input type="password" placeholder="영문, 숫자, 특수문자 조합 8자 이상">
+                <input type="password" placeholder="영문, 숫자, 특수문자 조합 8자 이상" id="pw">
               </div>
             </li>
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message">* 비밀번호가 일치하지 않습니다.</div>
+              <div class="main-input-error-message"><span>* 비밀번호가 일치하지 않습니다.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <div class="main-input-list-text">비밀번호 확인</div>
-                <input type="password" placeholder="비밀번호를 재입력하세요">
+                <input type="password" placeholder="비밀번호를 재입력하세요" id="rePw">
               </div>
             </li>
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message">* 필수 입력 값입니다.</div>
+              <div class="main-input-error-message"><span>* 필수 입력 값입니다.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <div class="main-input-list-text">핸드폰 번호</div>
-                <input type="text" placeholder="핸드폰 번호를 입력하세요">
+                <input type="text" placeholder="핸드폰 번호를 입력하세요" id="phoneNumber">
                 <button type="button">인증번호 발송</button>
               </div>
             </li>
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message">* 인증번호가 불일치합니다.</div>
+              <div class="main-input-error-message"><span>* 인증번호가 불일치합니다.</span><span>* 인증번호 확인이 필요합니다. 인증번호 수신 및 입력 후
+                  인증버튼을 눌러주세요</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <div class="main-input-list-text">인증 번호 입력</div>
-                <input type="text" placeholder="인증 번호 입력">
+                <input type="text" placeholder="인증 번호 입력" id="code">
                 <button type="button">인증</button>
               </div>
             </li>
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message">* 필수 입력 값입니다. / 형식이 올바르지 않습니다.</div>
+              <div class="main-input-error-message"><span>* 필수 입력 값입니다.</span><span>* 형식이 올바르지 않습니다.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <div class="main-input-list-text">이메일</div>
-                <input type="email" placeholder="이메일을 입력하세요">
+                <input type="email" placeholder="이메일을 입력하세요" id="email">
                 <div class="main-input-email-at"></div>
               </div>
             </li>
@@ -121,7 +123,7 @@
                 <!-- 입력 -->
                 <div class="main-input-list-text">주소</div>
                 <!-- 우편번호 입력되는 칸 -->
-                <input type="text" readonly style="pointer-events: none">
+                <input type="text" readonly style="pointer-events: none" id="postalCode">
                 <!-- 우편번호 버튼 -->
                 <button type="button">우편번호</button>
               </div>
@@ -130,14 +132,14 @@
                 <!-- 입력 메시지 div -->
                 <div class="main-input-list-text"></div>
                 <!-- 주소 입력 칸 -->
-                <input type="text" placeholder="주소를 입력하세요">
+                <input type="text" readonly style="pointer-events: none;" id="address">
               </div>
               <!-- 주소 입력 컨테이너(선택값) -->
               <div class="main-input-address">
                 <!-- 입력 메시지 div -->
                 <div class="main-input-list-text"></div>
                 <!-- 주소 입력 칸 -->
-                <input type="text" placeholder="상세 주소를 입력하세요">
+                <input type="text" placeholder="상세 주소 입력" id="detailAddress">
               </div>
             </li>
             <!-- li 태그 -->

@@ -13,6 +13,7 @@
 </head>
 
 <!-- 바디 -->
+
 <body>
   <!-- 헤더 -->
   <div id="header"></div>
@@ -34,7 +35,7 @@
           </div>
           <!-- 입력칸 -->
           <div class="main-input-blank">
-            <input type="text" name="register" placeholder="아이디">
+            <input type="text" id="id" name="register" placeholder="아이디" required>
           </div>
           <!-- 입력 메시지 - 비밀번호 -->
           <div class="main-input-message">
@@ -42,7 +43,7 @@
           </div>
           <!-- 입력칸 -->
           <div class="main-input-blank">
-            <input type="password" name="register" placeholder="비밀번호">
+            <input type="password" id="pw" name="register" placeholder="비밀번호" required>
           </div>
           <!-- 입력 오류 메시지 -->
           <div class="main-input-fail-message">
@@ -50,7 +51,7 @@
           </div>
           <!-- 로그인 버튼 -->
           <div class="main-login-button">
-            <button type="button" onclick="location.href='./../../mainLogin.html'">로그인
+            <button type="button">로그인
             </button>
           </div>
           <!-- 기타 버튼(아이디 찾기/비밀번호 찾기/회원가입) -->

@@ -79,6 +79,7 @@ body {
   bottom: 310px;
 }
 
+/* 버튼 컨테이너 button */
 .main-button-container button {
   background-color: #DCD6D0;
   width: 185px;
@@ -87,6 +88,7 @@ body {
   cursor: pointer;
 }
 
+/* 다음 버튼 */
 .main-button-next {
   border: 2px solid black;
   background-color: #DCD6D0;
@@ -100,10 +102,12 @@ body {
   text-align: center;
 }
 
+/* 버튼 컨테이너 */
 .main-button-container a {
   margin: 0px 10px;
 }
 
+/* 취소 버튼 */
 .main-button-cancel {
   border: 2px solid black;
   background-color: #efefef;
