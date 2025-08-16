@@ -37,7 +37,7 @@ function renderNews() {
     mainNewsDiv.appendChild(newsDiv);
   });
 
-  // 뉴스 리스트(텍스트) 추가 - 예시로 번호만
+  // 뉴스 리스트
   const newsListUl = document.querySelector(".news-list");
   newsListUl.innerHTML = "";
   newsData.forEach(news => {
@@ -52,7 +52,7 @@ function renderNews() {
 // 썸네일 리스트 ul 요소 선택
 function renderYoutube() {
   const thumbList = document.querySelector('.thumb-list');
-  thumbList.innerHTML = ''; // 초기화
+  thumbList.innerHTML = ''; 
 
   videoIds.forEach(id => {
     const li = document.createElement('li');
