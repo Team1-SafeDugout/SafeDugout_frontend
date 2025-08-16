@@ -3,12 +3,6 @@ body {
   margin: 0px 0px;
 }
 
-/* 헤더 */
-/* #header {
-  background-color: #DCD6D0;
-  height: 100px;
-} */
-
 /* 메인 */
 .main-container {
   width: 100%;
@@ -19,6 +13,7 @@ body {
   /* justify-content: center; */
 }
 
+/* 페이지 큰 제목 */
 .main-title {
   position: absolute;
   top: 140px;
@@ -27,6 +22,7 @@ body {
   font-weight: 700;
 }
 
+/* 페이지 작은 제목 */
 .main-small-title {
   position: absolute;
   top: 190px;
@@ -34,7 +30,7 @@ body {
   font-size: 24px;
 }
 
-/* form 박스 */
+/* 폼 박스 */
 .main-form-box {
   /* background-color: aqua; */
   width: 900px;
@@ -45,12 +41,14 @@ body {
   align-items: center;
 }
 
+/* 폼 박스 제목 */
 .main-form-title {
   width: 100%;
   margin: 140px 0px 0px;
   font-size: 15px;
 }
 
+/* 폼 제목 텍스트 */
 .main-form-title span {
   color: #D9D9D9;
   font-size: 15px;
@@ -67,7 +65,7 @@ body {
   justify-content: space-evenly;
 }
 
-/* form 행 */
+/* 입력 항목 */
 .main-input-list {
   /* background-color: aquamarine; */
   width: 100%;
@@ -75,7 +73,7 @@ body {
   display: flex;
 }
 
-/* form 왼쪽 box */
+/* 입력메시지 */
 .main-input-name {
   width: 120px;
   height: 75px;
@@ -84,7 +82,7 @@ body {
   font-size: 16px;
 }
 
-/* form 오른쪽 box */
+/* 오른쪽 네모칸 */
 .main-input-box {
   background-color: white;
   width: 770px;
@@ -93,7 +91,7 @@ body {
   /* line-height: 65px; */
 }
 
-/* 회원정보 입력 칸 */
+/* 오른쪽 네모칸 input 태그 */
 .main-input-box input {
   width: 270px;
   margin: 0px 0px 0px 10px;
@@ -112,12 +110,13 @@ body {
   font-size: 10px;
 }
 
-/* 다음, 취소 버튼 */
+/* 버튼 컨테이너 */
 .main-button-container {
   position: absolute;
   bottom: 205px;
 }
 
+/* 버튼 컨테이너 button 태그 */
 .main-button-container button {
   background-color: #DCD6D0;
   width: 185px;
@@ -125,40 +124,3 @@ body {
   margin: 0px 10px;
   cursor: pointer;
 }
-
-.main-button-next {
-  border: 2px solid black;
-  background-color: #DCD6D0;
-  width: 181px;
-  height: 56px;
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 60px;
-  text-align: center;
-}
-
-.main-button-container a {
-  margin: 0px 10px;
-}
-
-.main-button-cancel {
-  border: 2px solid black;
-  background-color: #efefef;
-  width: 181px;
-  height: 56px;
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 60px;
-  text-align: center;
-}
-
-/* 푸터 */
-/* #footer {
-  background-color: #DCD6D0;
-  height: 100px;
-  width: 100%;
-} */

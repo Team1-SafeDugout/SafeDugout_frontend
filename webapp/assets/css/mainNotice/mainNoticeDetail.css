@@ -1,6 +1,7 @@
 /* teamNoticeBoard.css */
 
-.team-notice-board-detail {
+/* 공지사항 디테일 컨테이너 */
+.notice-board-detail {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px 40px;
@@ -11,7 +12,8 @@
   box-sizing: border-box;
 }
 
-.team-notice-board-detail h2 {
+/* 공지사항 디테일 */
+.notice-board-detail h2 {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -20,7 +22,8 @@
   color: black;
 }
 
-.team-notice-board-header {
+/* 공지사항 제목 박스 */
+.notice-board-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,24 +36,28 @@
   color: black;
 }
 
-.team-notice-board-header p {
+/* 공지사항 제목 텍스트 */
+.notice-board-header p {
   flex: 1;
   padding-left: 12px;
   font-weight: 600;
   color: black;
 }
 
-.team-notice-board-btn-container{
+/* 버튼 컨테이너 */
+.notice-board-btn-container {
   display: flex;
   justify-content: space-between;
 }
 
-.team-notice-board-btn {
+/* 이전글, 다음글 버튼 */
+.notice-board-btn {
   display: flex;
   gap: 8px;
 }
 
-.team-notice-board-btn button,
+/* 이전글, 다음글, 목록으로 버튼 button 태그 */
+.notice-board-btn button,
 .btn-to-list button {
   background-color: #DCD6D0;
   padding: 5px 12px;
@@ -60,14 +67,16 @@
   min-width: 60px;
 }
 
-.team-notice-board-btn button:hover,
+/* 이전글, 다음글, 목록으로 버튼 button 태그 호버 */
+.notice-board-btn button:hover,
 .btn-to-list button:hover {
   background-color: #4D5061;
   color: #fff;
   border-color: #4D5061;
 }
 
-.team-notice-board-content {
+/* 공지사항 내용 */
+.notice-board-content {
   border: 1px solid #f5f5f5;
   padding: 25px 30px;
   font-size: 14px;
@@ -79,36 +88,34 @@
   background-color: #fff;
 }
 
-
-.team-notice-board-content .btn-guide {
+/* 공지사항 내용 버튼 가이드 */
+.notice-board-content .btn-guide {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.team-notice-board-content .btn-guide img {
+.notice-board-content .btn-guide img {
   width: 36px;
   height: 36px;
   margin-right: 12px;
 }
 
-.team-notice-board-content .btn-guide p {
+.notice-board-content .btn-guide p {
   font-size: 14px;
   color: #f5f5f5;
 }
 
 /* 문단 간 간격 */
-.team-notice-board-content p:not(:last-child) {
+.notice-board-content p:not(:last-child) {
   margin-bottom: 20px;
 }
 
 /* 날짜 표시 */
-.team-notice-date {
+.notice-date {
   text-align: left;
   font-size: 14px;
   color: black;
   border-top: 1px solid #f5f5f5;
   padding-top: 12px;
 }
-
-
