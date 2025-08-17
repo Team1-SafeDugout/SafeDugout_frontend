@@ -3,7 +3,7 @@ const isLogin = false;
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  const headerFileSelection = isLogin ? "/webapp/headerLogin.html" : "/webapp/headerNoLogin.html";
+  const headerFileSelection = isLogin ? "./../../headerLogin.html" : "./../../headerNoLogin.html";
 
   // 헤더 불러오기
   fetch(headerFileSelection)
@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
   // 푸터 불러오기
-  fetch('/webapp/footer.html')
+  fetch('./../../footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer').innerHTML = data;

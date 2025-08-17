@@ -27,7 +27,7 @@ body {
   font-size: 32px;
   font-weight: 700;
 }
- 
+
 .main-small-title {
   position: absolute;
   top: 190px;
@@ -102,11 +102,22 @@ body {
   padding: 0px 5px;
 }
 
+/* 기타 버튼 호버 */
+.main-input-box button:hover {
+  cursor: pointer;
+}
+
 /* 입력 오류 메시지 */
 .main-error-message {
+  height: 15px;
   margin: 5px 0px 0px 10px;
   color: red;
   font-size: 10px;
+}
+
+/* 입력 오류 메시지 span 태그 */
+.main-error-message span {
+  display: none;
 }
 
 /* 다음, 취소 버튼 */

@@ -67,6 +67,13 @@ body {
   color: black;
 }
 
+/* 수정/삭제 버튼, 목록으로 버튼 호버 */
+.post-button-update:hover,
+.post-button-delete:hover,
+.post-button {
+  cursor: pointer;
+}
+
 /* 왼쪽에 있을 사이드 메뉴와 본 페이지 메뉴를 나눠줄 flex 제공 */
 main {
   width: 100%;
@@ -159,7 +166,7 @@ main {
 /* 상품 등록 날짜 작성자 카테고리 글자 서식 */
 .product-info {
   font-size: 15px;
-  color: lightgrey;
+  color: rgba(0, 0, 0, 0.650);
 }
 
 /* 상품 디테일 */

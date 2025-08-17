@@ -105,6 +105,7 @@ body {
   position: absolute;
   bottom: 90px;
 }
+
 /* 버튼 컨테이너 button */
 .main-button-container button {
   background-color: #DCD6D0;
@@ -131,6 +132,11 @@ body {
 /* 버튼 컨테이너 a 태그 */
 .main-button-container a {
   margin: 0px 10px;
+}
+
+/* 버튼 컨테이너 a 태그 호버 */
+.main-button-container a:hover {
+  cursor: pointer;
 }
 
 /* 취소 버튼 텍스트 */

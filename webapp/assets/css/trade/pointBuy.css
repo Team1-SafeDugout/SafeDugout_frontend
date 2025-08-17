@@ -29,6 +29,7 @@ body {
   width: 710px;
   color: red;
   font-size: 15px;
+  visibility: hidden;
 }
 
 /* 컨테이너 */
@@ -137,6 +138,11 @@ body {
 /* 버튼 컨테이너 a 태그 */
 .main-button-container a {
   margin: 0px 10px;
+}
+
+/* 버튼 컨테이너 a 태그 호버 */
+.main-button-container a:hover {
+  cursor: pointer;
 }
 
 /* 취소 버튼 텍스트 */

@@ -71,7 +71,7 @@ body {
   text-align: center;
 }
 
-/* 모달창 버튼 컨테이너 */
+/* 모달창 버튼 컨테이너 a 태그 */
 .modal-button-container a {
   margin: 0px 10px;
 }
