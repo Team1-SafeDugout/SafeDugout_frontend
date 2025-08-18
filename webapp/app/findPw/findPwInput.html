@@ -47,47 +47,47 @@
               <!-- 오른쪽 네모칸 -->
               <div class="main-input-box">
                 <!-- 입력 오류 메시지 -->
-                <div class="main-error-message">* 등록되지 않은 정보입니다. / 필수 입력값입니다.</div>
+                <div class="main-error-message"><span>* 등록되지 않은 이름입니다.</span><span>* 필수 입력값입니다.</div>
                 <!-- 입력칸 -->
-                <input type="text" placeholder="이름을 입력하세요">
+                <input type="text" placeholder="이름을 입력하세요" id="userName">
               </div>
             </div>
             <div class="main-input-list">
               <div class="main-input-name">아이디</div>
               <div class="main-input-box">
-                <div class="main-error-message">* 등록되지 않은 아이디입니다. / 필수 입력값입니다.</div>
-                <input type="text" placeholder="아이디를 입력하세요">
+                <div class="main-error-message"><span>* 등록되지 않은 아이디입니다.</span><span>* 필수 입력값입니다.</span></div>
+                <input type="text" placeholder="아이디를 입력하세요" id="id">
               </div>
             </div>
             <div class="main-input-list">
               <div class="main-input-name">이메일</div>
               <div class="main-input-box">
-                <div class="main-error-message">* 등록되지 않은 이메일입니다. / 필수 입력값입니다.</div>
-                <input type="email" placeholder="이메일을 입력하세요">
+                <div class="main-error-message"><span>* 등록되지 않은 이메일입니다.</span><span>* 필수 입력값입니다.</span></div>
+                <input type="email" placeholder="이메일을 입력하세요" id="email">
               </div>
             </div>
             <div class="main-input-list">
               <div class="main-input-name">핸드폰 번호</div>
               <div class="main-input-box">
-                <div class="main-error-message">* 등록되지 않은 번호입니다. / 필수 입력값입니다.</div>
-                <input type="text" placeholder="핸드폰 번호를 입력하세요">
-                <button type="button">인증 번호 발송</button>
+                <div class="main-error-message"><span>* 등록되지 않은 번호입니다.</span><span>* 필수 입력값입니다.</span></div>
+                <input type="text" placeholder="핸드폰 번호를 입력하세요" id="phoneNumber">
+                <button type="button" id="sendCode">인증 번호 발송</button>
               </div>
             </div>
             <div class="main-input-list">
               <div class="main-input-name">인증번호 입력</div>
               <div class="main-input-box">
-                <div class="main-error-message">* 인증 번호 불일치</div>
-                <input type="text" placeholder="인증 번호 입력">
+                <div class="main-error-message"><span>* 인증 번호 불일치</span></div>
+                <input type="text" placeholder="인증 번호 입력" id="code">
                 <!-- 오른쪽 네모칸 인증 버튼 -->
-                <button type="button">인증</button>
+                <button type="button" id="authenticate">인증</button>
               </div>
             </div>
           </div>
           <!-- 버튼 컨테이너 -->
           <div class="main-button-container">
             <!-- 확인 버튼 -->
-            <button type="button" onclick="location.href='./findPwChange.html'">
+            <button type="button" id="okBtn">
               확인
             </button>
           </div>

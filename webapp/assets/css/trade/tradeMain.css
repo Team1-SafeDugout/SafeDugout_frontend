@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* 바디 */
 body {
   margin: 0px 0px;
@@ -114,7 +118,7 @@ body {
   text-decoration: none;
 }
 
-/* 상품 종류 켁스트 호버 */
+/* 상품 종류 텍스트 호버 */
 .category a:hover {
   cursor: pointer;
 }
@@ -165,6 +169,11 @@ body {
   text-align: center;
   line-height: 70px;
   font-size: 15px;
+}
+
+/* 팀 로고 호버 */
+.team-bar-logo:hover {
+  cursor: pointer;
 }
 
 /* 모든 팀 버튼 */
@@ -227,7 +236,7 @@ body {
 .page-num {
   background-color: #f5f5f5;
   border: 1px solid black;
-  width: 15px;
+  width: 20px;
   height: 20px;
   font-size: 15px;
   text-align: center;
@@ -236,7 +245,7 @@ body {
 }
 
 /* 페이지 버튼 첫번째 요소 */
-.page-num:nth-child(1) {
+.page-num:nth-child(2) {
   background-color: #DCD6D0;
 }
 
@@ -247,16 +256,17 @@ body {
 }
 
 /* 페이지 버튼 첫번째 요소 a 태그 */
-.page-num:nth-child(1) a {
+.page-num:nth-child(2) a {
   color: white;
 }
 
 /* 페이지 버튼 a 태그 호버 */
 .page-num a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
-/* 오른쪽 화살표 버튼 */
+/* 화살표 버튼 */
 .arrow-button {
   width: 15px;
   height: 20px;
@@ -265,21 +275,23 @@ body {
   line-height: 20px;
 }
 
-/* 오른쪽 화살표 버튼 a 태그 */
+/* 화살표 버튼 a 태그 */
 .arrow-button a {
   color: #DCD6D0;
   text-decoration: none;
 }
 
-/* 오른쪽 화살표 버튼 a 태그 호버 */
+/* 화살표 버튼 a 태그 호버 */
 .arrow-button a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* 상품 컨테이너 */
 .product-container {
   width: 100%;
   height: 540px;
+  margin-bottom: 65px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -344,4 +356,11 @@ body {
 .button-container {
   position: absolute;
   bottom: 0px;
+}
+
+/* 결과 없음 텍스트 */
+.no-result-text {
+  margin: 15px 0px 0px 10px;
+  display: none;
+  font-size: 15px;
 }

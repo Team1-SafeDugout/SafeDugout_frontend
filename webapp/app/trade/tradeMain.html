@@ -22,9 +22,9 @@
     <!-- 검색 컨테이너 -->
     <div class="search-container">
       <!-- 검색어 입력칸 -->
-      <input type="text" placeholder="검색어를 입력해주세요">
+      <input type="text" placeholder="검색어를 입력해주세요" id="searchWord">
       <!-- 검색 컨테이너 button 태그 -->
-      <button type="button" onclick="location.href='./tradeSearchResult.html'">검색</button>
+      <button type="button" id="searchBtn">검색</button>
     </div>
   </form>
   <!-- 메인 -->
@@ -45,25 +45,25 @@
             <!-- li 태그 -->
             <li>
               <!-- 카테고리 -->
-              <div class="category"><a href="">모든 상품 유형</a></div>
+              <div class="category"><a>모든 상품 유형</a></div>
             </li>
             <li>
-              <div class="category"><a href="">유니폼</a></div>
+              <div class="category"><a>유니폼</a></div>
             </li>
             <li>
-              <div class="category"><a href="">모자</a></div>
+              <div class="category"><a>모자</a></div>
             </li>
             <li>
-              <div class="category"><a href="">의류</a></div>
+              <div class="category"><a>의류</a></div>
             </li>
             <li>
-              <div class="category"><a href="">잡화</a></div>
+              <div class="category"><a>잡화</a></div>
             </li>
             <li>
-              <div class="category"><a href="">응원용품</a></div>
+              <div class="category"><a>응원용품</a></div>
             </li>
             <li>
-              <div class="category"><a href="">야구용품</a></div>
+              <div class="category"><a>야구용품</a></div>
             </li>
           </ul>
         </div>
@@ -76,18 +76,18 @@
           <div class="team-bar-text">팀 선택</div>
           <!-- 팀 로고 컨테이너 -->
           <div class="team-bar-logo-container">
-            <div class="team-bar-logo"><a href="">모든 팀</a></div>
-            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/ssg.png" alt=""></a></div>
-            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/lg.png" alt=""></a></div>
-            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/doosan.png" alt=""></a>
+            <div class="team-bar-logo"><a>모든 팀</a></div>
+            <div class="team-bar-logo"><a><img src="./../../assets/img/communityImg/ssg.png" alt=""></a></div>
+            <div class="team-bar-logo"><a><img src="./../../assets/img/communityImg/lg.png" alt=""></a></div>
+            <div class="team-bar-logo"><a><img src="./../../assets/img/communityImg/doosan.png" alt=""></a>
             </div>
-            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/WO.png" alt=""></a></div>
-            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/kia.png" alt=""></a></div>
-            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/SS.png" alt=""></a></div>
-            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/HH.png" alt=""></a></div>
-            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/nc.png" alt=""></a></div>
-            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/LT.png" alt=""></a></div>
-            <div class="team-bar-logo"><a href=""><img src="./../../assets/img/communityImg/kt.png" alt=""></a></div>
+            <div class="team-bar-logo"><a><img src="./../../assets/img/communityImg/WO.png" alt=""></a></div>
+            <div class="team-bar-logo"><a><img src="./../../assets/img/communityImg/kia.png" alt=""></a></div>
+            <div class="team-bar-logo"><a><img src="./../../assets/img/communityImg/SS.png" alt=""></a></div>
+            <div class="team-bar-logo"><a><img src="./../../assets/img/communityImg/HH.png" alt=""></a></div>
+            <div class="team-bar-logo"><a><img src="./../../assets/img/communityImg/nc.png" alt=""></a></div>
+            <div class="team-bar-logo"><a><img src="./../../assets/img/communityImg/LT.png" alt=""></a></div>
+            <div class="team-bar-logo"><a><img src="./../../assets/img/communityImg/kt.png" alt=""></a></div>
           </div>
         </div>
         <!-- 로고 하단 컨테이너 -->
@@ -95,24 +95,28 @@
           <!-- 로고 하단 컨테이너 텍스트 -->
           <div class="page-bar-text">
             <!-- 조회 결과 - 검색어 -->
-            <span class="big-text">[“검색 글”] 검색 결과</span>
+            <span class="big-text">[“<span id="searchWordText">검색어</span>”] 검색 결과</span>
             <!-- 조회 결과 - 개수, 팀, 상품 종류 -->
-            <span class="small-text">2134개 모든 팀 > 모든 상품 유형</span>
+            <span class="small-text"><span id="productCount">2134</span>개 모든 팀 > 모든 상품 유형</span>
           </div>
           <!-- 페이지 버튼 컨테이너 -->
           <div class="page-container">
-            <!-- 페이지 버튼 -->
-            <div class="page-num"><a href="">1</a></div>
-            <div class="page-num"><a href="">2</a></div>
-            <div class="page-num"><a href="">3</a></div>
-            <div class="page-num"><a href="">4</a></div>
-            <div class="page-num"><a href="">5</a></div>
             <!-- 오른쪽 화살표 버튼 -->
-            <div class="arrow-button"><a href="">▶</a></div>
+            <div class="arrow-button"><a>◀</a></div>
+            <!-- 페이지 버튼 -->
+            <div class="page-num"><a>1</a></div>
+            <div class="page-num"><a>2</a></div>
+            <div class="page-num"><a>3</a></div>
+            <div class="page-num"><a>4</a></div>
+            <div class="page-num"><a>5</a></div>
+            <!-- 오른쪽 화살표 버튼 -->
+            <div class="arrow-button"><a>▶</a></div>
           </div>
         </div>
         <!-- 상품 컨테이너 -->
         <div class="product-container">
+          <!-- 결과 없음 텍스트 -->
+          <div class="no-result-text">결과 없음</div>
           <!-- 상품 항목 -->
           <div class="product-list">
             <!-- 상품 이미지 -->

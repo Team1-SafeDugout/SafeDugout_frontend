@@ -78,7 +78,7 @@ body {
   width: 120px;
   height: 75px;
   text-align: center;
-  line-height: 75px;
+  line-height: 65px;
   font-size: 16px;
 }
 
@@ -105,9 +105,15 @@ body {
 
 /* 입력 오류 메시지 */
 .main-error-message {
+  height: 15px;
   margin: 5px 0px 0px 10px;
   color: red;
   font-size: 10px;
+}
+
+/* 입력 오류 메시지 span 태그 */
+.main-error-message span {
+  display: none;
 }
 
 /* 버튼 컨테이너 */

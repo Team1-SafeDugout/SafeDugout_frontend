@@ -57,6 +57,7 @@ body {
   height: 30px;
   background-color: #DCD6D0;
   color: black;
+  display: none;
 }
 
 /* 가격, 구매 버튼 컨테이너 */
@@ -168,7 +169,7 @@ main {
 /* 상품 등록 날짜 작성자 카테고리 글자 서식 */
 .product-info {
   font-size: 15px;
-  color: lightgrey;
+  color: rgba(0, 0, 0, 0.650);
 }
 
 /* 상품 디테일 */

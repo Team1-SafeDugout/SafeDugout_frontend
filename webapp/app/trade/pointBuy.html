@@ -13,6 +13,7 @@
 </head>
 
 <!-- 바디 -->
+
 <body>
   <!-- 헤더 -->
   <div id="header"></div>
@@ -35,7 +36,7 @@
             <!-- 포인트 입력 메시지 -->
             <div class="input-message">충전 금액 : </div>
             <!-- 포인트 입력칸 -->
-            <div class="point-amount"><input type="number" placeholder="포인트 입력"> 원</div>
+            <div class="point-amount"><input type="number" placeholder="포인트 입력" id="pointValue"> 원</div>
           </div>
           <!-- 컨테이너 -->
           <div class="container-full">
@@ -47,9 +48,9 @@
           <!-- 버튼 컨테이너 -->
           <div class="main-button-container">
             <!-- 결제 버튼 a 태그 -->
-            <a href="./pointBuyResult.html">
+            <a>
               <!-- 결제 버튼 텍스트 -->
-              <div class="main-button-next">결제
+              <div class="main-button-next" id="payBtn">결제
               </div>
             </a>
             <!-- 취소 버튼 a 태그 -->

@@ -38,9 +38,17 @@
           <!-- 이미지 컨테이너 -->
           <div class="img-container">
             <!-- 이미지 박스 -->
-            <div class="img-box"><img src="" alt=""></div>
-            <!-- 이미지 컨테이너 button 태그 -->
-            <button type="button">사진 등록+</button>
+            <div class="img-box">
+              <!-- 이미지 박스 img 태그 -->
+              <img src="./../../assets/img/communityImg/tradeLogo.png" alt="" id="previewImg">
+              <!-- 이미지 박스 추가하기, 삭제 버튼 -->
+              <div>
+                <!-- 사진 등록 버튼 -->
+                <label for="uploadImg">사진 등록 +<input type="file" id="uploadImg" accept="image/*"></label>
+                <!-- 사진 삭제 버튼 -->
+                <span id="deleteImg">삭제 X</span>
+              </div>
+            </div>
           </div>
           <!-- 중앙 컨테이너 -->
           <div class="middle-container">
@@ -49,12 +57,12 @@
               <!-- 등록 오류 메시지 -->
               <div class="register-error-message">• 상품명을 입력하세요</div>
               <!-- 상품 이름 텍스트 -->
-              <div class="product-name-text">상품 명 : <input type="text"></div>
+              <div class="product-name-text">상품 명 : <input type="text" id="productName"></div>
             </div>
             <!-- 카테고리 입력 컨테이너 -->
             <div class="category-input-container">
               <!-- 카테고리 텍스트 -->
-              <div class="product-category-text">카테고리 설정</div>
+              <div class="product-category-text"><span>카테고리 설정</span></div>
               <!-- 팀 선택 텍스트 -->
               <div class="product-team-text">팀 선택 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 팀을 선택하지 않으면 팀 카테고리가 기타로 설정됩니다.
               </div>
@@ -71,6 +79,7 @@
                 <div class="logo"><img src="./../../assets/img/communityImg/SS.png" alt=""></div>
                 <div class="logo"><img src="./../../assets/img/communityImg/ssg.png" alt=""></div>
                 <div class="logo"><img src="./../../assets/img/communityImg/WO.png" alt=""></div>
+                <input type="text" id="team" readonly>
               </div>
               <!-- 상품 종류 선택 텍스트 컨테이너 -->
               <div class="product-type-text-container">
@@ -80,11 +89,18 @@
                 <div class="register-error-message">• 굿즈 종류를 하나 선택해 주세요</div>
               </div>
               <!-- 상품 종류 값 -->
-              <div class="product-type"><label for="hat">모자</label><input type="checkbox" id="hat"></div>
-              <div class="product-type"><label for="cloths">의류</label><input type="checkbox" id="cloths"></div>
-              <div class="product-type"><label for="etc">잡화</label><input type="checkbox" id="etc"></div>
-              <div class="product-type"><label for="cheer">응원 도구</label><input type="checkbox" id="cheer"></div>
-              <div class="product-type"><label for="baseball">야구 용품</label><input type="checkbox" id="baseball"></div>
+              <div class="product-type"><label for="baseball">유니폼</label><input type="radio" name="productType"
+                  value="uniform"></div>
+              <div class="product-type"><label for="baseball">모자</label><input type="radio" name="productType"
+                  value="hat"></div>
+              <div class="product-type"><label for="baseball">의류</label><input type="radio" name="productType"
+                  value="cloths"></div>
+              <div class="product-type"><label for="baseball">잡화</label><input type="radio" name="productType"
+                  value="etc"></div>
+              <div class="product-type"><label for="baseball">응원 도구</label><input type="radio" name="productType"
+                  value="cheeringTool"></div>
+              <div class="product-type"><label for="baseball">야구 용품</label><input type="radio" name="productType"
+                  value="baseballEqu"></div>
             </div>
           </div>
           <!-- 오른쪽 컨테이너 -->
@@ -114,7 +130,7 @@
               <!-- 거래 방식 체크박스 -->
               <div class="trade-method-checkbox">
                 <!-- 거래 방식 텍스트 -->
-                <span>배달</span>
+                <span>배송</span>
                 <!-- 거래 방식 -->
                 <input type="radio" name="tradeMethod" value="deliver">
                 <!-- 거래 방식 텍스트-->
@@ -134,20 +150,20 @@
                 <!-- 상품 가격 텍스트 -->
                 <div>상품 가격 : </div>
                 <!-- 상품 가격 입력칸 -->
-                <input type="number">
+                <input type="number" id="productPoint">
               </div>
               <!-- 버튼 컨테이너 -->
               <div class="main-button-container">
                 <!-- 상품 등록 a 태그 -->
-                <a href="./productRegisterResult.html">
+                <a>
                   <!-- 상품 등록 버튼 텍스트 -->
-                  <div class="main-button-next">상품 등록
+                  <div class="main-button-next" id="registerBtn">상품 등록
                   </div>
                 </a>
                 <!-- 버튼 컨테이너 a 태그 -->
-                <a href="./tradeMain.html">
+                <a>
                   <!-- 취소 버튼 텍스트 -->
-                  <div class="main-button-cancel">취소
+                  <div class="main-button-cancel" id="cancelBtn">취소
                   </div>
                 </a>
               </div>

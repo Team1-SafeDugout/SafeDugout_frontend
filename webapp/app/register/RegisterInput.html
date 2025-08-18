@@ -38,20 +38,21 @@
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message"><span>* 필수 입력 값입니다.</span></div>
+              <div class="main-input-error-message"><span class="requiredValue">* 필수 입력 값입니다.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <!-- 입력 메시지 -->
                 <div class="main-input-list-text">이름</div>
                 <!-- 입력 input -->
-                <input type="text" placeholder="이름을 입력하세요" id="name">
+                <input type="text" placeholder="이름을 입력하세요" id="userName">
               </div>
             </li>
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message"><span>* 필수 입력 값입니다.</span><span>* 중복된 아이디 입니다.</span><span>* 아이디 중복
-                  확인을 해주세요.</span></div>
+              <div class="main-input-error-message"><span class="requiredValue">* 필수 입력 값입니다.</span><span>* 아이디가 유효하지
+                  않습니다.</span><span>* 아이디가 중복되었거나
+                  중복 확인이 되지 않았습니다.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <!-- 입력 메시지 -->
@@ -65,7 +66,8 @@
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message"><span>* 필수 입력 값입니다.</span><span>* 비밀번호가 유효하지 않습니다.</span></div>
+              <div class="main-input-error-message"><span class="requiredValue">* 필수 입력 값입니다.</span><span>* 비밀번호가 유효하지
+                  않습니다.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <div class="main-input-list-text">비밀번호</div>
@@ -85,7 +87,7 @@
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message"><span>* 필수 입력 값입니다.</span></div>
+              <div class="main-input-error-message"><span class="requiredValue">* 필수 입력 값입니다.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <div class="main-input-list-text">핸드폰 번호</div>
@@ -96,8 +98,8 @@
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message"><span>* 인증번호가 불일치합니다.</span><span>* 인증번호 확인이 필요합니다. 인증번호 수신 및 입력 후
-                  인증버튼을 눌러주세요</span></div>
+              <div class="main-input-error-message"><span>* 인증번호가 일치하지 않거나 인증번호 확인이 되지 않았습니다.
+                  인증번호 발송 후 인증 버튼을 눌러주세요.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <div class="main-input-list-text">인증 번호 입력</div>
@@ -108,7 +110,8 @@
             <!-- li 태그 -->
             <li>
               <!-- 입력 오류 메시지 -->
-              <div class="main-input-error-message"><span>* 필수 입력 값입니다.</span><span>* 형식이 올바르지 않습니다.</span></div>
+              <div class="main-input-error-message"><span class="requiredValue">* 필수 입력 값입니다.</span><span>* 형식이 올바르지
+                  않습니다.</span></div>
               <!-- 입력 컨테이너 -->
               <div class="main-input-list">
                 <div class="main-input-list-text">이메일</div>
@@ -139,7 +142,7 @@
                 <!-- 입력 메시지 div -->
                 <div class="main-input-list-text"></div>
                 <!-- 주소 입력 칸 -->
-                <input type="text" placeholder="상세 주소 입력" id="detailAddress">
+                <input type="text" readonly style="pointer-events: none;" id="detailAddress">
               </div>
             </li>
             <!-- li 태그 -->
@@ -149,8 +152,8 @@
                 <!-- 입력 메시지 -->
                 <div class="main-input-list-text">MY팀</div>
                 <!-- 드롭다운 메뉴 -->
-                <select name="" id="" placeholder="MY팀을 선택하세요">
-                  <option value="삼성 라이온즈">MY팀을 선택하세요(미정)</option>
+                <select name="" id="myTeam" placeholder="MY팀을 선택하세요">
+                  <option value="unselected">MY팀을 선택하세요(미정)</option>
                   <option value="삼성 라이온즈">삼성 라이온즈</option>
                   <option value="LG 트윈스">LG 트윈스</option>
                   <option value="두산 베어스">두산 베어스</option>
@@ -167,15 +170,12 @@
           </ul>
           <!-- 버튼 컨테이너 -->
           <div class="main-button-container">
-            <!-- 버튼 a 태그 -->
-            <a href="./RegisterResultMyTeamSelected.html">
-              <!-- 회원 가입 버튼 -->
-              <button type="button">
-                <!-- 회원 가입 텍스트 -->
-                <div class="main-button-next">회원 가입
-                </div>
-              </button>
-            </a>
+            <!-- 회원 가입 버튼 -->
+            <button type="button" id="registerBtn">
+              <!-- 회원 가입 텍스트 -->
+              <div class="main-button-next">회원 가입
+              </div>
+            </button>
           </div>
         </div>
       </form>
