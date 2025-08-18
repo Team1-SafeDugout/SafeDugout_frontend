@@ -71,6 +71,11 @@ main {
   height: 100%;
 }
 
+/* 카터고리 서식 */
+.category{
+  width: 95%;
+}
+
 /* 본문 서식 */
 
 .content{

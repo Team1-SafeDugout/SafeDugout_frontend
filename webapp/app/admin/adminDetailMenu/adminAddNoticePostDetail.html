@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./../../../assets/css/admin/adminDetailMenu/adminAddNoticePostDetail.css">
   <link rel="stylesheet" href="./../../../assets/css/admin/adminHeader.css">
   <link rel="stylesheet" href="./../../../assets/css/admin/adminFooter.css">
-  <script async src="./../../../assets/js/admin/adminDetail/adminAddNoticePostDetail.js"></script>
+  <script async src="./../../../assets/js/admin/adminDetailMenu/adminAddNoticePostDetail.js"></script>
 </head>
 
 <body>
@@ -22,8 +22,30 @@
         <!-- 제목 -->
         <section class = "title">
           <label for ="title-text"> 제목 </label>
-          <input type="text" name = "title-text" required>
+          <input type="text" name = "title-text"  id = "title-text" required>
         </section>
+
+        <!-- 카테고리 설정 -->
+         <section class = "category">
+          <label for = "post-categories"> 카테고리 선택 : </label>
+          <input type = "radio" name = "post-categories" value = "main"> 전체공지
+          <input type = "radio" name = "post-categories" value = "guide"> 입문 가이드
+          <input type = "radio" name = "post-categories" value = "team"> 
+          <label for = "select-team"> 팀 공지 </label>
+          <select class = "select-team" name = "team-categories">
+            <option name = "team-category" value = "lg"> LG </option>
+            <option name = "team-category" value = "hh"> 한화 </option>
+            <option name = "team-category" value = "lotte"> 롯데 </option>
+            <option name = "team-category" value = "ssg"> SSG </option>
+            <option name = "team-category" value = "kia"> 가어 </option>
+            <option name = "team-category" value = "kt"> KT </option>
+            <option name = "team-category" value = "nc"> NC </option>
+            <option name = "team-category" value = "samsung"> 삼성 </option>
+            <option name = "team-category" value = "doosan"> 두산 </option>
+            <option name = "team-category" value = "kiwoom"> 키움 </option>
+          </select>
+          
+         </section>
 
         <!-- 중간에 선으로 구분 -->
         <hr class = line>
